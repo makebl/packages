@@ -17,7 +17,7 @@ function mvdir() {
 mv -n `find $1/* -maxdepth 0 -type d` ./
 rm -rf $1
 }
-svn export https://github.com/gw826943555/openwrt-cpufreq/trunk/luci-app-cpufreq
+svn co https://github.com/kenzok8/jell/trunk/luci-app-cpufreq luci-app-cpufreq
 git clone --depth 1 https://github.com/kiddin9/my-packages && mvdir my-packages
 git clone --depth 1 https://github.com/kiddin9/openwrt-bypass && mvdir openwrt-bypass
 git clone --depth 1 https://github.com/kiddin9/luci-app-dnsfilter
