@@ -3,6 +3,7 @@ local http = require "luci.http"
 module("luci.controller.quickstart", package.seeall)
 
 function index()
+	entry({"admin", "nas"}, firstchild(), _("NAS") , 45).dependent = false
     if luci.sys.call("pgrep quickstart >/dev/null") == 0 then
         entry({"admin", "quickstart"}, template("quickstart/home"), _("QuickStart"), 1).leaf = true
         entry({"admin", "network_guide"}, call("networkguide_index"), _("NetworkGuide"), 2)
@@ -19,6 +20,7 @@ function index()
 end
 
 function networkguide_index()
+	entry({"admin", "nas"}, firstchild(), _("NAS") , 45).dependent = false
     luci.http.redirect(luci.dispatcher.build_url("admin","network_guide","pages","network"))
 end
 

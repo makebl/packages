@@ -8,8 +8,6 @@ include $(TOPDIR)/rules.mk
 LUCI_TITLE:=LuCI support for linkease
 LUCI_DEPENDS:=+linkease
 LUCI_PKGARCH:=all
-PKG_VERSION:=2.1.6
-PKG_RELEASE:=2
 LUCI_MINIFY_LUA:=0
 LUCI_MINIFY_CSS:=0
 LUCI_MINIFY_JS:=0
