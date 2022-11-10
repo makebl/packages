@@ -1,9 +1,9 @@
 local util  = require "luci.util"
 local jsonc = require "luci.jsonc"
 
-local lanraragi = {}
+local nastools = {}
 
-lanraragi.blocks = function()
+nastools.blocks = function()
   local f = io.popen("lsblk -s -f -b -o NAME,FSSIZE,MOUNTPOINT --json", "r")
   local vals = {}
   if f then
@@ -21,7 +21,7 @@ lanraragi.blocks = function()
   return vals
 end
 
-lanraragi.home = function()
+nastools.home = function()
   local uci = require "luci.model.uci".cursor()
   local home_dirs = {}
   home_dirs["main_dir"] = uci:get_first("quickstart", "main", "main_dir", "/root")
@@ -31,24 +31,24 @@ lanraragi.home = function()
   return home_dirs
 end
 
-lanraragi.find_paths = function(blocks, home_dirs, path_name)
-  local appname = '/LANraragi'
+nastools.find_paths = function(blocks, home_dirs, path_name)
   local default_path = ''
   local configs = {}
 
+  default_path = home_dirs[path_name] .. "/NasTools"
   if #blocks == 0 then
-    return
+    table.insert(configs, default_path)
   else
-    if path_name == "Downloads" then
-      appname = "/Music"
-    end
     for _, val in pairs(blocks) do 
-      table.insert(configs, val .. "/" .. path_name .. appname)
+      table.insert(configs, val .. "/" .. path_name .. "/NasTools")
     end
-    default_path = configs[1]
+    local without_conf_dir = "/root/" .. path_name .. "/NasTools"
+    if default_path == without_conf_dir then
+      default_path = configs[1]
+    end
   end
 
   return configs, default_path
 end
 
-return lanraragi
+return nastools
