@@ -116,12 +116,6 @@ svn export https://github.com/kiddin9/openwrt-packages/trunk/vsftpd-alt
 svn export https://github.com/messense/aliyundrive-fuse/trunk/openwrt && mvdir openwrt
 svn export https://github.com/messense/openwrt-wiretrustee/trunk/wiretrustee
 svn export https://github.com/messense/aliyundrive-webdav/trunk/openwrt aliyundrive && mvdir aliyundrive
-svn export https://github.com/linkease/nas-packages/trunk/network/services/quickstart quickstart
-mkdir -p luci-app-luci-app-quickstart/luasrc/view/quickstart/main.htm
-curl -fsSL  https://raw.githubusercontent.com/shidahuilang/openwrt-package/usb/argon/main.htm > luci-app-quickstart/luasrc/view/quickstart/main.htm
-svn export https://github.com/shidahuilang/luci-theme/trunk/luci-theme-argon luci-theme-argon
-svn export https://github.com/shidahuilang/luci-theme/trunk/luci-app-argon-config luci-app-argon-config
-svn export https://github.com/shidahuilang/luci-theme/trunk/luci-theme-neobird2 luci-theme-neobird2
 svn export https://github.com/Lienol/openwrt-package/branches/other/lean/luci-app-autoreboot
 svn export https://github.com/fw876/helloworld/trunk/sagernet-core
 svn export https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus
@@ -141,7 +135,19 @@ svn export https://github.com/linkease/openwrt-app-actions/trunk/applications/lu
 svn export https://github.com/linkease/istore-packages/trunk/luci-app-kodexplorer luci-app-kodexplorer
 svn export https://github.com/kenzok8/openwrt-packages/trunk/luci-app-store luci-app-store
 svn export https://github.com/linkease/istore-ui/trunk/app-store-ui app-store-ui
-svn export 
+###主题
+svn export https://github.com/immortalwrt/luci/branches/openwrt-18.06-k5.4/themes/luci-theme-opentomcat luci-theme-opentomcat
+svn export https://github.com/kenzok8/jell/trunk/luci-themedog luci-themedog
+svn export https://github.com/sirpdboy/luci-theme-opentopd luci-theme-opentopd
+svn export https://github.com/sirpdboy/sirpdboy-package/trunk/luci-theme-ifit luci-theme-ifit
+svn export https://github.com/sirpdboy/sirpdboy-package/trunk/luci-theme-opentomato luci-theme-opentomato
+svn export https://github.com/Aslin-Ameng/luci-theme-Light/trunk/luci-theme-Light luci-theme-Light
+svn export https://github.com/linkease/nas-packages/trunk/network/services/quickstart quickstart
+mkdir -p luci-app-luci-app-quickstart/luasrc/view/quickstart/main.htm
+curl -fsSL  https://raw.githubusercontent.com/shidahuilang/openwrt-package/usb/argon/main.htm > luci-app-quickstart/luasrc/view/quickstart/main.htm
+svn export https://github.com/shidahuilang/luci-theme/trunk/luci-theme-argon luci-theme-argon
+svn export https://github.com/shidahuilang/luci-theme/trunk/luci-app-argon-config luci-app-argon-config
+svn export https://github.com/shidahuilang/luci-theme/trunk/luci-theme-neobird2 luci-theme-neobird2
 
 git_sparse_clone master "https://github.com/coolsnowwolf/packages" "leanpack" net/miniupnpd net/mwan3 multimedia/UnblockNeteaseMusic-Go \
 multimedia/UnblockNeteaseMusic net/amule net/baidupcs-web multimedia/gmediarender net/go-aliyundrive-webdav \
