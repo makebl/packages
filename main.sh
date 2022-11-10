@@ -139,6 +139,9 @@ svn export https://github.com/immortalwrt/packages/trunk/multimedia/UnblockNetea
 svn export https://github.com/linkease/openwrt-app-actions/trunk/applications/luci-app-wxedge luci-app-wxedge
 svn export https://github.com/linkease/openwrt-app-actions/trunk/applications/luci-app-jellyfin luci-app-jellyfin
 svn export https://github.com/linkease/istore-packages/trunk/luci-app-kodexplorer luci-app-kodexplorer
+svn export https://github.com/kenzok8/openwrt-packages/trunk/luci-app-store luci-app-store
+svn export https://github.com/linkease/istore-ui/trunk/app-store-ui app-store-ui
+svn export 
 
 git_sparse_clone master "https://github.com/coolsnowwolf/packages" "leanpack" net/miniupnpd net/mwan3 multimedia/UnblockNeteaseMusic-Go \
 multimedia/UnblockNeteaseMusic net/amule net/baidupcs-web multimedia/gmediarender net/go-aliyundrive-webdav \
