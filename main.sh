@@ -60,8 +60,8 @@ git clone --depth 1 https://github.com/esirplayground/LingTiGameAcc
 git clone --depth 1 https://github.com/esirplayground/luci-app-LingTiGameAcc
 git clone --depth 1 https://github.com/brvphoenix/luci-app-wrtbwmon wrtbwmon1 && mvdir wrtbwmon1
 git clone --depth 1 https://github.com/brvphoenix/wrtbwmon wrtbwmon2 && mvdir wrtbwmon2
-git clone --depth 1 https://github.com/shidahuilang/luci-theme/luci-theme-argon
-git clone --depth 1 https://github.com/shidahuilang/luci-theme/luci-app-argon-config
+git clone --depth 1 https://github.com/shidahuilang/luci-theme/luci-theme-argon luci-theme-argon
+git clone --depth 1 https://github.com/shidahuilang/luci-theme/luci-app-argon-config luci-app-argon-config
 git clone --depth 1 https://github.com/jerrykuku/luci-app-vssr
 git clone --depth 1 https://github.com/jerrykuku/luci-app-ttnode
 git clone --depth 1 https://github.com/jerrykuku/luci-app-jd-dailybonus
@@ -89,8 +89,6 @@ git clone --depth 1 https://github.com/sundaqiang/openwrt-packages && mv -n open
 git clone --depth 1 https://github.com/zxlhhyccc/luci-app-v2raya
 git clone --depth 1 https://github.com/kenzok8/luci-theme-ifit ifit && mv -n ifit/luci-theme-ifit ./;rm -rf ifit
 git clone --depth 1 https://github.com/kenzok78/openwrt-minisign
-git clone --depth 1 https://github.com/kenzok78/luci-theme-argonne
-git clone --depth 1 https://github.com/kenzok78/luci-app-argonne-config
 git clone --depth 1 https://github.com/thinktip/luci-theme-neobird
 git clone --depth 1 -b lede https://github.com/pymumu/luci-app-smartdns
 git clone --depth 1 https://github.com/ophub/luci-app-amlogic amlogic && mv -n amlogic/luci-app-amlogic ./;rm -rf amlogic
@@ -177,8 +175,6 @@ sed -i "/minisign:minisign/d" luci-app-dnscrypt-proxy2/Makefile
 sed -i 's/+dockerd/+dockerd +cgroupfs-mount/' luci-app-docker*/Makefile
 sed -i '$i /etc/init.d/dockerd restart &' luci-app-docker*/root/etc/uci-defaults/*
 sed -i 's/+libcap /+libcap +libcap-bin /' luci-app-openclash/Makefile
-sed -i 's/\(+luci-compat\)/\1 +luci-theme-argon/' luci-app-argon-config/Makefile
-sed -i 's/\(+luci-compat\)/\1 +luci-theme-argonne/' luci-app-argonne-config/Makefile
 sed -i 's/ +uhttpd-mod-ubus//' luci-app-packet-capture/Makefile
 sed -i 's/	ip.neighbors/	luci.ip.neighbors/' luci-app-wifidog/luasrc/model/cbi/wifidog/wifidog_cfg.lua
 sed -i "s/nas/services/g" `grep nas -rl luci-app-fileassistant`
