@@ -87,7 +87,6 @@ git clone --depth 1 https://github.com/sundaqiang/openwrt-packages && mv -n open
 git clone --depth 1 https://github.com/zxlhhyccc/luci-app-v2raya
 git clone --depth 1 https://github.com/kenzok8/luci-theme-ifit ifit && mv -n ifit/luci-theme-ifit ./;rm -rf ifit
 git clone --depth 1 https://github.com/kenzok78/openwrt-minisign
-git clone --depth 1 https://github.com/thinktip/luci-theme-neobird
 git clone --depth 1 -b lede https://github.com/pymumu/luci-app-smartdns
 git clone --depth 1 https://github.com/ophub/luci-app-amlogic amlogic && mv -n amlogic/luci-app-amlogic ./;rm -rf amlogic
 git clone --depth 1 -b luci https://github.com/xiaorouji/openwrt-passwall passwall1 && mv -n passwall1/luci-app-passwall  ./; rm -rf passwall1
@@ -122,6 +121,7 @@ mkdir -p luci-app-luci-app-quickstart/luasrc/view/quickstart/main.htm
 curl -fsSL  https://raw.githubusercontent.com/shidahuilang/openwrt-package/usb/argon/main.htm > luci-app-quickstart/luasrc/view/quickstart/main.htm
 svn export https://github.com/shidahuilang/luci-theme/trunk/luci-theme-argon luci-theme-argon
 svn export https://github.com/shidahuilang/luci-theme/trunk/luci-app-argon-config luci-app-argon-config
+svn export https://github.com/shidahuilang/luci-theme/trunk/luci-theme-neobird2 luci-theme-neobird2
 svn export https://github.com/Lienol/openwrt-package/branches/other/lean/luci-app-autoreboot
 svn export https://github.com/fw876/helloworld/trunk/sagernet-core
 svn export https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus
