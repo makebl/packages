@@ -87,8 +87,8 @@ jobs:
         (
         git_clone https://github.com/zzsj0928/luci-app-pushbot
         git_clone https://github.com/shanglanxin/luci-app-homebridge
-        git_clone https://github.com/jerrykuku/luci-theme-argon
-        git_clone https://github.com/jerrykuku/luci-app-argon-config
+        git_clone https://github.com/shidahuilang/luci-theme/luci-theme-argon
+        git_clone https://github.com/shidahuilang/luci-theme/luci-app-argon-config
         git_clone https://github.com/jerrykuku/luci-app-vssr
         git_clone https://github.com/jerrykuku/luci-app-ttnode
         git_clone https://github.com/jerrykuku/luci-app-jd-dailybonus
