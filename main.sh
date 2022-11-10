@@ -60,8 +60,6 @@ git clone --depth 1 https://github.com/esirplayground/LingTiGameAcc
 git clone --depth 1 https://github.com/esirplayground/luci-app-LingTiGameAcc
 git clone --depth 1 https://github.com/brvphoenix/luci-app-wrtbwmon wrtbwmon1 && mvdir wrtbwmon1
 git clone --depth 1 https://github.com/brvphoenix/wrtbwmon wrtbwmon2 && mvdir wrtbwmon2
-git clone --depth 1 https://github.com/shidahuilang/luci-theme/luci-theme-argon luci-theme-argon
-git clone --depth 1 https://github.com/shidahuilang/luci-theme/luci-app-argon-config luci-app-argon-config
 git clone --depth 1 https://github.com/jerrykuku/luci-app-vssr
 git clone --depth 1 https://github.com/jerrykuku/luci-app-ttnode
 git clone --depth 1 https://github.com/jerrykuku/luci-app-jd-dailybonus
@@ -122,6 +120,8 @@ svn export https://github.com/messense/aliyundrive-webdav/trunk/openwrt aliyundr
 svn export https://github.com/linkease/nas-packages/trunk/network/services/quickstart quickstart
 mkdir -p luci-app-luci-app-quickstart/luasrc/view/quickstart/main.htm
 curl -fsSL  https://raw.githubusercontent.com/shidahuilang/openwrt-package/usb/argon/main.htm > luci-app-quickstart/luasrc/view/quickstart/main.htm
+svn export https://github.com/shidahuilang/luci-theme/trunk/luci-theme-argon luci-theme-argon
+svn export https://github.com/shidahuilang/luci-theme/trunk/luci-app-argon-config luci-app-argon-config
 svn export https://github.com/Lienol/openwrt-package/branches/other/lean/luci-app-autoreboot
 svn export https://github.com/fw876/helloworld/trunk/sagernet-core
 svn export https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus
