@@ -13,7 +13,7 @@ PKG_RELEASE:=
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/liudf0716/xfrpc.git
-PKG_SOURCE_VERSION:=null
+PKG_SOURCE_VERSION:=c53693be6995047e606e3874a56b6e27afef37d0
 PKG_MIRROR_HASH:=skip
 
 PKG_MAINTAINER:=Dengfeng Liu <liudf0716@gmail.com>

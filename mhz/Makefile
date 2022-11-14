@@ -6,7 +6,7 @@ PKG_RELEASE:=
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL=https://github.com/wtarreau/mhz.git
 PKG_SOURCE_DATE:=2022-08-18
-PKG_SOURCE_VERSION:=null
+PKG_SOURCE_VERSION:=6ec38cbb1371d20078a7a5059dd9faa5b281b2d9
 PKG_MIRROR_HASH:=skip
 
 PKG_MAINTAINER:=Robert Marko <robimarko@gmail.com>

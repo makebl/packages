@@ -13,7 +13,7 @@ PKG_VERSION:=1.14
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/taganaka/SpeedTest.git
-PKG_SOURCE_VERSION:=null
+PKG_SOURCE_VERSION:=0f63cfbf7ce8d64ea803bf143b957eae76323405
 
 PKG_MAINTAINER:=Konstantine Shevlakov <shevlyakov@132lan.ru>
 PKG_LICENSE:=MIT
