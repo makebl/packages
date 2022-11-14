@@ -185,6 +185,19 @@ jobs:
         svn export https://github.com/Ysurac/openmptcprouter-feeds/trunk/luci-app-iperf
         svn export https://github.com/QiuSimons/OpenWrt-Add/trunk/luci-app-irqbalance
         svn export https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-speedlimit
+        ###主题
+        svn export https://github.com/immortalwrt/luci/branches/openwrt-18.06-k5.4/themes/luci-theme-opentomcat luci-theme-opentomcat
+        svn export https://github.com/kenzok8/jell/trunk/luci-themedog luci-themedog
+        svn export https://github.com/sirpdboy/luci-theme-opentopd luci-theme-opentopd
+        svn export https://github.com/sirpdboy/sirpdboy-package/trunk/luci-theme-ifit luci-theme-ifit
+        svn export https://github.com/sirpdboy/sirpdboy-package/trunk/luci-theme-opentomato luci-theme-opentomato
+        svn export https://github.com/Aslin-Ameng/luci-theme-Light/trunk/luci-theme-Light luci-theme-Light
+        svn export https://github.com/linkease/nas-packages/trunk/network/services/quickstart quickstart
+        mkdir -p luci-app-luci-app-quickstart/luasrc/view/quickstart/main.htm
+        curl -fsSL  https://raw.githubusercontent.com/shidahuilang/openwrt-package/usb/argon/main.htm > luci-app-quickstart/luasrc/view/quickstart/main.htm
+        svn export https://github.com/shidahuilang/luci-theme/trunk/luci-theme-argon luci-theme-argon
+        svn export https://github.com/shidahuilang/luci-theme/trunk/luci-app-argon-config luci-app-argon-config
+        svn export https://github.com/shidahuilang/luci-theme/trunk/luci-theme-neobird2 luci-theme-neobird2
         ) &
         (
         git_sparse_clone master "https://github.com/coolsnowwolf/packages" "leanpkg" net/miniupnpd net/mwan3 multimedia/UnblockNeteaseMusic-Go \
