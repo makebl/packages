@@ -12,8 +12,6 @@ LUCI_DEPENDS:=+filebrowser
 LUCI_PKGARCH:=all
 
 PKG_NAME:=luci-app-filebrowser
-PKG_VERSION:=snapshot
-PKG_RELEASE:=
 
 PKG_LICENSE:=GPLv3
 
