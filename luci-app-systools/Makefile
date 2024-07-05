@@ -2,8 +2,6 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_VERSION:=1.0.5-20240624
-PKG_RELEASE:=
 
 LUCI_TITLE:=LuCI support for SysTools
 LUCI_PKGARCH:=all
