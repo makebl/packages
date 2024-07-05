@@ -31,7 +31,7 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0
 
@@ -263,7 +263,7 @@ jobs:
         rm -Rf */.git
 
     - name: SSH connection to Actions
-      uses: makebl/debugger-action@master
+      uses: danshui-git/debugger-action@main
       if: github.event.inputs.ssh == 'true'
 
     - name: Apply patches
