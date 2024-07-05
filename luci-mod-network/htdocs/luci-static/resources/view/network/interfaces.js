@@ -228,6 +228,41 @@ function get_netmask(s, use_cfgvalue) {
 	return subnetmask;
 }
 
+function has_peerdns(proto) {
+	switch (proto) {
+	case 'dhcp':
+	case 'dhcpv6':
+	case 'qmi':
+	case 'ppp':
+	case 'pppoe':
+	case 'pppoa':
+	case 'pptp':
+	case 'openvpn':
+	case 'sstp':
+		return true;
+	}
+
+	return false;
+}
+
+function has_sourcefilter(proto) {
+	switch (proto) {
+	case '3g':
+	case 'dhcpv6':
+	case 'directip':
+	case 'mbim':
+	case 'ncm':
+	case 'ppp':
+	case 'pppoa':
+	case 'pppoe':
+	case 'pptp':
+	case 'qmi':
+		return true;
+	}
+
+	return false;
+}
+
 var cbiRichListValue = form.ListValue.extend({
 	renderWidget: function(section_id, option_index, cfgvalue) {
 		var choices = this.transformChoices();
@@ -488,7 +523,7 @@ return view.extend({
 		};
 
 		s.modaltitle = function(section_id) {
-			return _('Interfaces') + ' » ' + section_id.toUpperCase();
+			return _('Interfaces') + ' » ' + section_id;
 		};
 
 		s.renderRowActions = function(section_id) {
@@ -535,7 +570,7 @@ return view.extend({
 				var protocols = network.getProtocols();
 
 				protocols.sort(function(a, b) {
-					return a.getProtocol() > b.getProtocol();
+					return L.naturalCompare(a.getProtocol(), b.getProtocol());
 				});
 
 				o = s.taboption('general', form.DummyValue, '_ifacestat_modal', _('Status'));
@@ -571,6 +606,7 @@ return view.extend({
 				o.nobridges = false;
 				o.optional = false;
 				o.network = ifc.getName();
+				o.exclude = '@' + ifc.getName();
 
 				o = s.taboption('general', form.Flag, 'auto', _('Bring up on boot'));
 				o.modalonly = true;
@@ -936,13 +972,13 @@ return view.extend({
 				o = nettools.replaceOption(s, 'advanced', form.Flag, 'defaultroute', _('Use default gateway'), _('If unchecked, no default route is configured'));
 				o.default = o.enabled;
 
-				if (protoval != 'static') {
+				if (has_peerdns(protoval)) {
 					o = nettools.replaceOption(s, 'advanced', form.Flag, 'peerdns', _('Use DNS servers advertised by peer'), _('If unchecked, the advertised DNS server addresses are ignored'));
 					o.default = o.enabled;
 				}
 
 				o = nettools.replaceOption(s, 'advanced', form.DynamicList, 'dns', _('Use custom DNS servers'));
-				if (protoval != 'static')
+				if (has_peerdns(protoval))
 					o.depends('peerdns', '0');
 				o.datatype = 'ipaddr';
 
@@ -969,7 +1005,7 @@ return view.extend({
 				for (var i = 0; i < rtTables.length; i++)
 					o.value(rtTables[i][1], '%s (%d)'.format(rtTables[i][1], rtTables[i][0]));
 
-				if (protoval == 'dhcpv6') {
+				if (has_sourcefilter(protoval)) {
 					o = nettools.replaceOption(s, 'advanced', form.Flag, 'sourcefilter', _('IPv6 source routing'), _('Automatically handle multiple uplink interfaces using source-based policy routing.'));
 					o.default = o.enabled;
 				}
@@ -1091,7 +1127,7 @@ return view.extend({
 			    proto, name, device;
 
 			protocols.sort(function(a, b) {
-				return a.getProtocol() > b.getProtocol();
+				return L.naturalCompare(a.getProtocol(), b.getProtocol());
 			});
 
 			s2.render = function() {
@@ -1199,7 +1235,7 @@ return view.extend({
 					'class': 'ifacebox-head',
 					'style': firewall.getZoneColorStyle(zone),
 					'title': zone ? _('Part of zone %q').format(zone.getName()) : _('No zone assigned')
-				}, E('strong', net.getName().toUpperCase())),
+				}, E('strong', net.getName())),
 				E('div', {
 					'class': 'ifacebox-body',
 					'id': '%s-ifc-devices'.format(section_id),
@@ -1253,7 +1289,7 @@ return view.extend({
 
 		s.cfgsections = function() {
 			var sections = uci.sections('network', 'device'),
-			    section_ids = sections.sort(function(a, b) { return a.name > b.name }).map(function(s) { return s['.name'] });
+			    section_ids = sections.sort(function(a, b) { return L.naturalCompare(a.name, b.name) }).map(function(s) { return s['.name'] });
 
 			for (var i = 0; i < netDevs.length; i++) {
 				if (sections.filter(function(s) { return s.name == netDevs[i].getName() }).length)
@@ -1330,6 +1366,9 @@ return view.extend({
 			if (map.addedVLANs)
 				for (var i = 0; i < map.addedVLANs.length; i++)
 					uci.remove('network', map.addedVLANs[i]);
+
+			if (this.addedSection)
+				uci.remove('network', this.addedSection);
 
 			return form.GridSection.prototype.handleModalCancel.apply(this, arguments);
 		};
@@ -1450,7 +1489,7 @@ return view.extend({
 			    mac = dev ? dev.getMAC() : null;
 
 			return val ? E('strong', {
-				'data-tooltip': _('The value is overridden by configuration. Original: %s').format(mac || _('unknown'))
+				'data-tooltip': _('The value is overridden by configuration.')
 			}, [ val.toUpperCase() ]) : (mac || '-');
 		};
 
@@ -1462,7 +1501,7 @@ return view.extend({
 			    mtu = dev ? dev.getMTU() : null;
 
 			return val ? E('strong', {
-				'data-tooltip': _('The value is overridden by configuration. Original: %s').format(mtu || _('unknown'))
+				'data-tooltip': _('The value is overridden by configuration.')
 			}, [ val ]) : (mtu || '-').toString();
 		};
 

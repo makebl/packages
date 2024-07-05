@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-09-17 06:52+0000\n"
-"Last-Translator: Mark MA <daomeideshu@gmail.com>\n"
+"PO-Revision-Date: 2024-04-12 14:21+0000\n"
+"Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsddns/ar/>\n"
 "Language: ar\n"
@@ -9,26 +9,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.9-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:430
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:432
 msgid "\"../\" not allowed in path for Security Reason."
 msgstr "\"../\" غير مسموح به في المسار لسبب الأمان."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:462
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:533
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:464
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:534
 msgid "Add new services..."
 msgstr "اضف خدمة جديدة..."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:607
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:608
 msgid "Advanced Settings"
 msgstr "إعدادات متقدمة"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:399
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:401
 msgid "Allow non-public IP's"
 msgstr "السماح لعناوين IP غير العامة"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:606
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:607
 msgid "Basic Settings"
 msgstr "الإعدادات الأساسية"
 
@@ -36,11 +36,11 @@ msgstr "الإعدادات الأساسية"
 msgid "Bind Network"
 msgstr "ربط الشبكة"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:330
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:332
 msgid "Binding to a specific network not supported"
 msgstr "الربط بشبكة معينة غير مدعوم"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:357
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:359
 msgid ""
 "BusyBox's nslookup and Wget do not support to specify the IP version to use "
 "for communication with DDNS Provider!"
@@ -48,7 +48,7 @@ msgstr ""
 "لا يدعم كل من nslookup و Wget من BusyBox تحديد إصدار IP لاستخدامه للتواصل مع "
 "مزود DDNS!"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:368
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:370
 msgid ""
 "BusyBox's nslookup and hostip do not support to specify to use TCP instead "
 "of default UDP when requesting DNS server!"
@@ -56,7 +56,7 @@ msgstr ""
 "لا يدعم nslookup و hostip الخاص ب BusyBox تحديد استخدام TCP بدلاً من UDP "
 "الافتراضي عند طلب خادم DNS!"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:379
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:381
 msgid ""
 "BusyBox's nslookup in the current compiled version does not handle given DNS "
 "Servers correctly!"
@@ -64,11 +64,11 @@ msgstr ""
 "لا يعالج nslookup الخاص ب BusyBox في الإصدار المترجم الحالي خوادم DNS "
 "المحددة بشكل صحيح!"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:450
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:452
 msgid "Ca Certs path"
 msgstr "مسار شهادات Ca"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:451
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:453
 msgid ""
 "Ca Certs path that will be used to download services data. Set IGNORE to "
 "skip certificate validation."
@@ -76,7 +76,7 @@ msgstr ""
 "مسار شهادات Ca الذي سيتم استخدامه لتنزيل بيانات الخدمات. قم بتعيين IGNORE "
 "لتخطي التحقق من صحة الشهادة."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:539
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:540
 msgid "Cancel"
 msgstr "إلغاء"
 
@@ -88,30 +88,30 @@ msgstr "تحقق الفاصل"
 msgid "Check Unit"
 msgstr "تحقق من الوحدة"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:524
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:525
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:658
 msgid "Checking the service support..."
 msgstr "جاري التحقق من دعم الخدمة ..."
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:27
 msgid "Configuration"
-msgstr "إعدادات"
+msgstr "ضبط الإعدادات"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:212
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:214
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1124
 msgid "Configuration Error"
 msgstr "خطأ في الاعداد"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:543
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:544
 msgid "Create service"
 msgstr "إنشاء الخدمة"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:412
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:414
 msgid "Current setting:"
 msgstr "الإعداد الحالي:"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:196
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:274
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:198
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:276
 msgid "Currently DDNS updates are not started at boot or on interface events."
 msgstr "لا يتم حاليًا بدء تحديثات DDNS عند التمهيد أو في أحداث الواجهة."
 
@@ -127,30 +127,30 @@ msgstr "تحديث URL مخصص"
 msgid "Custom update-script"
 msgstr "تحديث البرنامج النصي المخصص"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:194
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:277
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:196
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:279
 msgid "DDNS Autostart disabled"
 msgstr "بدء تشغيل تلقائي DDNS معطل"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:193
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:277
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:195
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:279
 msgid "DDNS Autostart enabled"
 msgstr "بدء التشغيل التلقائي DDNS قيد التشغيل"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:518
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:640
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:520
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:641
 msgid "DDNS Service provider"
 msgstr "مزود خدمة DDNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:282
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:284
 msgid "DDns"
 msgstr "DDNS نظام أسماء النطاقات الديناميكية"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:584
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:585
 msgid "DDns Service"
 msgstr "خدمة DDns"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:367
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:369
 msgid "DNS requests via TCP not supported"
 msgstr "طلبات DNS عبر TCP غير مدعومة"
 
@@ -158,7 +158,7 @@ msgstr "طلبات DNS عبر TCP غير مدعومة"
 msgid "DNS-Server"
 msgstr "خادم DNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:408
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:410
 msgid "Date format"
 msgstr "صيغة التاريخ"
 
@@ -180,16 +180,16 @@ msgid ""
 "DDNS provider"
 msgstr "يحدد المصدر لقراءة عنوان IP للأنظمة ، والذي سيتم إرساله إلى مزود DDNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:510
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:630
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:512
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:631
 msgid "Defines which IP address 'IPv4/IPv6' is send to the DDNS provider"
 msgstr "يحدد عنوان IP الذي يتم إرساله \"IPv4 / IPv6\" إلى مزود DDNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:424
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:426
 msgid "Directory contains Log files for each running section."
 msgstr "يحتوي الدليل على ملفات السجل لكل قسم قيد التشغيل."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:418
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:420
 msgid ""
 "Directory contains PID and other status information for each running section."
 msgstr "يحتوي الدليل على PID ومعلومات الحالة الأخرى لكل قسم قيد التشغيل."
@@ -202,17 +202,17 @@ msgstr "غير مفعل"
 msgid "Domain"
 msgstr "اختصاص"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:258
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:260
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:7
 #: applications/luci-app-ddns/root/usr/share/luci/menu.d/luci-app-ddns.json:3
 msgid "Dynamic DNS"
 msgstr "نظام أسماء النطاقات الديناميكية"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:265
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:267
 msgid "Dynamic DNS Version"
 msgstr "√"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:552
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:553
 msgid "Edit"
 msgstr "تحرير"
 
@@ -220,7 +220,7 @@ msgstr "تحرير"
 msgid "Enable secure communication with DDNS provider"
 msgstr "تمكين الاتصال الآمن مع مزود DDNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:612
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:613
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1132
 msgid "Enabled"
 msgstr "مفعل"
@@ -258,7 +258,7 @@ msgstr "ملف"
 msgid "Follow instructions you will find on their WEB page."
 msgstr "اتبع التعليمات التي ستجدها على صفحة الويب الخاصة بهم."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:410
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:412
 msgid "For supported codes look here"
 msgstr "للحصول على الرموز المدعومة انظر هنا"
 
@@ -266,7 +266,7 @@ msgstr "للحصول على الرموز المدعومة انظر هنا"
 msgid "Force IP Version"
 msgstr "فرض إصدار IP"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:356
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:358
 msgid "Force IP Version not supported"
 msgstr "فرض إصدار IP غير مدعوم"
 
@@ -290,13 +290,13 @@ msgstr "صيغة"
 msgid "Format: IP or FQDN"
 msgstr "الصيغة: IP أو FQDN"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:335
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:337
 msgid ""
 "GNU Wget will use the IP of given network, cURL will use the physical "
 "interface."
 msgstr "سيستخدم GNU Wget عنوان IP لشبكة معينة ، وسيستخدم cURL الواجهة المادية."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:263
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:265
 msgid "Global Settings"
 msgstr "الاعدادات العامة"
 
@@ -304,11 +304,11 @@ msgstr "الاعدادات العامة"
 msgid "Grant access to ddns procedures"
 msgstr "منح الوصول إلى إجراءات DNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:318
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:320
 msgid "HTTPS not supported"
 msgstr "HTTPS غير مدعوم"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:622
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:623
 msgid "Hostname/FQDN to validate, if IP update happen or necessary"
 msgstr "اسم المضيف / FQDN للتحقق ، إذا حدث تحديث IP أو ضروريًا"
 
@@ -316,13 +316,13 @@ msgstr "اسم المضيف / FQDN للتحقق ، إذا حدث تحديث IP �
 msgid "IP address source"
 msgstr "مصدر عنوان IP"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:509
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:629
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:511
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:630
 msgid "IP address version"
 msgstr "إصدار عنوان IP"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:512
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:634
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:514
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:635
 msgid "IPv4-Address"
 msgstr "عنوان IPv4"
 
@@ -330,37 +330,37 @@ msgstr "عنوان IPv4"
 msgid "IPv6 address must be given in square brackets"
 msgstr "يجب كتابة عنوان IPv6 بين قوسين معقوفين"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:309
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:311
 msgid "IPv6 is currently not (fully) supported by this system"
 msgstr "IPv6 غير مدعوم (بالكامل) بواسطة هذا النظام حاليًا"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:308
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:310
 msgid "IPv6 not supported"
 msgstr "IPv6 غير مدعوم"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:514
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:636
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:516
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:637
 msgid "IPv6-Address"
 msgstr "عنوان IPv6"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:443
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:445
 msgid ""
 "If Wget and cURL package are installed, Wget is used for communication by "
 "default."
 msgstr ""
 "إذا تم تثبيت حزمة Wget و cURL ، فسيتم استخدام Wget بشكل افتراضي للاتصال."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:613
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:614
 msgid "If this service section is disabled it could not be started."
 msgstr "إذا تم تعطيل قسم الخدمة هذا ، فلا يمكن بدء تشغيله."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:391
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:393
 msgid "If using secure communication you should verify server certificates!"
 msgstr "في حالة استخدام اتصال آمن ، يجب عليك التحقق من شهادات الخادم!"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:323
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:337
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:349
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:325
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:339
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:351
 msgid ""
 "In some versions cURL/libcurl in OpenWrt is compiled without proxy support."
 msgstr ""
@@ -370,7 +370,7 @@ msgstr ""
 msgid "Info"
 msgstr "معلومات"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:262
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:264
 msgid "Information"
 msgstr "معلومة"
 
@@ -379,7 +379,7 @@ msgstr "معلومة"
 msgid "Insert a Update Script OR a Update URL"
 msgstr "أدخل برنامج نصي للتحديث أو عنوان URL للتحديث"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:393
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:395
 msgid ""
 "Install 'ca-certificates' package or needed certificates by hand into /etc/"
 "ssl/certs default directory"
@@ -412,15 +412,15 @@ msgstr "وحدة الفاصل الزمني لفرض إرسال التحديثا�
 msgid "Last Update"
 msgstr "اخر تحديث"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:609
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:610
 msgid "Log File Viewer"
 msgstr "عارض ملف السجل"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:423
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:425
 msgid "Log directory"
 msgstr "دليل السجل"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:435
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:437
 msgid "Log length"
 msgstr "طول السجل"
 
@@ -432,25 +432,25 @@ msgstr "تسجيل الدخول إلى ملف"
 msgid "Log to syslog"
 msgstr "سجل في سجل النظام"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:621
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:622
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1120
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:29
 msgid "Lookup Hostname"
 msgstr "اسم مضيف البحث"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:497
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:499
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1114
 msgid "Name"
 msgstr "اسم"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:331
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:333
 msgid ""
 "Neither GNU Wget with SSL nor cURL installed to select a network to use for "
 "communication."
 msgstr ""
 "لم يتم تثبيت GNU Wget مع SSL أو cURL لتحديد شبكة لاستخدامها في الاتصال."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:319
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:321
 msgid ""
 "Neither GNU Wget with SSL nor cURL installed to support secure updates via "
 "HTTPS protocol."
@@ -458,7 +458,7 @@ msgstr ""
 "لم يتم تثبيت GNU Wget مع SSL أو cURL لدعم التحديثات الآمنة عبر بروتوكول "
 "HTTPS."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:615
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:616
 msgid "Neither from LuCI interface nor from console."
 msgstr "لا من واجهة LuCI ولا من وحدة التحكم."
 
@@ -474,12 +474,12 @@ msgstr "شبكة الاتصال"
 msgid "Network on which the ddns-updater scripts will be started"
 msgstr "الشبكة التي ستبدأ عليها سكربتات محدث ddns"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:214
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:216
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1141
 msgid "Never"
 msgstr "أبدا"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:500
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:502
 msgid "New DDns Service…"
 msgstr "خدمة DDns الجديدة …"
 
@@ -488,13 +488,13 @@ msgstr "خدمة DDns الجديدة …"
 msgid "Next Update"
 msgstr "التحديث القادم"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:213
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:215
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1125
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:40
 msgid "No Data"
 msgstr "لايوجد بيانات"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:390
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:392
 msgid "No certificates found"
 msgstr "لم يتم العثور على شهادات"
 
@@ -502,11 +502,11 @@ msgstr "لم يتم العثور على شهادات"
 msgid "No logging"
 msgstr "لا تسجيل"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:400
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:402
 msgid "Non-public and by default blocked IP's"
 msgstr "غير عام وبشكل افتراضي عناوين IP المحظورة"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:216
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:218
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1106
 msgid "Not Running"
 msgstr "لا يعمل"
@@ -515,7 +515,7 @@ msgstr "لا يعمل"
 msgid "Notice"
 msgstr "ملاحضة"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:436
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:438
 msgid "Number of last lines stored in log files"
 msgstr "عدد الأسطر الأخيرة المخزنة في ملفات السجل"
 
@@ -571,7 +571,7 @@ msgstr "كلمة المرور"
 msgid "Path to CA-Certificate"
 msgstr "المسار إلى CA-Certificate"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:310
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:312
 msgid ""
 "Please follow the instructions on OpenWrt's homepage to enable IPv6 support"
 msgstr ""
@@ -594,11 +594,11 @@ msgstr "حقا تبديل الخدمة؟"
 msgid "Registered IP"
 msgstr "IP المسجل"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:574
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:575
 msgid "Reload"
 msgstr "إعادة تحميل"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:557
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:558
 msgid "Reload this service"
 msgstr "إعادة تحميل هذه الخدمة"
 
@@ -614,7 +614,7 @@ msgstr "يستبدل [PASSWORD] في تحديث URL (URL المشفر)"
 msgid "Replaces [USERNAME] in Update-URL (URL-encoded)"
 msgstr "يستبدل [USERNAME] في Update-URL (بترميز URL)"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:288
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:290
 msgid "Restart DDns"
 msgstr "أعد تشغيل DDns"
 
@@ -626,7 +626,7 @@ msgstr "وحدة إعادة المحاولة"
 msgid "Run once"
 msgstr "تشغيل مرة واحدة"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:227
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:229
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1109
 msgid "Running"
 msgstr "قيد التشغيل"
@@ -636,12 +636,12 @@ msgstr "قيد التشغيل"
 msgid "Script"
 msgstr "النص"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:523
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:524
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:657
 msgid "Select a service"
 msgstr "اختر الخدمة"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:525
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:526
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:660
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:680
 msgid "Service doesn't support this ip type"
@@ -652,15 +652,15 @@ msgstr "الخدمة لا تدعم هذا النوع من بروتوكول ال�
 msgid "Service not installed"
 msgstr "الخدمة غير مثبتة"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:459
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:461
 msgid "Services"
 msgstr "خدمات"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:454
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:456
 msgid "Services URL Download"
 msgstr "تنزيل عنوان URL للخدمات"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:292
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:294
 msgid "Services list last update"
 msgstr "آخر تحديث لقائمة الخدمات"
 
@@ -670,11 +670,11 @@ msgstr ""
 "سيؤدي تعيين هذه المعلمة إلى 0 إلى إجبار البرنامج النصي على التشغيل مرة واحدة "
 "فقط"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:188
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:190
 msgid "Start DDNS"
 msgstr "ابدأ DDNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:270
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:272
 msgid "State"
 msgstr "حالة"
 
@@ -682,19 +682,19 @@ msgstr "حالة"
 msgid "Status"
 msgstr "الحالة"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:417
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:419
 msgid "Status directory"
 msgstr "دليل الحالة"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:573
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:574
 msgid "Stop"
 msgstr "قف"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:188
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:190
 msgid "Stop DDNS"
 msgstr "وقف DDNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:562
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:563
 msgid "Stop this service"
 msgstr "أوقف هذه الخدمة"
 
@@ -715,7 +715,7 @@ msgid "The interval between which each succesive retry will commence."
 msgstr ""
 "عند حدوث خطأ ، سيتوقف البرنامج النصي عن التنفيذ بعد عدد معين من المحاولات"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:503
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:505
 msgid "The service name is already used"
 msgstr "اسم الخدمة مستخدم الآن"
 
@@ -727,8 +727,8 @@ msgstr "لا توجد خدمة مهيأة."
 msgid "This is the current content of the log file in %h for this service."
 msgstr ""
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:197
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:275
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:199
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:277
 msgid ""
 "This is the default if you run DDNS scripts by yourself (i.e. via cron with "
 "force_interval set to '0')"
@@ -740,7 +740,7 @@ msgstr ""
 msgid "This will be autoset to the selected interface"
 msgstr "سيتم تعيين هذا تلقائيًا على الواجهة المحددة"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:608
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:609
 msgid "Timer Settings"
 msgstr "إعدادات المؤقت"
 
@@ -752,13 +752,13 @@ msgstr "محدد موقع المعلومات URL"
 msgid "URL to detect"
 msgstr "URL المراد اكتشافه"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:215
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:217
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1141
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:38
 msgid "Unknown"
 msgstr "مجهول"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:299
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:301
 msgid "Update DDns Services List"
 msgstr "تحديث قائمة خدمات DDns"
 
@@ -766,7 +766,7 @@ msgstr "تحديث قائمة خدمات DDns"
 msgid "Update URL to be used for updating your DDNS Provider."
 msgstr "تحديث URL لاستخدامه لتحديث مزود DDNS الخاص بك."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:455
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:457
 msgid ""
 "Url used to download services file. By default is the master openwrt ddns "
 "package repo."
@@ -778,7 +778,7 @@ msgstr ""
 msgid "Use HTTP Secure"
 msgstr "استخدم HTTP Secure"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:442
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:444
 msgid "Use cURL"
 msgstr "استخدم cURL"
 
@@ -790,7 +790,7 @@ msgstr "البرنامج النصي المحدد من قبل المستخدم ل
 msgid "Username"
 msgstr "اسم المستخدم"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:378
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:380
 msgid "Using specific DNS Server not supported"
 msgstr "استخدام خادم DNS محدد غير مدعوم"
 
@@ -828,7 +828,7 @@ msgstr ""
 "يكتب رسائل السجل إلى سجل النظام. ستتم دائمًا كتابة الأخطاء الفادحة في سجل "
 "النظام."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:382
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:384
 msgid ""
 "You should install 'bind-host' or 'knot-host' or 'drill' or 'hostip' "
 "package, if you need to specify a DNS server to detect your registered IP."
@@ -837,7 +837,7 @@ msgstr ""
 "\"hostip\" ، إذا كنت بحاجة إلى تحديد خادم DNS لاكتشاف عنوان IP المسجل الخاص "
 "بك."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:371
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:373
 msgid ""
 "You should install 'bind-host' or 'knot-host' or 'drill' package for DNS "
 "requests."
@@ -845,11 +845,11 @@ msgstr ""
 "يجب عليك تثبيت حزمة \"bind-host\" أو \"knot-host\" أو حزمة \"drill\" لطلبات "
 "DNS."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:359
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:361
 msgid "You should install 'wget' or 'curl' or 'uclient-fetch' package."
 msgstr "يجب عليك تثبيت الحزمة \"wget\" أو \"curl\" أو \"uclient-fetch\"."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:321
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:323
 msgid ""
 "You should install 'wget' or 'curl' or 'uclient-fetch' with 'libustream-"
 "*ssl' package."
@@ -857,26 +857,26 @@ msgstr ""
 "يجب عليك تثبيت \"wget\" أو \"curl\" أو \"uclient-fetch\" مع الحزمة "
 "\"libustream- * ssl\"."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:333
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:335
 msgid "You should install 'wget' or 'curl' package."
 msgstr "يجب عليك تثبيت الحزمة \"wget\" أو \"curl\"."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:347
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:349
 msgid ""
 "You should install 'wget' or 'uclient-fetch' package or replace libcurl."
 msgstr ""
 "يجب عليك تثبيت الحزمة \"wget\" أو \"uclient-fetch\" أو استبدال libcurl."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:345
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:347
 msgid "cURL is installed, but libcurl was compiled without proxy support."
 msgstr "تم تثبيت cURL ، ولكن تم تجميع libcurl بدون دعم الوكيل."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:344
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:346
 msgid "cURL without Proxy Support"
 msgstr "cURL بدون دعم الوكيل"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:519
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:642
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:521
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:643
 msgid "custom"
 msgstr "حسب الطلب"
 
@@ -903,7 +903,7 @@ msgstr "دقائق"
 msgid "or"
 msgstr "أو"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:311
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:313
 msgid "or update your system to the latest OpenWrt Release"
 msgstr "أو قم بتحديث نظامك إلى أحدث إصدار من OpenWrt"
 
@@ -916,16 +916,17 @@ msgstr "ثواني"
 msgid "to run HTTPS without verification of server certificates (insecure)"
 msgstr "لتشغيل HTTPS بدون التحقق من شهادات الخادم (غير آمن)"
 
-msgid "Interval unit to force updates send to DDNS Provider"
-msgstr "وحدة الفاصل الزمني لفرض إرسال التحديثات إلى مزود DDNS"
+#~ msgid "Interval unit to force updates send to DDNS Provider"
+#~ msgstr "وحدة الفاصل الزمني لفرض إرسال التحديثات إلى مزود DDNS"
 
-msgid "On Error the script will retry the failed action after given time"
-msgstr ""
-"عند \"خطأ\" ، سيقوم البرنامج النصي بإعادة محاولة الإجراء الفاشل بعد وقت معين"
+#~ msgid "On Error the script will retry the failed action after given time"
+#~ msgstr ""
+#~ "عند \"خطأ\" ، سيقوم البرنامج النصي بإعادة محاولة الإجراء الفاشل بعد وقت "
+#~ "معين"
 
-msgid "On Error the script will stop execution after given number of retrys"
-msgstr ""
-"عند حدوث خطأ ، سيتوقف البرنامج النصي عن التنفيذ بعد عدد معين من المحاولات"
+#~ msgid "On Error the script will stop execution after given number of retrys"
+#~ msgstr ""
+#~ "عند حدوث خطأ ، سيتوقف البرنامج النصي عن التنفيذ بعد عدد معين من المحاولات"
 
-msgid "The default setting of '0' will retry infinite."
-msgstr "الإعداد الافتراضي \"0\" سيعيد المحاولة بلا حدود."
+#~ msgid "The default setting of '0' will retry infinite."
+#~ msgstr "الإعداد الافتراضي \"0\" سيعيد المحاولة بلا حدود."

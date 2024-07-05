@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: luci-app-ddns 2.4.0-1\n"
 "POT-Creation-Date: 2016-01-30 11:07+0100\n"
-"PO-Revision-Date: 2022-11-17 11:47+0000\n"
-"Last-Translator: Simona Iacob <s@zp1.net>\n"
+"PO-Revision-Date: 2023-04-23 07:03+0000\n"
+"Last-Translator: olimpiumarius <oliver_magnum44@yahoo.com>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsddns/ro/>\n"
 "Language: ro\n"
@@ -12,26 +12,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.18-dev\n"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:430
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:432
 msgid "\"../\" not allowed in path for Security Reason."
 msgstr "\"../\" nu este permis în calea de acces din motive de securitate."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:462
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:533
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:464
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:534
 msgid "Add new services..."
 msgstr "Adaugă servicii noi..."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:607
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:608
 msgid "Advanced Settings"
 msgstr "Setări avansate"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:399
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:401
 msgid "Allow non-public IP's"
 msgstr "Permite IP-uri non-publice"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:606
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:607
 msgid "Basic Settings"
 msgstr "Setări de bază"
 
@@ -39,11 +39,11 @@ msgstr "Setări de bază"
 msgid "Bind Network"
 msgstr "Leagă de rețea"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:330
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:332
 msgid "Binding to a specific network not supported"
 msgstr "Legarea de o anumită rețea nu este suportată"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:357
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:359
 msgid ""
 "BusyBox's nslookup and Wget do not support to specify the IP version to use "
 "for communication with DDNS Provider!"
@@ -51,7 +51,7 @@ msgstr ""
 "BusyBox's nslookup și Wget nu suportă specificarea versiunii IP de utilizat "
 "pentru comunicarea cu furnizorul DDNS!"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:368
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:370
 msgid ""
 "BusyBox's nslookup and hostip do not support to specify to use TCP instead "
 "of default UDP when requesting DNS server!"
@@ -59,7 +59,7 @@ msgstr ""
 "BusyBox's nslookup și hostip nu acceptă specificarea utilizării TCP în loc "
 "de UDP implicit atunci când se solicită un server DNS!"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:379
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:381
 msgid ""
 "BusyBox's nslookup in the current compiled version does not handle given DNS "
 "Servers correctly!"
@@ -67,11 +67,11 @@ msgstr ""
 "BusyBox's nslookup în versiunea compilată actuală nu gestionează corect "
 "serverele DNS date!"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:450
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:452
 msgid "Ca Certs path"
 msgstr "Ca Certs cale de acces"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:451
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:453
 msgid ""
 "Ca Certs path that will be used to download services data. Set IGNORE to "
 "skip certificate validation."
@@ -79,7 +79,7 @@ msgstr ""
 "Ca Certs calea de acces care va fi utilizată pentru a descărca datele "
 "serviciilor. Setați IGNORE pentru a sări peste validarea certificatelor."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:539
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:540
 msgid "Cancel"
 msgstr "Anulare"
 
@@ -91,7 +91,7 @@ msgstr "Interval de verificare"
 msgid "Check Unit"
 msgstr "Verificați unitatea"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:524
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:525
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:658
 msgid "Checking the service support..."
 msgstr "Verificarea suportului de service..."
@@ -100,21 +100,21 @@ msgstr "Verificarea suportului de service..."
 msgid "Configuration"
 msgstr "Configurație"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:212
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:214
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1124
 msgid "Configuration Error"
 msgstr "Eroare de configurație"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:543
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:544
 msgid "Create service"
 msgstr "Creează serviciu"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:412
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:414
 msgid "Current setting:"
 msgstr "Setarea curentă:"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:196
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:274
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:198
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:276
 msgid "Currently DDNS updates are not started at boot or on interface events."
 msgstr ""
 "În prezent, actualizările DDNS nu sunt pornite la pornire sau la evenimente "
@@ -134,30 +134,30 @@ msgstr "Adresa particularizata de actualizare"
 msgid "Custom update-script"
 msgstr "Script de update personalizat"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:194
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:277
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:196
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:279
 msgid "DDNS Autostart disabled"
 msgstr "Pornirea automată a DDNS dezactivată"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:193
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:277
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:195
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:279
 msgid "DDNS Autostart enabled"
 msgstr "Pornirea automată a DDNS activată"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:518
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:640
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:520
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:641
 msgid "DDNS Service provider"
 msgstr "Furnizorul de servicii DDNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:282
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:284
 msgid "DDns"
 msgstr "DDns"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:584
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:585
 msgid "DDns Service"
 msgstr "Serviciul DDns"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:367
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:369
 msgid "DNS requests via TCP not supported"
 msgstr "Cererile DNS prin TCP nu sunt acceptate"
 
@@ -165,7 +165,7 @@ msgstr "Cererile DNS prin TCP nu sunt acceptate"
 msgid "DNS-Server"
 msgstr "Server DNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:408
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:410
 msgid "Date format"
 msgstr "Formatul datei"
 
@@ -189,18 +189,18 @@ msgstr ""
 "Definește sursa de la care se citește adresa IP a sistemelor, care va fi "
 "trimisă furnizorului DDNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:510
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:630
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:512
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:631
 msgid "Defines which IP address 'IPv4/IPv6' is send to the DDNS provider"
 msgstr "Definește care adresă IP \"IPv4/IPv6\" este trimisa furnizorului DDNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:424
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:426
 msgid "Directory contains Log files for each running section."
 msgstr ""
 "Directorul conține fișierele jurnal pentru fiecare secțiune în curs de "
 "execuție."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:418
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:420
 msgid ""
 "Directory contains PID and other status information for each running section."
 msgstr ""
@@ -215,17 +215,17 @@ msgstr "Dezactivat"
 msgid "Domain"
 msgstr "Domeniu"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:258
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:260
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:7
 #: applications/luci-app-ddns/root/usr/share/luci/menu.d/luci-app-ddns.json:3
 msgid "Dynamic DNS"
 msgstr "DNS dinamic"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:265
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:267
 msgid "Dynamic DNS Version"
 msgstr "Versiune DNS Dinamic"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:552
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:553
 msgid "Edit"
 msgstr "Editați"
 
@@ -233,10 +233,10 @@ msgstr "Editați"
 msgid "Enable secure communication with DDNS provider"
 msgstr "Activează comunicarea securizată cu furnizorul DDNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:612
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:613
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1132
 msgid "Enabled"
-msgstr "Activat"
+msgstr "activat"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:949
 msgid "Error"
@@ -271,7 +271,7 @@ msgstr "Fișier"
 msgid "Follow instructions you will find on their WEB page."
 msgstr "Urmați instrucțiunile pe care le veți găsi pe pagina lor WEB."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:410
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:412
 msgid "For supported codes look here"
 msgstr "Pentru coduri acceptate, uitați-vă aici"
 
@@ -279,7 +279,7 @@ msgstr "Pentru coduri acceptate, uitați-vă aici"
 msgid "Force IP Version"
 msgstr "Forțează versiune IP"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:356
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:358
 msgid "Force IP Version not supported"
 msgstr "Forțarea versiunii IP nu este suportată"
 
@@ -303,14 +303,14 @@ msgstr "Format"
 msgid "Format: IP or FQDN"
 msgstr "Format: IP sau FQDN"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:335
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:337
 msgid ""
 "GNU Wget will use the IP of given network, cURL will use the physical "
 "interface."
 msgstr ""
 "GNU Wget va folosi IP-ul rețelei date, iar cURL va folosi interfața fizică."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:263
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:265
 msgid "Global Settings"
 msgstr "Setări generale"
 
@@ -318,11 +318,11 @@ msgstr "Setări generale"
 msgid "Grant access to ddns procedures"
 msgstr "Acordați acces la procedurile ddns"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:318
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:320
 msgid "HTTPS not supported"
 msgstr "HTTPS nu este acceptat"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:622
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:623
 msgid "Hostname/FQDN to validate, if IP update happen or necessary"
 msgstr ""
 "Numele de gazdă/FQDN de validat, dacă se întâmplă sau este necesară "
@@ -332,13 +332,13 @@ msgstr ""
 msgid "IP address source"
 msgstr "Sursa adresei IP"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:509
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:629
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:511
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:630
 msgid "IP address version"
 msgstr "Versiunea adresei IP"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:512
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:634
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:514
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:635
 msgid "IPv4-Address"
 msgstr "Adresa IPv4"
 
@@ -346,20 +346,20 @@ msgstr "Adresa IPv4"
 msgid "IPv6 address must be given in square brackets"
 msgstr "Adresa IPv6 trebuie indicată între paranteze drepte"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:309
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:311
 msgid "IPv6 is currently not (fully) supported by this system"
 msgstr "IPv6 nu este în prezent (pe deplin) acceptat de acest sistem"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:308
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:310
 msgid "IPv6 not supported"
 msgstr "IPv6 nu este suportat"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:514
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:636
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:516
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:637
 msgid "IPv6-Address"
 msgstr "Adresă IPv6"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:443
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:445
 msgid ""
 "If Wget and cURL package are installed, Wget is used for communication by "
 "default."
@@ -367,20 +367,20 @@ msgstr ""
 "În cazul în care sunt instalate pachetele Wget și cURL, Wget este utilizat "
 "în mod implicit pentru comunicare."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:613
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:614
 msgid "If this service section is disabled it could not be started."
 msgstr ""
 "Dacă această secțiune de serviciu este dezactivată, nu a putut fi pornită."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:391
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:393
 msgid "If using secure communication you should verify server certificates!"
 msgstr ""
 "Dacă utilizați o comunicare securizată, ar trebui să verificați "
 "certificatele serverului!"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:323
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:337
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:349
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:325
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:339
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:351
 msgid ""
 "In some versions cURL/libcurl in OpenWrt is compiled without proxy support."
 msgstr ""
@@ -391,7 +391,7 @@ msgstr ""
 msgid "Info"
 msgstr "Informații"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:262
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:264
 msgid "Information"
 msgstr "Informație"
 
@@ -400,7 +400,7 @@ msgstr "Informație"
 msgid "Insert a Update Script OR a Update URL"
 msgstr "Introduceți un script de actualizare SAU un URL de actualizare"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:393
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:395
 msgid ""
 "Install 'ca-certificates' package or needed certificates by hand into /etc/"
 "ssl/certs default directory"
@@ -436,15 +436,15 @@ msgstr ""
 msgid "Last Update"
 msgstr "Ultima actualizare"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:609
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:610
 msgid "Log File Viewer"
 msgstr "Vizualizator de fișiere jurnal"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:423
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:425
 msgid "Log directory"
 msgstr "Director de jurnal"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:435
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:437
 msgid "Log length"
 msgstr "Lungimea jurnalului"
 
@@ -456,18 +456,18 @@ msgstr "Înregistrare în fișier"
 msgid "Log to syslog"
 msgstr "Înregistrare în syslog"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:621
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:622
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1120
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:29
 msgid "Lookup Hostname"
 msgstr "Căutarea numelui de gazdă"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:497
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:499
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1114
 msgid "Name"
 msgstr "Nume"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:331
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:333
 msgid ""
 "Neither GNU Wget with SSL nor cURL installed to select a network to use for "
 "communication."
@@ -475,7 +475,7 @@ msgstr ""
 "Nici GNU Wget cu SSL și nici cURL nu sunt instalate pentru a selecta o rețea "
 "de utilizat pentru comunicare."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:319
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:321
 msgid ""
 "Neither GNU Wget with SSL nor cURL installed to support secure updates via "
 "HTTPS protocol."
@@ -483,7 +483,7 @@ msgstr ""
 "Nici GNU Wget cu SSL și nici cURL nu sunt instalate pentru a suporta "
 "actualizări securizate prin protocolul HTTPS."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:615
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:616
 msgid "Neither from LuCI interface nor from console."
 msgstr "Nici de la interfața LuCI, nici de la consolă."
 
@@ -499,12 +499,12 @@ msgstr "Rețea"
 msgid "Network on which the ddns-updater scripts will be started"
 msgstr "Rețeaua pe care vor fi pornite scripturile ddns-updater"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:214
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:216
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1141
 msgid "Never"
 msgstr "Niciodată"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:500
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:502
 msgid "New DDns Service…"
 msgstr "Noul serviciu DDns…"
 
@@ -513,13 +513,13 @@ msgstr "Noul serviciu DDns…"
 msgid "Next Update"
 msgstr "Următoarea actualizare"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:213
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:215
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1125
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:40
 msgid "No Data"
 msgstr "Nu există date"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:390
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:392
 msgid "No certificates found"
 msgstr "Nu s-au găsit certificate"
 
@@ -527,11 +527,11 @@ msgstr "Nu s-au găsit certificate"
 msgid "No logging"
 msgstr "Fără logare"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:400
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:402
 msgid "Non-public and by default blocked IP's"
 msgstr "IP-uri nepublice și implicit blocate"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:216
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:218
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1106
 msgid "Not Running"
 msgstr "Nu funcționează"
@@ -540,7 +540,7 @@ msgstr "Nu funcționează"
 msgid "Notice"
 msgstr "Aviz"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:436
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:438
 msgid "Number of last lines stored in log files"
 msgstr "Numărul ultimelor linii stocate în fișierele jurnal"
 
@@ -601,7 +601,7 @@ msgstr "Parolă"
 msgid "Path to CA-Certificate"
 msgstr "Calea către certificatul CA"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:310
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:312
 msgid ""
 "Please follow the instructions on OpenWrt's homepage to enable IPv6 support"
 msgstr ""
@@ -625,11 +625,11 @@ msgstr "Chiar schimbați serviciul?"
 msgid "Registered IP"
 msgstr "IP înregistrat"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:574
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:575
 msgid "Reload"
-msgstr "Reîncărcare"
+msgstr "Reîncărcați"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:557
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:558
 msgid "Reload this service"
 msgstr "Reîncărcați acest serviciu"
 
@@ -645,7 +645,7 @@ msgstr "Înlocuiește [PASSWORD] în Update-URL (URL-encoded)"
 msgid "Replaces [USERNAME] in Update-URL (URL-encoded)"
 msgstr "Înlocuiește [USERNAME] în Update-URL (URL-encoded)"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:288
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:290
 msgid "Restart DDns"
 msgstr "Reporniți DDns"
 
@@ -657,7 +657,7 @@ msgstr "Unitate de reluare"
 msgid "Run once"
 msgstr "Rulați o dată"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:227
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:229
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1109
 msgid "Running"
 msgstr "Rulare"
@@ -667,12 +667,12 @@ msgstr "Rulare"
 msgid "Script"
 msgstr "Scenariu"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:523
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:524
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:657
 msgid "Select a service"
 msgstr "Selectați un serviciu"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:525
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:526
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:660
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:680
 msgid "Service doesn't support this ip type"
@@ -683,15 +683,15 @@ msgstr "Serviciul nu acceptă acest tip de ip"
 msgid "Service not installed"
 msgstr "Serviciul nu este instalat"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:459
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:461
 msgid "Services"
 msgstr "Servicii"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:454
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:456
 msgid "Services URL Download"
 msgstr "Servicii URL Descărcare"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:292
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:294
 msgid "Services list last update"
 msgstr "Ultima actualizare a listei de servicii"
 
@@ -701,11 +701,11 @@ msgstr ""
 "Setarea acestui parametru la 0 va forța scriptul să ruleze doar o singură "
 "dată"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:188
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:190
 msgid "Start DDNS"
 msgstr "Porniți DDNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:270
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:272
 msgid "State"
 msgstr "Stat"
 
@@ -713,19 +713,19 @@ msgstr "Stat"
 msgid "Status"
 msgstr "Stare"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:417
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:419
 msgid "Status directory"
 msgstr "Director de stare"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:573
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:574
 msgid "Stop"
-msgstr "Opriți"
+msgstr "Stop"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:188
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:190
 msgid "Stop DDNS"
 msgstr "Opriți DDNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:562
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:563
 msgid "Stop this service"
 msgstr "Opriți acest serviciu"
 
@@ -745,7 +745,7 @@ msgstr "Setarea implicită de \"0\" va reîncerca la infinit."
 msgid "The interval between which each succesive retry will commence."
 msgstr "Intervalul între care va începe fiecare reîncercare succesivă."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:503
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:505
 msgid "The service name is already used"
 msgstr "Numele serviciului este deja utilizat"
 
@@ -759,8 +759,8 @@ msgstr ""
 "Acesta este conținutul actual al fișierului jurnal în %h pentru acest "
 "serviciu."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:197
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:275
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:199
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:277
 msgid ""
 "This is the default if you run DDNS scripts by yourself (i.e. via cron with "
 "force_interval set to '0')"
@@ -772,7 +772,7 @@ msgstr ""
 msgid "This will be autoset to the selected interface"
 msgstr "Aceasta va fi setată automat pe interfața selectată"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:608
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:609
 msgid "Timer Settings"
 msgstr "Setări temporizator"
 
@@ -784,13 +784,13 @@ msgstr "URL"
 msgid "URL to detect"
 msgstr "URL de detectat"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:215
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:217
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1141
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:38
 msgid "Unknown"
 msgstr "Necunoscut"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:299
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:301
 msgid "Update DDns Services List"
 msgstr "Actualizarea listei de servicii DDns"
 
@@ -800,7 +800,7 @@ msgstr ""
 "URL de actualizare care urmează să fie utilizat pentru actualizarea "
 "furnizorului DDNS."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:455
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:457
 msgid ""
 "Url used to download services file. By default is the master openwrt ddns "
 "package repo."
@@ -812,7 +812,7 @@ msgstr ""
 msgid "Use HTTP Secure"
 msgstr "Utilizați HTTP Securizat"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:442
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:444
 msgid "Use cURL"
 msgstr "Utilizați cURL"
 
@@ -824,7 +824,7 @@ msgstr "Script definit de utilizator pentru a citi adresa IP a sistemelor"
 msgid "Username"
 msgstr "Nume Utilizator"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:378
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:380
 msgid "Using specific DNS Server not supported"
 msgstr "Nu se acceptă utilizarea unui server DNS specific"
 
@@ -866,7 +866,7 @@ msgstr ""
 "Scrie mesajele de jurnal în syslog. Erorile critice vor fi întotdeauna "
 "scrise în syslog."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:382
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:384
 msgid ""
 "You should install 'bind-host' or 'knot-host' or 'drill' or 'hostip' "
 "package, if you need to specify a DNS server to detect your registered IP."
@@ -875,7 +875,7 @@ msgstr ""
 "\"drill\" sau \"hostip\", dacă aveți nevoie să specificați un server DNS "
 "pentru a vă detecta IP-ul înregistrat."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:371
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:373
 msgid ""
 "You should install 'bind-host' or 'knot-host' or 'drill' package for DNS "
 "requests."
@@ -883,11 +883,11 @@ msgstr ""
 "Ar trebui să instalați pachetul 'bind-host' ori 'knot-host' sau 'drill' "
 "pentru cererile DNS."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:359
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:361
 msgid "You should install 'wget' or 'curl' or 'uclient-fetch' package."
 msgstr "Ar trebui să instalați pachetul 'wget' ori 'curl' sau 'uclient-fetch'."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:321
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:323
 msgid ""
 "You should install 'wget' or 'curl' or 'uclient-fetch' with 'libustream-"
 "*ssl' package."
@@ -895,28 +895,28 @@ msgstr ""
 "Ar trebui să instalați \"wget\" sau \"curl\" sau \"uclient-fetch\" cu "
 "pachetul \"libustream-*ssl\"."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:333
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:335
 msgid "You should install 'wget' or 'curl' package."
 msgstr "Ar trebui să instalați pachetul \"wget\" sau \"curl\"."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:347
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:349
 msgid ""
 "You should install 'wget' or 'uclient-fetch' package or replace libcurl."
 msgstr ""
 "Ar trebui să instalați pachetul 'wget' sau 'uclient-fetch' sau să înlocuiți "
 "libcurl."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:345
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:347
 msgid "cURL is installed, but libcurl was compiled without proxy support."
 msgstr ""
 "cURL este instalat, dar libcurl a fost compilat fără suport pentru proxy."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:344
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:346
 msgid "cURL without Proxy Support"
 msgstr "cURL fără suport Proxy"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:519
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:642
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:521
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:643
 msgid "custom"
 msgstr "personalizat"
 
@@ -943,7 +943,7 @@ msgstr "minute"
 msgid "or"
 msgstr "sau"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:311
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:313
 msgid "or update your system to the latest OpenWrt Release"
 msgstr "sau actualizați-vă sistemul la cea mai recentă versiune OpenWrt"
 
@@ -957,18 +957,19 @@ msgid "to run HTTPS without verification of server certificates (insecure)"
 msgstr ""
 "pentru a rula HTTPS fără verificarea certificatelor serverului (nesigur)"
 
-msgid "Interval unit to force updates send to DDNS Provider"
-msgstr ""
-"Unitatea de interval pentru a forța trimiterea de actualizări către "
-"furnizorul DDNS"
+#~ msgid "Interval unit to force updates send to DDNS Provider"
+#~ msgstr ""
+#~ "Unitatea de interval pentru a forța trimiterea de actualizări către "
+#~ "furnizorul DDNS"
 
-msgid "On Error the script will retry the failed action after given time"
-msgstr ""
-"La Eroare, scriptul va încerca din nou acțiunea eșuată după un anumit "
-"interval de timp"
+#~ msgid "On Error the script will retry the failed action after given time"
+#~ msgstr ""
+#~ "La Eroare, scriptul va încerca din nou acțiunea eșuată după un anumit "
+#~ "interval de timp"
 
-msgid "On Error the script will stop execution after given number of retrys"
-msgstr "La eroare, scriptul va opri execuția după un anumit număr de încercări"
+#~ msgid "On Error the script will stop execution after given number of retrys"
+#~ msgstr ""
+#~ "La eroare, scriptul va opri execuția după un anumit număr de încercări"
 
-msgid "The default setting of '0' will retry infinite."
-msgstr "Setarea implicită de \"0\" va reîncerca la infinit."
+#~ msgid "The default setting of '0' will retry infinite."
+#~ msgstr "Setarea implicită de \"0\" va reîncerca la infinit."

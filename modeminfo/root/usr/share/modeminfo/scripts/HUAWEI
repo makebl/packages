@@ -1,5 +1,5 @@
 # Huawei modems
-function huawei_data(){
+function modem_data(){
 	MANUF=$(echo "$O" | grep -i $FAMILY)
         MODEL=$(echo "$O" | grep -A1 -i $FAMILY | tail -1)
         DEVICE="$MANUF $MODEL"
@@ -34,6 +34,9 @@ function huawei_data(){
 		esac
 	fi
 	EARFCN=$(echo "$O" | awk -F[,\ ] '/^\^HFREQINFO/ {print $4}')
+	if [ "x${EARFCN}" = "x" ]; then
+		EARFCN=$(echo "$O" | awk -F[,\ ] '/^\^MONSC/ {print $5}')
+	fi
 	BWDx=$(echo "$O" | awk -F[,\ ] '/^\^HFREQINFO/ {print $6}')
 	RSRx=$(echo "$O" | awk -F[,:] '/^\^LTERSRP:/ {print $2}')
 	if [ "x$RSRx" != "x" ]; then
@@ -83,7 +86,7 @@ function huawei_data(){
 		15000) BWDL=4 ;;
 		20000) BWDL=5 ;;
 	esac
-	if [ $(uci -q get modeminfo.@modeminfo[0].decimail) -eq 1 ]; then
+	if [ $(uci -q get modeminfo.@general[0].decimail) = "1" ]; then
                 LAC=$LAC_NUM
                 CID=$CID_NUM
         fi

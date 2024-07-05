@@ -1,14 +1,41 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
-msgid "Preferred LTE Bands"
+msgid "Preferred LTE bands"
 msgstr "Preferowane pasma LTE"
 
-msgid "LTE bands:"
-msgstr "Ustawione pasma LTE:"
+msgid "Preferred 5G SA bands"
+msgstr "Preferowane pasma 5G SA"
 
-msgid "Supported LTE bands:"
-msgstr "Obsługiwane pasma LTE:"
+msgid "Preferred 5G NSA bands"
+msgstr "Preferowane pasma 5G NSA"
+
+msgid "Currently set LTE bands"
+msgstr "Aktualnie ustawione pasma LTE"
+
+msgid "Currently set 5G SA bands"
+msgstr "Aktualnie ustawione pasma 5G SA"
+
+msgid "Currently set 5G NSA bands"
+msgstr "Aktualnie ustawione pasma 5G NSA"
+
+msgid "Preferred LTE/5G Bands"
+msgstr "Preferowane pasma LTE/5G"
+
+msgid "Supported LTE bands"
+msgstr "Obsługiwane pasma LTE"
+
+msgid "Supported 5G SA bands"
+msgstr "Obsługiwane pasma 5G SA"
+
+msgid "Supported 5G NSA bands"
+msgstr "Obsługiwane pasma 5G NSA"
+
+msgid "5G bands cannot be read. Check if your modem supports this technology and if it is in the list of supported modems."
+msgstr "Nie można odczytać pasm 5G. Sprawdź czy twój modem wspiera tą technologię i czy jest na liście obsługiwanych modemów."
+
+msgid "LTE bands cannot be read. Check if your modem supports this technology and if it is in the list of supported modems."
+msgstr "Nie można odczytać pasm LTE. Sprawdź czy twój modem wspiera tą technologię i czy jest na liście obsługiwanych modemów."
 
 msgid ""
 "Configuration modem frequency bands. More "
@@ -17,14 +44,20 @@ msgstr ""
 "Konfiguracja preferowanych pasm modemu. Więcej "
 "informacji o aplikacji modemband na %sforum eko.one.pl%s."
 
-msgid "Configure modem bands"
+msgid "LTE Bands Configuration"
 msgstr "Konfiguracja pasm LTE"
+
+msgid "5G SA Bands Configuration"
+msgstr "Konfiguracja pasm 5G SA"
+
+msgid "5G NSA Bands Configuration"
+msgstr "Konfiguracja pasm 5G NSA"
 
 msgid "Preferred bands settings"
 msgstr "Ustawienia preferowanych pasm"
 
-msgid "Modification of the bands:"
-msgstr "Modyfikacja pasm:"
+msgid "Modification of the bands"
+msgstr "Modyfikacja pasm"
 
 msgid "Modem information"
 msgstr "Informacje o modemie"
@@ -83,8 +116,8 @@ msgstr "Preferowane pasma"
 msgid "Configuration"
 msgstr "Konfiguracja"
 
-msgid "Configuration luci-app-modemband"
-msgstr "Konfiguracja luci-app-modemband"
+msgid "Configuration modemband"
+msgstr "Konfiguracja modemband"
 
 msgid "Configuration panel for modemband and gui application."
 msgstr "Panel ustawień dla aplikacji modemband oraz dla interfejsu użytkownika."
@@ -158,14 +191,17 @@ msgstr "Włącz"
 msgid "Turn off notifications"
 msgstr "Wyłącz powiadomienia"
 
+msgid "Appearance and action settings"
+msgstr "Ustawienia wyglądu i działania"
+
 msgid "Checking this option disables the notification that appears every time the bands are changed."
 msgstr "Zaznaczenie tej opcji wyłącza powiadomienie pojawiające się przy każdej zmianie pasm."
 
 msgid "Modem settings template"
 msgstr "Szablon ustawień modemu"
 
-msgid "Modemband configuration"
-msgstr "Konfiguracja modemband"
+msgid "Modem template configuration"
+msgstr "Konfiguracja szablonu modemu"
 
 msgid "Settings panel for the modemband application that allows you to customize the package for your modem."
 msgstr "Panel ustawień dla aplikacji modemband umożliwiający dostosowanie pakietu do posiadanego modemu."
@@ -178,4 +214,37 @@ msgstr "Obsługiwane pasma zależą od regionu w którym pracuje modem. Modyfiku
 
 msgid "Waiting to read data from the modem..."
 msgstr "Oczekiwanie na odczyt danych z modemu..."
+
+msgid "Edit"
+msgstr "Edycja"
+
+msgid "Template loaded"
+msgstr "Wczytany szablon"
+
+msgid "Refresh the view"
+msgstr "Odśwież widok"
+
+msgid "Reload"
+msgstr "Wczytaj ponownie"
+
+msgid "Select the modem settings file"
+msgstr "Wybierz plik ustawień modemu"
+
+msgid "Select the template assigned to the Vendor and ProdID of the modem."
+msgstr "Wybierz szablon przypisany do dostawcy i ProdID modemu."
+
+msgid "Band selection switch"
+msgstr "Przełącznik wyboru pasm"
+
+msgid "Deselect all"
+msgstr "Odznacz wszystkie"
+
+msgid "Select all"
+msgstr "Zaznacz wszystkie"
+
+msgid "Bands are disabled..."
+msgstr "Pasma są wyłączone..."
+
+msgid "Check if you have selected the bands correctly."
+msgstr "Sprawdź, czy prawidłowo wybrałeś pasma."
 

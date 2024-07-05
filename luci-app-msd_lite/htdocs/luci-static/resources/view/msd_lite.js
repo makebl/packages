@@ -25,7 +25,7 @@ return view.extend({
 		o.datatype = 'ipaddrport(1)';
 		o.rmempty = false;
 
-		o = s.option(widgets.DeviceSelect, 'interface', _('Source interface'),
+		o = s.option(widgets.NetworkSelect, 'network', _('Source interface'),
 			_('For multicast receive.'));
 		o.nocreate = true;
 		o.optional = true;
@@ -59,6 +59,11 @@ return view.extend({
 			_('Multicast receive timeout.'));
 		o.datatype = 'uinteger';
 		o.default = '2';
+
+		o = s.option(form.Value, 'rejoin_time', _('IGMP/MLD rejoin time'),
+			_('Do IGMP/MLD leave+join every X seconds. Leave <em>0</em> to disable.'));
+		o.datatype = 'uinteger';
+		o.default = '0';
 
 		return m.render();
 	}

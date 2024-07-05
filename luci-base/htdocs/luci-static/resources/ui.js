@@ -1050,7 +1050,8 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
 			'class': 'cbi-dropdown',
 			'multiple': this.options.multiple ? '' : null,
 			'optional': this.options.optional ? '' : null,
-			'disabled': this.options.disabled ? '' : null
+			'disabled': this.options.disabled ? '' : null,
+			'tabindex': -1
 		}, E('ul'));
 
 		var keys = Object.keys(this.choices);
@@ -1185,12 +1186,10 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
 			window.addEventListener('touchstart', this.closeAllDropdowns);
 		}
 		else {
-			sb.addEventListener('mouseover', this.handleMouseover.bind(this));
 			sb.addEventListener('focus', this.handleFocus.bind(this));
 
 			canary.addEventListener('focus', this.handleCanaryFocus.bind(this));
 
-			window.addEventListener('mouseover', this.setFocus);
 			window.addEventListener('click', this.closeAllDropdowns);
 		}
 
@@ -1338,12 +1337,18 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
 		sb.insertBefore(pv, ul.nextElementSibling);
 
 		li.forEach(function(l) {
-			l.setAttribute('tabindex', 0);
+			if (!l.hasAttribute('unselectable'))
+				l.setAttribute('tabindex', 0);
 		});
 
 		sb.lastElementChild.setAttribute('tabindex', 0);
 
-		this.setFocus(sb, sel || li[0], true);
+		var focusFn = L.bind(function(el) {
+			this.setFocus(sb, el, true);
+			ul.removeEventListener('transitionend', focusFn);
+		}, this, sel || li[0]);
+
+		ul.addEventListener('transitionend', focusFn);
 	},
 
 	/** @private */
@@ -1452,7 +1457,7 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
 			li.setAttribute('display', 0);
 			li.setAttribute('selected', '');
 
-			this.closeDropdown(sb, true);
+			this.closeDropdown(sb);
 		}
 
 		this.saveValues(sb, ul);
@@ -1559,26 +1564,19 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
 
 	/** @private */
 	setFocus: function(sb, elem, scroll) {
-		if (sb && sb.hasAttribute && sb.hasAttribute('locked-in'))
+		if (sb.hasAttribute('locked-in'))
 			return;
 
-		if (sb.target && findParent(sb.target, 'ul.dropdown'))
-			return;
-
-		document.querySelectorAll('.focus').forEach(function(e) {
-			if (!matchesElem(e, 'input')) {
-				e.classList.remove('focus');
-				e.blur();
-			}
+		sb.querySelectorAll('.focus').forEach(function(e) {
+			e.classList.remove('focus');
 		});
 
-		if (elem) {
-			elem.focus();
-			elem.classList.add('focus');
+		elem.classList.add('focus');
 
-			if (scroll)
-				elem.parentNode.scrollTop = elem.offsetTop - elem.parentNode.offsetTop;
-		}
+		if (scroll)
+			elem.parentNode.scrollTop = elem.offsetTop - elem.parentNode.offsetTop;
+
+		elem.focus();
 	},
 
 	/** @private */
@@ -1587,7 +1585,7 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
 		    markup = null;
 
 		if (tpl)
-			markup = (tpl.textContent || tpl.innerHTML || tpl.firstChild.data).replace(/^<!--|-->$/, '').trim();
+			markup = (tpl.textContent || tpl.innerHTML || tpl.firstChild.data).replace(/^<!--|--!?>$/, '').trim();
 		else
 			markup = '<li data-value="{{value}}"><span data-label-placeholder="true" /></li>';
 
@@ -1605,6 +1603,9 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
 
 		if (this.options.multiple)
 			this.transformItem(sb, new_item);
+
+		if (!new_item.hasAttribute('unselectable'))
+			new_item.setAttribute('tabindex', 0);
 
 		return new_item;
 	},
@@ -1758,7 +1759,8 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
 
 	/** @private */
 	handleKeydown: function(ev) {
-		var sb = ev.currentTarget;
+		var sb = ev.currentTarget,
+		    ul = sb.querySelector('ul.dropdown');
 
 		if (matchesElem(ev.target, 'input'))
 			return;
@@ -1779,6 +1781,7 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
 			switch (ev.keyCode) {
 			case 27:
 				this.closeDropdown(sb);
+				ev.stopPropagation();
 				break;
 
 			case 13:
@@ -1802,11 +1805,24 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
 					this.setFocus(sb, active.previousElementSibling);
 					ev.preventDefault();
 				}
+				else if (document.activeElement === ul) {
+					this.setFocus(sb, ul.lastElementChild);
+					ev.preventDefault();
+				}
 				break;
 
 			case 40:
 				if (active && active.nextElementSibling) {
-					this.setFocus(sb, active.nextElementSibling);
+					var li = active.nextElementSibling;
+					this.setFocus(sb, li);
+					if (this.options.create && li == li.parentNode.lastElementChild) {
+						var input = li.querySelector('input:not([type="hidden"]):not([type="checkbox"]');
+						if (input) input.focus();
+					}
+					ev.preventDefault();
+				}
+				else if (document.activeElement === ul) {
+					this.setFocus(sb, ul.firstElementChild);
 					ev.preventDefault();
 				}
 				break;
@@ -1834,19 +1850,6 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
 	},
 
 	/** @private */
-	handleMouseover: function(ev) {
-		var sb = ev.currentTarget;
-
-		if (!sb.hasAttribute('open'))
-			return;
-
-		var li = findParent(ev.target, 'li');
-
-		if (li && li.parentNode.classList.contains('dropdown'))
-			this.setFocus(sb, li);
-	},
-
-	/** @private */
 	handleFocus: function(ev) {
 		var sb = ev.currentTarget;
 
@@ -1864,7 +1867,8 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
 	/** @private */
 	handleCreateKeydown: function(ev) {
 		var input = ev.currentTarget,
-		    sb = findParent(input, '.cbi-dropdown');
+		    li = findParent(input, 'li'),
+		    sb = findParent(li, '.cbi-dropdown');
 
 		switch (ev.keyCode) {
 		case 13:
@@ -1873,9 +1877,23 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
 			if (input.classList.contains('cbi-input-invalid'))
 				return;
 
+			this.handleCreateBlur(ev);
 			this.createItems(sb, input.value);
 			input.value = '';
-			input.blur();
+			break;
+
+		case 27:
+			this.handleCreateBlur(ev);
+			this.closeDropdown(sb);
+			ev.stopPropagation();
+			input.value = '';
+			break;
+
+		case 38:
+			if (li.previousElementSibling) {
+				this.handleCreateBlur(ev);
+				this.setFocus(sb, li.previousElementSibling, true);
+			}
 			break;
 		}
 	},
@@ -1883,13 +1901,15 @@ var UIDropdown = UIElement.extend(/** @lends LuCI.ui.Dropdown.prototype */ {
 	/** @private */
 	handleCreateFocus: function(ev) {
 		var input = ev.currentTarget,
-		    cbox = findParent(input, 'li').querySelector('input[type="checkbox"]'),
+		    li = findParent(input, 'li'),
+		    cbox = li.querySelector('input[type="checkbox"]'),
 		    sb = findParent(input, '.cbi-dropdown');
 
 		if (cbox)
 			cbox.checked = true;
 
 		sb.setAttribute('locked-in', '');
+		this.setFocus(sb, li, true);
 	},
 
 	/** @private */
@@ -3209,6 +3229,17 @@ var UITable = baseclass.extend(/** @lends LuCI.ui.table.prototype */ {
 		if (!Array.isArray(data))
 			return;
 
+		this.data = data;
+		this.placeholder = placeholder;
+
+		var n = 0,
+		    rows = this.node.querySelectorAll('tr, .tr'),
+		    trows = [],
+		    headings = [].slice.call(this.node.firstElementChild.querySelectorAll('th, .th')),
+		    captionClasses = this.options.captionClasses,
+		    trTag = (rows[0] && rows[0].nodeName == 'DIV') ? 'div' : 'tr',
+		    tdTag = (headings[0] && headings[0].nodeName == 'DIV') ? 'div' : 'td';
+
 		if (sorting) {
 			var list = data.map(L.bind(function(row) {
 				return [ this.deriveSortKey(row[sorting[0]], sorting[0]), row ];
@@ -3225,25 +3256,23 @@ var UITable = baseclass.extend(/** @lends LuCI.ui.table.prototype */ {
 			list.forEach(function(item) {
 				data.push(item[1]);
 			});
+
+			headings.forEach(function(th, i) {
+				if (i == sorting[0])
+					th.setAttribute('data-sort-direction', sorting[1] ? 'desc' : 'asc');
+				else
+					th.removeAttribute('data-sort-direction');
+			});
 		}
 
-		this.data = data;
-		this.placeholder = placeholder;
-
-		var n = 0,
-		    rows = this.node.querySelectorAll('tr'),
-		    trows = [],
-		    headings = [].slice.call(this.node.firstElementChild.querySelectorAll('th')),
-		    captionClasses = this.options.captionClasses;
-
 		data.forEach(function(row) {
-			trows[n] = E('tr', { 'class': 'tr' });
+			trows[n] = E(trTag, { 'class': 'tr' });
 
 			for (var i = 0; i < headings.length; i++) {
 				var text = (headings[i].innerText || '').trim();
 				var raw_val = Array.isArray(row[i]) ? row[i][0] : null;
 				var disp_val = Array.isArray(row[i]) ? row[i][1] : row[i];
-				var td = trows[n].appendChild(E('td', {
+				var td = trows[n].appendChild(E(tdTag, {
 					'class': 'td',
 					'data-title': (text !== '') ? text : null,
 					'data-value': raw_val
@@ -3270,8 +3299,8 @@ var UITable = baseclass.extend(/** @lends LuCI.ui.table.prototype */ {
 			this.node.removeChild(rows[n]);
 
 		if (placeholder && this.node.firstElementChild === this.node.lastElementChild) {
-			var trow = this.node.appendChild(E('tr', { 'class': 'tr placeholder' })),
-			    td = trow.appendChild(E('td', { 'class': 'td' }, placeholder));
+			var trow = this.node.appendChild(E(trTag, { 'class': 'tr placeholder' })),
+			    td = trow.appendChild(E(tdTag, { 'class': 'td' }, placeholder));
 
 			if (typeof(captionClasses) == 'object')
 				DOMTokenList.prototype.add.apply(td.classList, L.toArray(captionClasses[0]));
@@ -3298,6 +3327,7 @@ var UITable = baseclass.extend(/** @lends LuCI.ui.table.prototype */ {
 		if (!headrow)
 			return;
 
+		options.id = node.id;
 		options.classes = [].slice.call(node.classList).filter(function(c) { return c != 'table' });
 		options.sortable = [];
 		options.captionClasses = [];
@@ -3396,8 +3426,11 @@ var UITable = baseclass.extend(/** @lends LuCI.ui.table.prototype */ {
 		if (this.sortState)
 			return this.sortState;
 
+		if (!this.options.id)
+			return null;
+
 		var page = document.body.getAttribute('data-page'),
-		    key = page + '.' + this.id,
+		    key = page + '.' + this.options.id,
 		    state = session.getLocalData('tablesort');
 
 		if (L.isObject(state) && Array.isArray(state[key]))
@@ -3414,7 +3447,7 @@ var UITable = baseclass.extend(/** @lends LuCI.ui.table.prototype */ {
 			return;
 
 		var page = document.body.getAttribute('data-page'),
-		    key = page + '.' + this.id,
+		    key = page + '.' + this.options.id,
 		    state = session.getLocalData('tablesort');
 
 		if (!L.isObject(state))
@@ -3430,18 +3463,14 @@ var UITable = baseclass.extend(/** @lends LuCI.ui.table.prototype */ {
 		if (!ev.target.matches('th[data-sortable-row]'))
 			return;
 
-		var th = ev.target,
-		    direction = (th.getAttribute('data-sort-direction') == 'asc'),
-		    index = 0;
+		var index, direction;
 
-		this.node.firstElementChild.querySelectorAll('th').forEach(function(other_th, i) {
-			if (other_th !== th)
-				other_th.removeAttribute('data-sort-direction');
-			else
+		this.node.firstElementChild.querySelectorAll('th, .th').forEach(function(th, i) {
+			if (th === ev.target) {
 				index = i;
+				direction = th.getAttribute('data-sort-direction') == 'asc';
+			}
 		});
-
-		th.setAttribute('data-sort-direction', direction ? 'desc' : 'asc');
 
 		this.setActiveSortState(index, direction);
 		this.update(this.data, this.placeholder);
@@ -3461,8 +3490,17 @@ var UITable = baseclass.extend(/** @lends LuCI.ui.table.prototype */ {
 var UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 	__init__: function() {
 		modalDiv = document.body.appendChild(
-			dom.create('div', { id: 'modal_overlay' },
-				dom.create('div', { class: 'modal', role: 'dialog', 'aria-modal': true })));
+			dom.create('div', {
+				id: 'modal_overlay',
+				tabindex: -1,
+				keydown: this.cancelModal
+			}, [
+				dom.create('div', {
+					class: 'modal',
+					role: 'dialog',
+					'aria-modal': true
+				})
+			]));
 
 		tooltipDiv = document.body.appendChild(
 			dom.create('div', { class: 'cbi-tooltip' }));
@@ -3526,6 +3564,7 @@ var UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 
 		document.body.classList.add('modal-overlay-active');
 		modalDiv.scrollTop = 0;
+		modalDiv.focus();
 
 		return dlg;
 	},
@@ -3542,6 +3581,17 @@ var UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 	 */
 	hideModal: function() {
 		document.body.classList.remove('modal-overlay-active');
+		modalDiv.blur();
+	},
+
+	/** @private */
+	cancelModal: function(ev) {
+		if (ev.key == 'Escape') {
+			var btn = modalDiv.querySelector('.right > button, .right > .btn');
+
+			if (btn)
+				btn.click();
+		}
 	},
 
 	/** @private */
@@ -4157,7 +4207,7 @@ var UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 							'class': 'btn',
 							'click': function() {
 								UI.prototype.hideModal();
-								rejectFn(new Error('Upload has been cancelled'));
+								rejectFn(new Error(_('Upload has been cancelled')));
 							}
 						}, [ _('Cancel') ]),
 						' ',

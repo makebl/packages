@@ -9,8 +9,8 @@ PKG_RELEASE:=
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/Tencent/rapidjson.git
-PKG_SOURCE_DATE:=2022-08-23
-PKG_SOURCE_VERSION:=80b6d1c83402a5785c486603c5611923159d0894
+PKG_SOURCE_DATE:=2024-04-09
+PKG_SOURCE_VERSION:=null
 PKG_MIRROR_HASH:=skip
 
 PKG_LICENSE:=BSD 3-Clause
@@ -23,11 +23,6 @@ CMAKE_INSTALL:=1
 include $(INCLUDE_DIR)/package.mk
 include $(INCLUDE_DIR)/cmake.mk
 
-CMAKE_OPTIONS+= \
-	-DRAPIDJSON_BUILD_DOC=OFF \
-	-DRAPIDJSON_BUILD_EXAMPLES=OFF \
-	-DRAPIDJSON_BUILD_TESTS=OFF
-
 define Package/rapidjson
   SECTION:=lib
   CATEGORY:=Libraries
@@ -39,5 +34,10 @@ endef
 define Package/rapidjson/description
   A fast JSON parser/generator for C++ with both SAX/DOM style API
 endef
+
+CMAKE_OPTIONS+= \
+	-DRAPIDJSON_BUILD_DOC=OFF \
+	-DRAPIDJSON_BUILD_EXAMPLES=OFF \
+	-DRAPIDJSON_BUILD_TESTS=OFF
 
 $(eval $(call BuildPackage,rapidjson))

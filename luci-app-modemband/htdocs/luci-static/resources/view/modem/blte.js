@@ -9,8 +9,33 @@
 'require tools.widgets as widgets';
 
 /*
-	Copyright 2022 Rafał Wabik - IceG - From eko.one.pl forum
+	Copyright 2022-2024 Rafał Wabik - IceG - From eko.one.pl forum
 */
+
+var CBISelectswitch = form.DummyValue.extend({                                                                                         
+    renderWidget: function(section_id, option_id, cfgvalue) {                                                                          
+        var section = this.section;                                                                                                    
+        return E([], [                                                                                                                 
+            E('span', { 'class': 'control-group' }, [                                                                                  
+                E('button', {                                                                                                          
+                    'class': 'cbi-button cbi-button-apply',                                                                            
+                    'click': ui.createHandlerFn(this, function() {                                                                     
+                        var dropdown = section.getUIElement(section_id, 'set_bands');                                              
+                        dropdown.setValue([]);                                                                                         
+                    }),                                                                                                                
+                }, _('Deselect all')),                                                                                                 
+                ' ',                                                                                                                   
+                E('button', {                                                                                                          
+                    'class': 'cbi-button cbi-button-action important',                                                                 
+                    'click': ui.createHandlerFn(this, function() {                                                                     
+                        var dropdown = section.getUIElement(section_id, 'set_bands');                                              
+                        dropdown.setValue(Object.keys(dropdown.choices));                                                              
+                    })                                                                                                                 
+                }, _('Select all'))                                                                                                    
+            ])                                                                                                                         
+        ]);                                                                                                                            
+    },                                                                                                                                 
+});
 
 var BANDmagic = form.DummyValue.extend({
 
@@ -167,6 +192,9 @@ var cbiRichListValue = form.ListValue.extend({
 			id: this.cbid(section_id),
 			sort: this.keylist,
 			optional: true,
+			multiple: true,
+			display_items: 5,
+			dropdown_items: 10,
 			select_placeholder: this.select_placeholder || this.placeholder,
 			custom_placeholder: this.custom_placeholder || this.placeholder,
 			validate: L.bind(this.validate, this, section_id),
@@ -265,22 +293,15 @@ return view.extend({
 
 		if(!json.hasOwnProperty('error')){
 
-		if (json.enabled == '' || json.modem == '') {
-			fs.exec('sleep 2');
-				if (json.enabled == '' || json.modem == '') {
-						L.ui.showModal(_('Modemband'), [
-						E('p', { 'class': 'spinning' }, _('Waiting to read data from the modem...'))
-						]);
+		if (json.enabled == '' || json.modem == '' || json.modem === undefined || json.enabled === undefined) {
 
-						window.setTimeout(function() {
-						location.reload();
-						//L.hideModal();
-						}, 25000).finally();
-					}
-				}
-					else {
-					L.hideModal();
-					}
+			ui.addNotification(null, E('p', _('LTE bands cannot be read. Check if your modem supports this technology and if it is in the list of supported modems.')), 'info');
+			modemen = '-';
+			modem = '-';
+			sbands = '-';
+
+		}
+		else {
 
 		var modem = json.modem;
 		for (var i = 0; i < json.enabled.length; i++) 
@@ -327,7 +348,8 @@ return view.extend({
 
 			});
 		});
-		}		
+		}
+}		
 		else {
 			if (json.error.includes('No supported') == true) {
 			modemen = '-';
@@ -347,7 +369,7 @@ return view.extend({
 
 		var info = _('Configuration modem frequency bands. More information about the modemband application on the %seko.one.pl forum%s.').format('<a href="https://eko.one.pl/?p=openwrt-modemband" target="_blank">', '</a>');
 
-		m = new form.JSONMap(this.formdata, _('Configure modem bands'), info);
+		m = new form.JSONMap(this.formdata, _('LTE Bands Configuration'), info);
 
 		s = m.section(form.TypedSection, 'modemband', '', _(''));
 		s.anonymous = true;
@@ -357,17 +379,17 @@ return view.extend({
 				E('h3', _('Modem information')),
 					E('table', { 'class': 'table' }, [
 						E('tr', { 'class': 'tr' }, [
-						E('td', { 'class': 'td left', 'width': '33%' }, [ _('Modem:')]),
+						E('td', { 'class': 'td left', 'width': '33%' }, [ _('Modem')]),
 						E('td', { 'class': 'td left', 'id': 'modem' }, [ modem || '-' ]),
 					]),
 
 						E('tr', { 'class': 'tr' }, [
-						E('td', { 'class': 'td left', 'width': '33%' }, [ _('LTE bands:')]),
+						E('td', { 'class': 'td left', 'width': '33%' }, [ _('Currently set LTE bands')]),
 						E('td', { 'class': 'td left', 'id': 'modemlteb' }, [ modemen || '-' ]),
 					]),
 
 						E('tr', { 'class': 'tr' }, [
-						E('td', { 'class': 'td left', 'width': '33%' }, [ _('Supported LTE bands:')]),
+						E('td', { 'class': 'td left', 'width': '33%' }, [ _('Supported LTE bands')]),
 						E('td', { 'class': 'td left', 'id': 'sbands' }, [ sbands || '-' ]),
 					]),
 				])
@@ -378,11 +400,17 @@ return view.extend({
 		s.anonymous = true;
 		s.addremove = false;
 
-		if(!("error" in json)) {
+		if (json.enabled == '' || json.modem == '' || json.modem === undefined || json.enabled === undefined) {
+
+			modemen = '-';
+			modem = '-';
+			sbands = '-';
+		}
+		else {
 		s.tab('bandset', _('Preferred bands settings'));
  
 		o = s.taboption('bandset', cbiRichListValue, 'set_bands',
-		_('Modification of the bands:'), 
+		_('Modification of the bands'), 
 		_("Select the preferred band(s) for the modem."));
 
 		for (var i = 0; i < json.supported.length; i++) 
@@ -396,6 +424,8 @@ return view.extend({
 		o.cfgvalue = function(section_id) {
 			return L.toArray((json.enabled).join(' '));
 		};
+		
+		o = s.taboption('bandset', CBISelectswitch, '_switch', _('Band selection switch'));
 
 		s = m.section(form.TypedSection);
 		s.anonymous = true;
@@ -449,7 +479,8 @@ return view.extend({
 			args.push(data.modemband.set_bands);
 			var ax = args.toString();
 			ax = ax.replace(/,/g, ' ')
-			fs.exec_direct('/usr/bin/modemband.sh', [ 'setbands', ax ]);
+			
+			ax.length >= 1 ? fs.exec_direct('/usr/bin/modemband.sh', [ 'setbands', ax ]) : ui.addNotification(null, E('p', _('Check if you have selected the bands correctly.')), 'info');
 
 			return uci.load('modemband').then(function() {
 				var wrestart = (uci.get('modemband', '@modemband[0]', 'wanrestart'));
@@ -464,8 +495,10 @@ return view.extend({
 				var sport = (uci.get('modemband', '@modemband[0]', 'set_port'));
 				var nuser = (uci.get('modemband', '@modemband[0]', 'notify'));
 				
-				if ( nuser != '1' || nuser == null ) {
-				ui.addNotification(null, E('p', _('The new bands settings have been sent to the modem. If the changes are not visible, a restart of the connection, modem or router may be required.')), 'info');
+				if ( ax.length >= 1 ) {
+					if ( nuser != '1' || nuser == null ) {
+					ui.addNotification(null, E('p', _('The new bands settings have been sent to the modem. If the changes are not visible, a restart of the connection, modem or router may be required.')), 'info');
+					}
 				}
 				
 				if (wrestart == '1') {
@@ -492,3 +525,4 @@ return view.extend({
 		]);
 	}
 });
+

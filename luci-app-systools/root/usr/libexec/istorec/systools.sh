@@ -8,6 +8,8 @@ usage() {
   echo "usage: $0 sub-command"
   echo "where sub-command is one of:"
   echo "      turn_off_ipv6                   Disable IPv6"
+  echo "      full_ipv6                       Full IPv6"
+  echo "      half_ipv6                       Half IPv6 (Only Router)"
   echo "      reset_rom_pkgs                  Reset pkgs from rom"
   echo "      qb_reset_password               Reset qBitorent password"
   echo "      disk_power_mode                 Show disk power status"
@@ -15,17 +17,19 @@ usage() {
 }
 
 case ${ACTION} in
-  "turn_off_ipv6")
-    /usr/share/systools/turn_off_ipv6.run
+  "turn_off_ipv6"|\
+  "full_ipv6"|\
+  "half_ipv6")
+    bash "/usr/share/systools/${ACTION}.run"
   ;;
   "reset_rom_pkgs")
-    /usr/share/systools/reset_rom_pkgs.run
+    bash "/usr/share/systools/${ACTION}.run"
   ;;
   "qb_reset_password")
-    /usr/share/systools/qb_reset_password.run
+    bash "/usr/share/systools/${ACTION}.run"
   ;;
   "disk_power_mode")
-    /usr/share/systools/disk_power_mode.run
+    bash "/usr/share/systools/${ACTION}.run"
   ;;
   "speedtest")
     /usr/share/systools/speedtest.run ${1}
@@ -34,6 +38,12 @@ case ${ACTION} in
     bash "/usr/share/systools/${ACTION}.run"
   ;;
   "openssl-chacha20-poly1305")
+    bash "/usr/share/systools/${ACTION}.run"
+  ;;
+  "istore-reinstall")
+    bash "/usr/share/systools/${ACTION}.run"
+  ;;
+  "disable-wandrop")
     bash "/usr/share/systools/${ACTION}.run"
   ;;
   *)

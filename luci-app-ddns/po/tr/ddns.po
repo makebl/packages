@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: luci-app-ddns 2.4.0-1\n"
 "POT-Creation-Date: 2016-01-30 11:07+0100\n"
-"PO-Revision-Date: 2022-10-28 15:05+0000\n"
-"Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
+"PO-Revision-Date: 2024-03-31 19:53+0000\n"
+"Last-Translator: Oğuz Han <h4n.3545@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsddns/tr/>\n"
 "Language: tr\n"
@@ -11,26 +11,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:430
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:432
 msgid "\"../\" not allowed in path for Security Reason."
 msgstr "Güvenlik nedeniyle yol içerisinde \"../\" öğesine izin verilmez."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:462
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:533
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:464
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:534
 msgid "Add new services..."
 msgstr "Yeni hizmetler ekle..."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:607
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:608
 msgid "Advanced Settings"
 msgstr "Gelişmiş Ayarlar"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:399
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:401
 msgid "Allow non-public IP's"
 msgstr "Genel olmayan IP'lere izin ver"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:606
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:607
 msgid "Basic Settings"
 msgstr "Temel Ayarlar"
 
@@ -38,11 +38,11 @@ msgstr "Temel Ayarlar"
 msgid "Bind Network"
 msgstr "Ağı Bağla"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:330
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:332
 msgid "Binding to a specific network not supported"
 msgstr "Belirli bir ağa bağlanma desteklenmez"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:357
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:359
 msgid ""
 "BusyBox's nslookup and Wget do not support to specify the IP version to use "
 "for communication with DDNS Provider!"
@@ -50,7 +50,7 @@ msgstr ""
 "BusyBox'ın nslookup ve Wget'i, DDNS Sağlayıcısı ile iletişim için "
 "kullanılacak IP sürümünü belirlemeyi desteklemez!"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:368
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:370
 msgid ""
 "BusyBox's nslookup and hostip do not support to specify to use TCP instead "
 "of default UDP when requesting DNS server!"
@@ -58,7 +58,7 @@ msgstr ""
 "BusyBox'ın nslookup ve hostip'i, DNS sunucusu talep ederken varsayılan UDP "
 "yerine TCP kullanmayı belirtmeyi desteklemez!"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:379
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:381
 msgid ""
 "BusyBox's nslookup in the current compiled version does not handle given DNS "
 "Servers correctly!"
@@ -66,11 +66,11 @@ msgstr ""
 "BusyBox'ın mevcut derlenmiş sürümdeki nslookup'ı, verilen DNS Sunucularını "
 "doğru şekilde işlemez!"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:450
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:452
 msgid "Ca Certs path"
 msgstr "Ca Sertifikaları yolu"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:451
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:453
 msgid ""
 "Ca Certs path that will be used to download services data. Set IGNORE to "
 "skip certificate validation."
@@ -78,7 +78,7 @@ msgstr ""
 "Servis verilerini indirmek için kullanılacak Ca Sertifikaları yolu. "
 "Sertifika doğrulamasını atlamak için IGNORE'u ayarlayın."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:539
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:540
 msgid "Cancel"
 msgstr "İptal"
 
@@ -90,7 +90,7 @@ msgstr "Kontrol etme aralığı"
 msgid "Check Unit"
 msgstr "Kontrol Ünitesi"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:524
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:525
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:658
 msgid "Checking the service support..."
 msgstr "Servis desteği kontrol ediliyor..."
@@ -99,21 +99,21 @@ msgstr "Servis desteği kontrol ediliyor..."
 msgid "Configuration"
 msgstr "Yapılandırma"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:212
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:214
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1124
 msgid "Configuration Error"
 msgstr "Yapılandırma hatası"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:543
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:544
 msgid "Create service"
 msgstr "Hizmet oluştur"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:412
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:414
 msgid "Current setting:"
 msgstr "Şimdiki ayar:"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:196
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:274
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:198
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:276
 msgid "Currently DDNS updates are not started at boot or on interface events."
 msgstr ""
 "Şu anda DDNS güncellemeleri önyükleme sırasında veya arayüz olaylarında "
@@ -133,30 +133,30 @@ msgstr "Özel güncelleme URL'si"
 msgid "Custom update-script"
 msgstr "Özel güncelleme betiği"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:194
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:277
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:196
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:279
 msgid "DDNS Autostart disabled"
 msgstr "DDNS Otomatik Başlatma devre dışı"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:193
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:277
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:195
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:279
 msgid "DDNS Autostart enabled"
 msgstr "DDNS Otomatik Başlatma etkin"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:518
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:640
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:520
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:641
 msgid "DDNS Service provider"
 msgstr "DDNS Servis sağlayıcısı"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:282
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:284
 msgid "DDns"
 msgstr "DDns"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:584
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:585
 msgid "DDns Service"
 msgstr "DDns Hizmeti"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:367
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:369
 msgid "DNS requests via TCP not supported"
 msgstr "TCP üzerinden DNS istekleri desteklenmez"
 
@@ -164,7 +164,7 @@ msgstr "TCP üzerinden DNS istekleri desteklenmez"
 msgid "DNS-Server"
 msgstr "Dns sunucusu"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:408
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:410
 msgid "Date format"
 msgstr "Tarih formatı"
 
@@ -188,17 +188,17 @@ msgstr ""
 "DDNS sağlayıcısına gönderilecek olan sistem IP Adresini okumak için kaynağı "
 "tanımlar"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:510
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:630
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:512
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:631
 msgid "Defines which IP address 'IPv4/IPv6' is send to the DDNS provider"
 msgstr ""
 "DDNS sağlayıcısına hangi IP adresinin 'IPv4 / IPv6' gönderileceğini tanımlar"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:424
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:426
 msgid "Directory contains Log files for each running section."
 msgstr "Dizin, çalışan her bölüm için Günlük dosyalarını içerir."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:418
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:420
 msgid ""
 "Directory contains PID and other status information for each running section."
 msgstr "Dizin, çalışan her bölüm için PID ve diğer durum bilgilerini içerir."
@@ -211,17 +211,17 @@ msgstr "Devre dışı"
 msgid "Domain"
 msgstr "Alan"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:258
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:260
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:7
 #: applications/luci-app-ddns/root/usr/share/luci/menu.d/luci-app-ddns.json:3
 msgid "Dynamic DNS"
 msgstr "Dinamik DNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:265
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:267
 msgid "Dynamic DNS Version"
 msgstr "Dinamik DNS Sürümü"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:552
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:553
 msgid "Edit"
 msgstr "Düzenle"
 
@@ -229,10 +229,10 @@ msgstr "Düzenle"
 msgid "Enable secure communication with DDNS provider"
 msgstr "DDNS sağlayıcısı ile güvenli iletişimi etkinleştirin"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:612
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:613
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1132
 msgid "Enabled"
-msgstr "Etkin"
+msgstr "Etkinleştirildi"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:949
 msgid "Error"
@@ -267,7 +267,7 @@ msgstr "Dosya"
 msgid "Follow instructions you will find on their WEB page."
 msgstr "Web sayfalarında bulacağınız talimatları izleyin."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:410
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:412
 msgid "For supported codes look here"
 msgstr "Desteklenen kodlar için buraya bakın"
 
@@ -275,7 +275,7 @@ msgstr "Desteklenen kodlar için buraya bakın"
 msgid "Force IP Version"
 msgstr "IP Sürümünü Zorla"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:356
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:358
 msgid "Force IP Version not supported"
 msgstr "IP Sürümünü Zorla desteklenmiyor"
 
@@ -299,7 +299,7 @@ msgstr "Biçim"
 msgid "Format: IP or FQDN"
 msgstr "Biçim: IP veya FQDN"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:335
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:337
 msgid ""
 "GNU Wget will use the IP of given network, cURL will use the physical "
 "interface."
@@ -307,7 +307,7 @@ msgstr ""
 "GNU Wget, verilen ağın IP'sini kullanacaktır, cURL fiziksel arayüzü "
 "kullanacaktır."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:263
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:265
 msgid "Global Settings"
 msgstr "Genel Ayarlar"
 
@@ -315,11 +315,11 @@ msgstr "Genel Ayarlar"
 msgid "Grant access to ddns procedures"
 msgstr "DDNS prosedürlerine erişim izni verin"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:318
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:320
 msgid "HTTPS not supported"
 msgstr "HTTPS desteklenmiyor"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:622
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:623
 msgid "Hostname/FQDN to validate, if IP update happen or necessary"
 msgstr ""
 "IP güncellemesinin gerçekleşip gerçekleşmediğini veya gerekli olup "
@@ -329,13 +329,13 @@ msgstr ""
 msgid "IP address source"
 msgstr "IP adresi kaynağı"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:509
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:629
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:511
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:630
 msgid "IP address version"
 msgstr "IP adresi sürümü"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:512
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:634
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:514
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:635
 msgid "IPv4-Address"
 msgstr "IPv4 Adresi"
 
@@ -343,20 +343,20 @@ msgstr "IPv4 Adresi"
 msgid "IPv6 address must be given in square brackets"
 msgstr "IPv6 adresi köşeli parantez içinde verilmelidir"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:309
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:311
 msgid "IPv6 is currently not (fully) supported by this system"
 msgstr "IPv6 şu anda bu sistem tarafından (tam olarak) desteklenmemektedir"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:308
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:310
 msgid "IPv6 not supported"
 msgstr "IPv6 desteklenmiyor"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:514
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:636
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:516
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:637
 msgid "IPv6-Address"
 msgstr "IPv6 Adresi"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:443
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:445
 msgid ""
 "If Wget and cURL package are installed, Wget is used for communication by "
 "default."
@@ -364,18 +364,18 @@ msgstr ""
 "Wget ve cURL paketi yüklüyse, iletişim için varsayılan olarak Wget "
 "kullanılır."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:613
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:614
 msgid "If this service section is disabled it could not be started."
 msgstr "Bu servis bölümü devre dışı bırakılırsa başlatılamaz."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:391
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:393
 msgid "If using secure communication you should verify server certificates!"
 msgstr ""
 "Güvenli iletişim kullanıyorsanız, sunucu sertifikalarını doğrulamalısınız!"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:323
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:337
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:349
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:325
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:339
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:351
 msgid ""
 "In some versions cURL/libcurl in OpenWrt is compiled without proxy support."
 msgstr ""
@@ -385,7 +385,7 @@ msgstr ""
 msgid "Info"
 msgstr "Bilgi"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:262
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:264
 msgid "Information"
 msgstr "Bilgi"
 
@@ -394,7 +394,7 @@ msgstr "Bilgi"
 msgid "Insert a Update Script OR a Update URL"
 msgstr "Bir Güncelleme Komut Dosyası Ekle VEYA ve Güncelleme URL'si"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:393
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:395
 msgid ""
 "Install 'ca-certificates' package or needed certificates by hand into /etc/"
 "ssl/certs default directory"
@@ -428,15 +428,15 @@ msgstr ""
 msgid "Last Update"
 msgstr "Son Güncelleme"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:609
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:610
 msgid "Log File Viewer"
 msgstr "Günlük Dosyası Görüntüleyicisi"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:423
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:425
 msgid "Log directory"
 msgstr "Günlük dizini"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:435
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:437
 msgid "Log length"
 msgstr "Günlük uzunluğu"
 
@@ -448,18 +448,18 @@ msgstr "Günlüğü dosyaya yaz"
 msgid "Log to syslog"
 msgstr "Günlüğü syslog'a yaz"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:621
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:622
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1120
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:29
 msgid "Lookup Hostname"
 msgstr "Ana Makine Adı Ara"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:497
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:499
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1114
 msgid "Name"
 msgstr "Ad"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:331
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:333
 msgid ""
 "Neither GNU Wget with SSL nor cURL installed to select a network to use for "
 "communication."
@@ -467,7 +467,7 @@ msgstr ""
 "Ne SSL ile GNU Wget ne de cURL iletişim için kullanmak üzere bir ağ seçmek "
 "için kurulu."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:319
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:321
 msgid ""
 "Neither GNU Wget with SSL nor cURL installed to support secure updates via "
 "HTTPS protocol."
@@ -475,7 +475,7 @@ msgstr ""
 "HTTPS protokolü aracılığıyla güvenli güncellemeleri desteklemek için ne "
 "SSL'li GNU Wget ne de cURL yüklü."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:615
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:616
 msgid "Neither from LuCI interface nor from console."
 msgstr "Ne LuCI arayüzünden ne de konsoldan."
 
@@ -491,12 +491,12 @@ msgstr "Ağ"
 msgid "Network on which the ddns-updater scripts will be started"
 msgstr "DDns güncelleyici komut dosyalarının başlatılacağı ağ"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:214
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:216
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1141
 msgid "Never"
 msgstr "Asla"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:500
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:502
 msgid "New DDns Service…"
 msgstr "Yeni DDns Hizmeti…"
 
@@ -505,13 +505,13 @@ msgstr "Yeni DDns Hizmeti…"
 msgid "Next Update"
 msgstr "Sonraki Güncelleme"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:213
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:215
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1125
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:40
 msgid "No Data"
 msgstr "Veri Yok"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:390
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:392
 msgid "No certificates found"
 msgstr "Sertifika bulunamadı"
 
@@ -519,11 +519,11 @@ msgstr "Sertifika bulunamadı"
 msgid "No logging"
 msgstr "Günlük kaydı yok"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:400
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:402
 msgid "Non-public and by default blocked IP's"
 msgstr "Herkese açık olmayan ve varsayılan olarak engellenen IP'ler"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:216
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:218
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1106
 msgid "Not Running"
 msgstr "Çalışmıyor"
@@ -532,7 +532,7 @@ msgstr "Çalışmıyor"
 msgid "Notice"
 msgstr "Uyarı"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:436
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:438
 msgid "Number of last lines stored in log files"
 msgstr "Günlük dosyalarında saklanan son satırların sayısı"
 
@@ -591,13 +591,13 @@ msgstr "Proxy sunucu"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:749
 msgid "Password"
-msgstr "Parola"
+msgstr "Şifre"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:775
 msgid "Path to CA-Certificate"
 msgstr "CA-Sertifikası'nın Yolu"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:310
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:312
 msgid ""
 "Please follow the instructions on OpenWrt's homepage to enable IPv6 support"
 msgstr ""
@@ -621,11 +621,11 @@ msgstr "Gerçekten hizmet değiştirilsin mi?"
 msgid "Registered IP"
 msgstr "Kayıtlı IP"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:574
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:575
 msgid "Reload"
 msgstr "Yeniden yükle"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:557
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:558
 msgid "Reload this service"
 msgstr "Bu hizmeti yeniden yükleyin"
 
@@ -641,7 +641,7 @@ msgstr "Güncelleme URL'sindeki [ŞİFRE] 'yi değiştirir (URL kodlu)"
 msgid "Replaces [USERNAME] in Update-URL (URL-encoded)"
 msgstr "Güncelleme URL'sindeki [KULLANICI ADI] 'nı değiştirir (URL kodlu)"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:288
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:290
 msgid "Restart DDns"
 msgstr "DDns'yi yeniden başlatın"
 
@@ -653,7 +653,7 @@ msgstr "Yeniden Deneme Birimi"
 msgid "Run once"
 msgstr "Bir kere çalıştır"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:227
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:229
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1109
 msgid "Running"
 msgstr "Çalışıyor"
@@ -663,12 +663,12 @@ msgstr "Çalışıyor"
 msgid "Script"
 msgstr "Betik"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:523
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:524
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:657
 msgid "Select a service"
 msgstr "Bir hizmet seçin"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:525
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:526
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:660
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:680
 msgid "Service doesn't support this ip type"
@@ -679,15 +679,15 @@ msgstr "Hizmet bu ip türünü desteklemiyor"
 msgid "Service not installed"
 msgstr "Hizmet yüklü değil"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:459
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:461
 msgid "Services"
 msgstr "Hizmetler"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:454
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:456
 msgid "Services URL Download"
 msgstr "Hizmetin URL'sini İndirme"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:292
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:294
 msgid "Services list last update"
 msgstr "Servis listesi son güncelleme"
 
@@ -697,31 +697,31 @@ msgstr ""
 "Bu parametrenin 0 olarak ayarlanması, komut dosyasını yalnızca bir kez "
 "çalışmaya zorlar"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:188
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:190
 msgid "Start DDNS"
 msgstr "DDNS'yi başlatın"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:270
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:272
 msgid "State"
-msgstr "Bölge"
+msgstr "Durum"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1103
 msgid "Status"
 msgstr "Durum"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:417
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:419
 msgid "Status directory"
 msgstr "Durum dizini"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:573
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:574
 msgid "Stop"
 msgstr "Durdur"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:188
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:190
 msgid "Stop DDNS"
 msgstr "DDNS'yi durdur"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:562
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:563
 msgid "Stop this service"
 msgstr "Bu hizmeti durdur"
 
@@ -741,7 +741,7 @@ msgstr "Varsayılan '0' ayarı sonsuz olarak yeniden deneyecektir."
 msgid "The interval between which each succesive retry will commence."
 msgstr "Her ardışık yeniden denemenin başlayacağı aralık."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:503
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:505
 msgid "The service name is already used"
 msgstr "Hizmet adı zaten kullanılıyor"
 
@@ -753,8 +753,8 @@ msgstr "Yapılandırılmış hizmet yok."
 msgid "This is the current content of the log file in %h for this service."
 msgstr "Bu, bu hizmet için günlük dosyasının %h içindeki geçerli içeriğidir."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:197
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:275
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:199
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:277
 msgid ""
 "This is the default if you run DDNS scripts by yourself (i.e. via cron with "
 "force_interval set to '0')"
@@ -766,7 +766,7 @@ msgstr ""
 msgid "This will be autoset to the selected interface"
 msgstr "Bu, seçilen arayüze otomatik olarak ayarlanacaktır"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:608
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:609
 msgid "Timer Settings"
 msgstr "Zamanlayıcı Ayarları"
 
@@ -778,13 +778,13 @@ msgstr "URL"
 msgid "URL to detect"
 msgstr "Algılanacak URL"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:215
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:217
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1141
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:38
 msgid "Unknown"
 msgstr "Bilinmiyor"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:299
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:301
 msgid "Update DDns Services List"
 msgstr "DDns Hizmetleri Listesini Güncelle"
 
@@ -792,7 +792,7 @@ msgstr "DDns Hizmetleri Listesini Güncelle"
 msgid "Update URL to be used for updating your DDNS Provider."
 msgstr "DDNS Sağlayıcınızı güncellemek için kullanılacak URL'yi güncelleyin."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:455
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:457
 msgid ""
 "Url used to download services file. By default is the master openwrt ddns "
 "package repo."
@@ -804,7 +804,7 @@ msgstr ""
 msgid "Use HTTP Secure"
 msgstr "Güvenli HTTP kullan"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:442
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:444
 msgid "Use cURL"
 msgstr "cURL kullan"
 
@@ -816,7 +816,7 @@ msgstr "Sistemlerin IP Adresini okumak için kullanıcı tanımlı komut dosyas�
 msgid "Username"
 msgstr "Kullanıcı adı"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:378
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:380
 msgid "Using specific DNS Server not supported"
 msgstr "Özel DNS Sunucusunun kullanılması desteklenmez"
 
@@ -853,7 +853,7 @@ msgid ""
 msgstr ""
 "Günlük mesajlarını syslog'a yazar. Kritik Hatalar her zaman syslog'a yazılır."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:382
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:384
 msgid ""
 "You should install 'bind-host' or 'knot-host' or 'drill' or 'hostip' "
 "package, if you need to specify a DNS server to detect your registered IP."
@@ -862,7 +862,7 @@ msgstr ""
 "'bind-host' veya 'knot-host' veya 'drill' veya 'hostip' paketini "
 "kurmalısınız."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:371
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:373
 msgid ""
 "You should install 'bind-host' or 'knot-host' or 'drill' package for DNS "
 "requests."
@@ -870,11 +870,11 @@ msgstr ""
 "DNS talepleri için 'bind-host' veya 'knot-host' veya 'drill' paketini "
 "kurmalısınız."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:359
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:361
 msgid "You should install 'wget' or 'curl' or 'uclient-fetch' package."
 msgstr "'Wget' veya 'curl' veya 'uclient-fetch' paketini kurmalısınız."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:321
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:323
 msgid ""
 "You should install 'wget' or 'curl' or 'uclient-fetch' with 'libustream-"
 "*ssl' package."
@@ -882,27 +882,27 @@ msgstr ""
 "'Wget' veya 'curl' veya 'uclient-fetch' i 'libustream-*ssl' paketi ile "
 "kurmalısınız."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:333
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:335
 msgid "You should install 'wget' or 'curl' package."
 msgstr "'Wget' veya 'curl' paketini kurmalısınız."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:347
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:349
 msgid ""
 "You should install 'wget' or 'uclient-fetch' package or replace libcurl."
 msgstr ""
 "'Wget' veya 'uclient-fetch' paketini kurmalı veya libcurl'yi "
 "değiştirmelisiniz."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:345
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:347
 msgid "cURL is installed, but libcurl was compiled without proxy support."
 msgstr "cURL yüklendi, ancak libcurl proxy desteği olmadan derlendi."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:344
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:346
 msgid "cURL without Proxy Support"
 msgstr "Proxy Desteği olmadan cURL"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:519
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:642
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:521
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:643
 msgid "custom"
 msgstr "özel"
 
@@ -929,7 +929,7 @@ msgstr "dakika"
 msgid "or"
 msgstr "veya"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:311
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:313
 msgid "or update your system to the latest OpenWrt Release"
 msgstr "veya sisteminizi en son OpenWrt Sürümüne güncelleyin"
 
@@ -944,20 +944,20 @@ msgstr ""
 "HTTPS'yi sunucu sertifikalarının doğrulanması olmadan çalıştırmak için "
 "(güvenli değil)"
 
-msgid "Interval unit to force updates send to DDNS Provider"
-msgstr ""
-"Güncellemelerin DDNS Sağlayıcısına zorla gönderilmesini sağlayan aralık "
-"birimi"
+#~ msgid "Interval unit to force updates send to DDNS Provider"
+#~ msgstr ""
+#~ "Güncellemelerin DDNS Sağlayıcısına zorla gönderilmesini sağlayan aralık "
+#~ "birimi"
 
-msgid "On Error the script will retry the failed action after given time"
-msgstr ""
-"Hata durumunda komut dosyası, belirli bir süre sonra başarısız olan eylemi "
-"yeniden deneyecektir"
+#~ msgid "On Error the script will retry the failed action after given time"
+#~ msgstr ""
+#~ "Hata durumunda komut dosyası, belirli bir süre sonra başarısız olan "
+#~ "eylemi yeniden deneyecektir"
 
-msgid "On Error the script will stop execution after given number of retrys"
-msgstr ""
-"Hata durumunda komut dosyası, verilen sayıda yeniden denemeden sonra "
-"yürütmeyi durduracaktır"
+#~ msgid "On Error the script will stop execution after given number of retrys"
+#~ msgstr ""
+#~ "Hata durumunda komut dosyası, verilen sayıda yeniden denemeden sonra "
+#~ "yürütmeyi durduracaktır"
 
-msgid "The default setting of '0' will retry infinite."
-msgstr "Varsayılan '0' ayarı sonsuz olarak yeniden deneyecektir."
+#~ msgid "The default setting of '0' will retry infinite."
+#~ msgstr "Varsayılan '0' ayarı sonsuz olarak yeniden deneyecektir."

@@ -5,7 +5,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=toml11
-PKG_VERSION:=3.7.1
+PKG_VERSION:=3.8.1
 PKG_RELEASE:=
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
@@ -33,5 +33,7 @@ define Package/toml11/description
   toml11 is a C++11 (or later) header-only toml parser/encoder
   depending only on C++ standard library.
 endef
+
+CMAKE_OPTIONS+= -DCMAKE_CXX_STANDARD=11
 
 $(eval $(call BuildPackage,toml11))

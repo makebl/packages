@@ -5,7 +5,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=naiveproxy
-PKG_VERSION:=108.0.5359.94-1
+PKG_VERSION:=125.0.6422.35-1
 PKG_RELEASE:=
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
@@ -16,12 +16,9 @@ PKG_LICENSE:=BSD 3-Clause
 PKG_LICENSE_FILES:=LICENSE
 PKG_MAINTAINER:=Tianling Shen <cnsztl@immortalwrt.org>
 
-ifneq ($(wildcard $(TOPDIR)/feeds/packages/devel/ninja/ninja.mk),)
-PKG_BUILD_DEPENDS+= ninja/host
-endif
-NINJA ?= ninja
-PKG_USE_MIPS16:=0
+PKG_BUILD_DEPENDS:=gn/host
 PKG_BUILD_PARALLEL:=1
+PKG_BUILD_FLAGS:=no-mips16
 
 ifneq ($(CONFIG_CPU_TYPE)," ")
   CPU_TYPE:=$(word 1, $(subst +," ,$(CONFIG_CPU_TYPE)))
@@ -58,31 +55,22 @@ ifneq ($(CONFIG_CCACHE),)
   export naive_ccache_flags=cc_wrapper="$(CCACHE)"
 endif
 
-CLANG_VER:=16-init-6578-g0d30e92f-2
+CLANG_VER:=19-init-8091-gab037c4f-1
 CLANG_FILE:=clang-llvmorg-$(CLANG_VER).tgz
 define Download/CLANG
 	URL:=https://commondatastorage.googleapis.com/chromium-browser-clang/Linux_x64
 	URL_FILE:=$(CLANG_FILE)
 	FILE:=$(CLANG_FILE)
-	HASH:=aa3a115ee2d19eead9bbee92350949c9d931f755b0b433703571e2f2154822b4
+	HASH:=6b797d118cc593eca0f2e568169295a5a9b65ddabed2de34b9a201a4bb7990f5
 endef
 
-GN_VER:=b9c6c19be95a3863e02f00f1fe403b2502e345b6
-GN_FILE:=gn-git_revision-$(GN_VER).zip
-define Download/GN_TOOL
-	URL:=https://chrome-infra-packages.appspot.com/dl/gn/gn/linux-amd64/+
-	URL_FILE:=git_revision:$(GN_VER)
-	FILE:=$(GN_FILE)
-	HASH:=74707aafd30bc4c725e4d251568883e46bc2f92c8e41a6ab62e99c29ac2f6778
-endef
-
-PGO_VER:=5359-1669656947-a415d5db65dd3e05ade5e2d1d5f3750801174642
+PGO_VER:=6422-1715102072-9bdbfa29f2bb1ff28f0f031b98501a1193b8d03b-13cfbf145656b369f9c23bff70ab2fb07e1e2fdb
 PGO_FILE:=chrome-linux-$(PGO_VER).profdata
 define Download/PGO_PROF
 	URL:=https://storage.googleapis.com/chromium-optimization-profiles/pgo_profiles
 	URL_FILE:=$(PGO_FILE)
 	FILE:=$(PGO_FILE)
-	HASH:=e71bcc45bf3acdc2624cb00557428a0922b62bfff8d68b81fe533ccd863426d5
+	HASH:=5a0b3d3f75c536cade97f15a71c17424c868948fa26a8267488bd588756b66af
 endef
 
 define Build/Prepare
@@ -95,8 +83,6 @@ define Build/Prepare
 		mkdir -p "third_party/llvm-build/Release+Asserts" ; \
 		$(TAR) -xzf "$(DL_DIR)/$(CLANG_FILE)" -C "third_party/llvm-build/Release+Asserts" ; \
 		echo -e "llvmorg-$(CLANG_VER)" > "third_party/llvm-build/Release+Asserts/cr_build_revision" ; \
-		mkdir -p "gn/out" ; \
-		unzip -o "$(DL_DIR)/$(GN_FILE)" -d "gn/out" ; \
 		popd ; \
 	)
 endef
@@ -107,7 +93,7 @@ define Build/Configure
 		. ../init_env.sh "$(ARCH)" $(CPU_TYPE) $(CPU_SUBTYPE) "$(TOOLCHAIN_DIR)" ; \
 		export naive_flags+=" $$$${naive_ccache_flags}" ; \
 		mkdir -p "out" ; \
-		./gn/out/gn gen "out/Release" --args="$$$${naive_flags}" --script-executable="$(PYTHON)" ; \
+		gn gen "out/Release" --args="$$$${naive_flags}" --script-executable="$(PYTHON)" ; \
 		popd ; \
 	)
 endef
@@ -122,7 +108,6 @@ define Package/naiveproxy/install
 endef
 
 $(eval $(call Download,CLANG))
-$(eval $(call Download,GN_TOOL))
 $(eval $(call Download,PGO_PROF))
 
 $(eval $(call BuildPackage,naiveproxy))

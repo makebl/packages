@@ -12,7 +12,6 @@ PKG_FLAGS:=nonshared
 PKG_RELEASE:=
 
 PKG_CONFIG_DEPENDS:= \
-	CONFIG_LINUX_5_10 \
 	CONFIG_TARGET_ramips
 
 include $(INCLUDE_DIR)/package.mk
@@ -22,14 +21,14 @@ define Package/automount
   MAINTAINER:=Lean
   DEPENDS:= \
     +block-mount \
+    +e2fsprogs \
     +kmod-usb-storage \
     +kmod-usb-storage-extras \
     +!TARGET_ramips:kmod-usb-storage-uas \
     +kmod-fs-ext4 \
     +kmod-fs-exfat \
     +kmod-fs-vfat \
-    +LINUX_5_10:ntfs-3g \
-    +!LINUX_5_10:ntfs3-mount
+    +ntfs3-mount
   PKGARCH:=all
 endef
 
@@ -48,6 +47,9 @@ define Build/Compile
 endef
 
 define Package/automount/install
+	$(INSTALL_DIR) $(1)/etc/uci-defaults
+	$(INSTALL_BIN) ./files/11-anonmount $(1)/etc/uci-defaults/
+
 	$(INSTALL_DIR) $(1)/etc/hotplug.d/block
 	$(INSTALL_BIN) ./files/15-automount $(1)/etc/hotplug.d/block/
 endef

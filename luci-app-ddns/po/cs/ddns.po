@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: luci-app-ddns 2.4.0-1\n"
 "POT-Creation-Date: 2016-01-30 11:07+0100\n"
-"PO-Revision-Date: 2021-05-07 11:32+0000\n"
-"Last-Translator: Adam Salač <adam@salac.me>\n"
+"PO-Revision-Date: 2023-09-27 19:02+0000\n"
+"Last-Translator: David Rapaň <david@rapan.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsddns/cs/>\n"
 "Language: cs\n"
@@ -13,26 +13,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.7-dev\n"
+"X-Generator: Weblate 5.1-dev\n"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:430
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:432
 msgid "\"../\" not allowed in path for Security Reason."
 msgstr "\".. /\"není v cestě povoleno z bezpečnostních důvodů."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:462
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:533
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:464
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:534
 msgid "Add new services..."
 msgstr "Přidat nové služby..."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:607
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:608
 msgid "Advanced Settings"
 msgstr "Pokročilá nastavení"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:399
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:401
 msgid "Allow non-public IP's"
 msgstr "Povolit neveřejné adresy IP"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:606
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:607
 msgid "Basic Settings"
 msgstr "Základní nastavení"
 
@@ -40,11 +40,11 @@ msgstr "Základní nastavení"
 msgid "Bind Network"
 msgstr "Vytvořit vazbu mezi sítí"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:330
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:332
 msgid "Binding to a specific network not supported"
 msgstr "Vazba na určitou síť není podporována"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:357
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:359
 msgid ""
 "BusyBox's nslookup and Wget do not support to specify the IP version to use "
 "for communication with DDNS Provider!"
@@ -52,7 +52,7 @@ msgstr ""
 "Verze programů nslookup a wget, které jsou součástí balíčku BusyBox, "
 "nepodporují specifikaci verze IP pro komunikaci s poskytovatelem DDNS!"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:368
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:370
 msgid ""
 "BusyBox's nslookup and hostip do not support to specify to use TCP instead "
 "of default UDP when requesting DNS server!"
@@ -61,7 +61,7 @@ msgstr ""
 "nepodporují využití TCP místo výchozího protokolu UDP pro dotazování serveru "
 "DNS!"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:379
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:381
 msgid ""
 "BusyBox's nslookup in the current compiled version does not handle given DNS "
 "Servers correctly!"
@@ -69,11 +69,11 @@ msgstr ""
 "Současně kompilovaná verze programu nslookup, která je součástí balíčku "
 "BusyBox, nemůže správně zpracovat uvedené servery DNS!"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:450
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:452
 msgid "Ca Certs path"
 msgstr "Adresář certifikátů CA"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:451
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:453
 msgid ""
 "Ca Certs path that will be used to download services data. Set IGNORE to "
 "skip certificate validation."
@@ -81,9 +81,9 @@ msgstr ""
 "Adresář který bude využit pro stažení dat služeb. Nastavte na IGNORE pro "
 "přeskočení ověření certifikátu."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:539
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:540
 msgid "Cancel"
-msgstr "Storno"
+msgstr "Zrušit"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:964
 msgid "Check Interval"
@@ -93,7 +93,7 @@ msgstr "Interval kontroly"
 msgid "Check Unit"
 msgstr "Zkontrolovat jednotku"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:524
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:525
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:658
 msgid "Checking the service support..."
 msgstr "Ověřování podpory služeb..."
@@ -102,21 +102,21 @@ msgstr "Ověřování podpory služeb..."
 msgid "Configuration"
 msgstr "Nastavení"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:212
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:214
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1124
 msgid "Configuration Error"
 msgstr "Chyba nastavení"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:543
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:544
 msgid "Create service"
 msgstr "Vytvořit službu"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:412
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:414
 msgid "Current setting:"
 msgstr "Současné nastavení:"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:196
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:274
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:198
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:276
 msgid "Currently DDNS updates are not started at boot or on interface events."
 msgstr ""
 "V současné době nejsou aktualizace DDNS spouštěny při spuštění zařízení nebo "
@@ -134,30 +134,30 @@ msgstr "Vlastní aktualizační-URL"
 msgid "Custom update-script"
 msgstr "Vlastní aktualizační skript"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:194
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:277
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:196
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:279
 msgid "DDNS Autostart disabled"
 msgstr "Automatické spuštění DDNS je zakázáno"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:193
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:277
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:195
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:279
 msgid "DDNS Autostart enabled"
 msgstr "Automatické spuštění DDNS povoleno"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:518
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:640
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:520
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:641
 msgid "DDNS Service provider"
 msgstr "Poskytovatel služeb DDNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:282
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:284
 msgid "DDns"
 msgstr "DDNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:584
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:585
 msgid "DDns Service"
 msgstr "Služba DDNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:367
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:369
 msgid "DNS requests via TCP not supported"
 msgstr "Požadavky DNS přes TCP nejsou podporovány"
 
@@ -165,7 +165,7 @@ msgstr "Požadavky DNS přes TCP nejsou podporovány"
 msgid "DNS-Server"
 msgstr "Server DNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:408
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:410
 msgid "Date format"
 msgstr "Formát data"
 
@@ -189,16 +189,16 @@ msgstr ""
 "Definuje zdroj pro zjištění systémových IP adres, který bude odeslán "
 "poskytovateli DDNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:510
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:630
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:512
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:631
 msgid "Defines which IP address 'IPv4/IPv6' is send to the DDNS provider"
 msgstr "Určuje, která IP adresa (IPv4/IPv6) bude odeslána poskytovateli DDNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:424
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:426
 msgid "Directory contains Log files for each running section."
 msgstr "Adresář obsahuje soubory protokolu pro každou běžící sekci."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:418
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:420
 msgid ""
 "Directory contains PID and other status information for each running section."
 msgstr ""
@@ -212,17 +212,17 @@ msgstr "Zakázáno"
 msgid "Domain"
 msgstr "Doména"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:258
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:260
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:7
 #: applications/luci-app-ddns/root/usr/share/luci/menu.d/luci-app-ddns.json:3
 msgid "Dynamic DNS"
 msgstr "Dynamické DNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:265
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:267
 msgid "Dynamic DNS Version"
 msgstr "Verze Dynamic DNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:552
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:553
 msgid "Edit"
 msgstr "Upravit"
 
@@ -230,7 +230,7 @@ msgstr "Upravit"
 msgid "Enable secure communication with DDNS provider"
 msgstr "Povolit zabezpečenou komunikaci s poskytovatelem DDNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:612
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:613
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1132
 msgid "Enabled"
 msgstr "Zapnuto"
@@ -268,7 +268,7 @@ msgstr "Soubor"
 msgid "Follow instructions you will find on their WEB page."
 msgstr "Postupujte podle pokynů, které najdete na jejich webové stránce."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:410
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:412
 msgid "For supported codes look here"
 msgstr "Podporované kódy najdete zde"
 
@@ -276,7 +276,7 @@ msgstr "Podporované kódy najdete zde"
 msgid "Force IP Version"
 msgstr "Vynutit verzi IP"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:356
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:358
 msgid "Force IP Version not supported"
 msgstr "Vynucená verze IP není podporována"
 
@@ -300,13 +300,13 @@ msgstr "Formát"
 msgid "Format: IP or FQDN"
 msgstr "Formát: IP nebo FQDN"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:335
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:337
 msgid ""
 "GNU Wget will use the IP of given network, cURL will use the physical "
 "interface."
 msgstr "GNU Wget použije IP dané sítě, cURL použije fyzické rozhraní."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:263
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:265
 msgid "Global Settings"
 msgstr "Obecná nastavení"
 
@@ -314,11 +314,11 @@ msgstr "Obecná nastavení"
 msgid "Grant access to ddns procedures"
 msgstr "Povolit přístup k procedurám DDNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:318
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:320
 msgid "HTTPS not supported"
 msgstr "Protokol HTTPS není podporován"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:622
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:623
 msgid "Hostname/FQDN to validate, if IP update happen or necessary"
 msgstr ""
 "Název hostitele / FQDN k ověření, pokud dojde k aktualizaci IP nebo je-li to "
@@ -328,13 +328,13 @@ msgstr ""
 msgid "IP address source"
 msgstr "Zdrojová IP adresa"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:509
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:629
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:511
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:630
 msgid "IP address version"
 msgstr "Verze IP adresy"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:512
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:634
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:514
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:635
 msgid "IPv4-Address"
 msgstr "IPv4 adresa"
 
@@ -342,20 +342,20 @@ msgstr "IPv4 adresa"
 msgid "IPv6 address must be given in square brackets"
 msgstr "Adresa IPv6 musí být uvedena v hranatých závorkách"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:309
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:311
 msgid "IPv6 is currently not (fully) supported by this system"
 msgstr "Protokol IPv6 momentálně není (plně) podporován tímto systémem"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:308
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:310
 msgid "IPv6 not supported"
 msgstr "Protokol IPv6 není podporován"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:514
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:636
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:516
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:637
 msgid "IPv6-Address"
 msgstr "IPv6 adresa"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:443
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:445
 msgid ""
 "If Wget and cURL package are installed, Wget is used for communication by "
 "default."
@@ -363,19 +363,19 @@ msgstr ""
 "Pokud jsou nainstalovány balíčky Wget a cURL, standardně se pro komunikaci "
 "použije Wget."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:613
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:614
 msgid "If this service section is disabled it could not be started."
 msgstr "Pokud je tato část služby zakázána, nelze ji spustit."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:391
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:393
 msgid "If using secure communication you should verify server certificates!"
 msgstr ""
 "Pokud používáte zabezpečenou komunikaci, měli byste ověřit serverové "
 "certifikáty!"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:323
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:337
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:349
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:325
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:339
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:351
 msgid ""
 "In some versions cURL/libcurl in OpenWrt is compiled without proxy support."
 msgstr ""
@@ -383,9 +383,9 @@ msgstr ""
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:946
 msgid "Info"
-msgstr "Informace"
+msgstr "Info"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:262
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:264
 msgid "Information"
 msgstr "Informace"
 
@@ -394,7 +394,7 @@ msgstr "Informace"
 msgid "Insert a Update Script OR a Update URL"
 msgstr "Vložte aktualizační skript či aktualizační URL"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:393
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:395
 msgid ""
 "Install 'ca-certificates' package or needed certificates by hand into /etc/"
 "ssl/certs default directory"
@@ -423,21 +423,21 @@ msgstr "Jednotka intervalu pro kontrolu změněné adresy IP"
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1015
 msgid "Interval unit to force updates sent to DDNS Provider."
 msgstr ""
-"Jednotka intervalu, která vynutí odeslání aktualizací zprostředkovateli DDNS"
+"Jednotka intervalu pro vynucení odeslání aktualizací poskytovateli DDNS."
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1137
 msgid "Last Update"
 msgstr "Poslední aktualizace"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:609
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:610
 msgid "Log File Viewer"
 msgstr "Prohlížeč souborů protokolu"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:423
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:425
 msgid "Log directory"
 msgstr "Adresář protokolu"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:435
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:437
 msgid "Log length"
 msgstr "Délka protokolu"
 
@@ -449,18 +449,18 @@ msgstr "Protokolovat do souboru"
 msgid "Log to syslog"
 msgstr "Protokolovat do syslog"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:621
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:622
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1120
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:29
 msgid "Lookup Hostname"
 msgstr "Doménové jméno"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:497
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:499
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1114
 msgid "Name"
-msgstr "Název"
+msgstr "Jméno"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:331
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:333
 msgid ""
 "Neither GNU Wget with SSL nor cURL installed to select a network to use for "
 "communication."
@@ -468,7 +468,7 @@ msgstr ""
 "Není nainstalován GNU Wget s SSL ani cURL pro výběr sítě, která má být "
 "použita ke komunikaci."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:319
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:321
 msgid ""
 "Neither GNU Wget with SSL nor cURL installed to support secure updates via "
 "HTTPS protocol."
@@ -476,7 +476,7 @@ msgstr ""
 "Není nainstalován GNU Wget s SSL ani cURL pro podporu bezpečných aktualizací "
 "pomocí protokolu HTTPS."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:615
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:616
 msgid "Neither from LuCI interface nor from console."
 msgstr "Ani z rozhraní LuCI ani z konzole."
 
@@ -492,12 +492,12 @@ msgstr "Síť"
 msgid "Network on which the ddns-updater scripts will be started"
 msgstr "Síť, na které budou spuštěny skripty ddns-updater"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:214
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:216
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1141
 msgid "Never"
 msgstr "Nikdy"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:500
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:502
 msgid "New DDns Service…"
 msgstr "Nová služba DDNS…"
 
@@ -506,13 +506,13 @@ msgstr "Nová služba DDNS…"
 msgid "Next Update"
 msgstr "Další aktualizace"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:213
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:215
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1125
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:40
 msgid "No Data"
 msgstr "Žádná data"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:390
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:392
 msgid "No certificates found"
 msgstr "Nebyly nalezeny žádné certifikáty"
 
@@ -520,20 +520,20 @@ msgstr "Nebyly nalezeny žádné certifikáty"
 msgid "No logging"
 msgstr "Žádné protokolování"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:400
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:402
 msgid "Non-public and by default blocked IP's"
 msgstr "Neveřejné a implicitně blokované adresy IP"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:216
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:218
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1106
 msgid "Not Running"
 msgstr "Není spuštěno"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:947
 msgid "Notice"
-msgstr "Oznámení"
+msgstr "Upozornění"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:436
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:438
 msgid "Number of last lines stored in log files"
 msgstr "Počet posledních řádků uložených v souborech protokolu"
 
@@ -561,7 +561,7 @@ msgstr ""
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1025
 msgid "On Error the script will stop execution after given number of retrys."
-msgstr ""
+msgstr "V případě chyby se skript zastaví po daném počtu opakování."
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:756
 msgid "Optional Encoded Parameter"
@@ -591,7 +591,7 @@ msgstr "Heslo"
 msgid "Path to CA-Certificate"
 msgstr "Cesta k certifikátu CA"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:310
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:312
 msgid ""
 "Please follow the instructions on OpenWrt's homepage to enable IPv6 support"
 msgstr ""
@@ -615,17 +615,17 @@ msgstr "Doopravdy přehodit službu?"
 msgid "Registered IP"
 msgstr "Registrovaná IP adresa"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:574
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:575
 msgid "Reload"
 msgstr "Znovu načíst"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:557
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:558
 msgid "Reload this service"
 msgstr "Znovu načíst tuto službu"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:738
 msgid "Replaces [DOMAIN] in Update-URL (URL-encoded)"
-msgstr ""
+msgstr "Nahradí [DOMAIN] v aktualizační adrese (kódováno URL)"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:750
 msgid "Replaces [PASSWORD] in Update-URL (URL-encoded)"
@@ -635,7 +635,7 @@ msgstr "Nahradí [PASSWORD] v Update-URL (kódování URL)"
 msgid "Replaces [USERNAME] in Update-URL (URL-encoded)"
 msgstr "Nahradí [USERNAME] v Update-URL (kódování URL)"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:288
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:290
 msgid "Restart DDns"
 msgstr "Restartovat DDNS"
 
@@ -647,7 +647,7 @@ msgstr "Opakovat jednotku"
 msgid "Run once"
 msgstr "Spustit jednou"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:227
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:229
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1109
 msgid "Running"
 msgstr "Spuštěno"
@@ -657,12 +657,12 @@ msgstr "Spuštěno"
 msgid "Script"
 msgstr "Skript"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:523
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:524
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:657
 msgid "Select a service"
 msgstr "Vybrat službu"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:525
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:526
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:660
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:680
 msgid "Service doesn't support this ip type"
@@ -673,15 +673,15 @@ msgstr "Služba nepodporuje tento typ IP"
 msgid "Service not installed"
 msgstr "Služba není nainstalovaná"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:459
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:461
 msgid "Services"
 msgstr "Služby"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:454
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:456
 msgid "Services URL Download"
 msgstr "URL pro stažení služeb"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:292
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:294
 msgid "Services list last update"
 msgstr "Poslední aktualizace seznamu služeb"
 
@@ -691,11 +691,11 @@ msgstr ""
 "Nastavením tohoto parametru na hodnotu 0 se vynutí pouze jednorázové "
 "spuštění skriptu"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:188
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:190
 msgid "Start DDNS"
 msgstr "Spustit DDNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:270
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:272
 msgid "State"
 msgstr "Stav"
 
@@ -703,19 +703,19 @@ msgstr "Stav"
 msgid "Status"
 msgstr "Stav"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:417
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:419
 msgid "Status directory"
 msgstr "Stavový adresář"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:573
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:574
 msgid "Stop"
 msgstr "Zastavit"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:188
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:190
 msgid "Stop DDNS"
 msgstr "Zastavit DDNS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:562
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:563
 msgid "Stop this service"
 msgstr "Zastavit tuto službu"
 
@@ -733,9 +733,9 @@ msgstr "Výchozí nastavení '0' znamená nekonečné opakování."
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1035
 msgid "The interval between which each succesive retry will commence."
-msgstr "Při chybě skript zastaví provádění po daném počtu opakování"
+msgstr "Při chybě skript zastaví provádění po daném počtu opakování."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:503
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:505
 msgid "The service name is already used"
 msgstr "Název služby je již používán"
 
@@ -746,9 +746,10 @@ msgstr "Není nakonfigurována žádná služba."
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1070
 msgid "This is the current content of the log file in %h for this service."
 msgstr ""
+"Toto je aktuální obsah souboru protokolu v adresáři %h pro tuto službu."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:197
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:275
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:199
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:277
 msgid ""
 "This is the default if you run DDNS scripts by yourself (i.e. via cron with "
 "force_interval set to '0')"
@@ -760,7 +761,7 @@ msgstr ""
 msgid "This will be autoset to the selected interface"
 msgstr "Tato možnost bude automaticky nastavena na vybrané rozhraní"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:608
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:609
 msgid "Timer Settings"
 msgstr "Nastavení časovače"
 
@@ -772,13 +773,13 @@ msgstr "URL"
 msgid "URL to detect"
 msgstr "Adresa URL pro rozpoznání"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:215
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:217
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1141
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:38
 msgid "Unknown"
 msgstr "Neznámé"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:299
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:301
 msgid "Update DDns Services List"
 msgstr "Aktualizovat seznam služeb DDNS"
 
@@ -786,7 +787,7 @@ msgstr "Aktualizovat seznam služeb DDNS"
 msgid "Update URL to be used for updating your DDNS Provider."
 msgstr "Adresa URL použitá zprostředkovatelem DDNS pro aktualizaci."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:455
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:457
 msgid ""
 "Url used to download services file. By default is the master openwrt ddns "
 "package repo."
@@ -798,7 +799,7 @@ msgstr ""
 msgid "Use HTTP Secure"
 msgstr "Použít zabezpečený protokol HTTPS"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:442
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:444
 msgid "Use cURL"
 msgstr "Použít cURL"
 
@@ -810,7 +811,7 @@ msgstr "Uživatelem definovaný skript pro čtení systémových IP adres"
 msgid "Username"
 msgstr "Uživatelské jméno"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:378
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:380
 msgid "Using specific DNS Server not supported"
 msgstr "Použití specifického serveru DNS není podporováno"
 
@@ -833,7 +834,7 @@ msgstr "Varování"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1043
 msgid "Which time units to use for retry counters."
-msgstr "Při chybě skript zopakuje neúspěšnou akci po daném čase"
+msgstr "Při chybě skript zopakuje neúspěšnou akci po daném čase."
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:957
 msgid ""
@@ -850,7 +851,7 @@ msgstr ""
 "Zapisuje zprávy protokolu do syslogu. Kritické chyby budou vždy zapsány do "
 "syslogu."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:382
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:384
 msgid ""
 "You should install 'bind-host' or 'knot-host' or 'drill' or 'hostip' "
 "package, if you need to specify a DNS server to detect your registered IP."
@@ -859,7 +860,7 @@ msgstr ""
 "byste si nainstalovat balíček \"bind-host\", \"knot-host\", \"drill\" nebo "
 "\"hostip\"."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:371
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:373
 msgid ""
 "You should install 'bind-host' or 'knot-host' or 'drill' package for DNS "
 "requests."
@@ -867,12 +868,12 @@ msgstr ""
 "Měli byste nainstalovat balíček 'bind-host' nebo 'knot-host' nebo 'drill' "
 "pro DNS dotazy."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:359
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:361
 msgid "You should install 'wget' or 'curl' or 'uclient-fetch' package."
 msgstr ""
 "Měli byste nainstalovat balíček 'wget' nebo 'curl' nebo 'uclient-fetch'."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:321
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:323
 msgid ""
 "You should install 'wget' or 'curl' or 'uclient-fetch' with 'libustream-"
 "*ssl' package."
@@ -880,27 +881,27 @@ msgstr ""
 "Měli byste nainstalovat balíček 'wget' nebo 'curl' nebo 'uclient-fetch' s "
 "balíčkem 'libustream-*ssl'."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:333
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:335
 msgid "You should install 'wget' or 'curl' package."
 msgstr "Měli byste nainstalovat balíček 'wget' nebo 'curl'."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:347
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:349
 msgid ""
 "You should install 'wget' or 'uclient-fetch' package or replace libcurl."
 msgstr ""
 "Měli byste nainstalovat balíček 'wget' nebo 'uclient-fetch' nebo nahradit "
 "libcurl."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:345
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:347
 msgid "cURL is installed, but libcurl was compiled without proxy support."
 msgstr "cURL je nainstalován, ale libcurl byl kompilován bez podpory proxy."
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:344
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:346
 msgid "cURL without Proxy Support"
 msgstr "cURL bez podpory proxy"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:519
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:642
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:521
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:643
 msgid "custom"
 msgstr "vlastní"
 
@@ -927,7 +928,7 @@ msgstr "minuty/minut"
 msgid "or"
 msgstr "nebo"
 
-#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:311
+#: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:313
 msgid "or update your system to the latest OpenWrt Release"
 msgstr "nebo aktualizujte systém na nejnovější verzi OpenWrt"
 
@@ -940,15 +941,16 @@ msgstr "sekundy/sekund"
 msgid "to run HTTPS without verification of server certificates (insecure)"
 msgstr "k použití HTTPS bez ověření serverových certifikátů (nedůvěryhodné)"
 
-msgid "Interval unit to force updates send to DDNS Provider"
-msgstr ""
-"Jednotka intervalu, která vynutí odeslání aktualizací zprostředkovateli DDNS"
+#~ msgid "Interval unit to force updates send to DDNS Provider"
+#~ msgstr ""
+#~ "Jednotka intervalu, která vynutí odeslání aktualizací zprostředkovateli "
+#~ "DDNS"
 
-msgid "On Error the script will retry the failed action after given time"
-msgstr "Při chybě skript zopakuje neúspěšnou akci po daném čase"
+#~ msgid "On Error the script will retry the failed action after given time"
+#~ msgstr "Při chybě skript zopakuje neúspěšnou akci po daném čase"
 
-msgid "On Error the script will stop execution after given number of retrys"
-msgstr "Při chybě skript zastaví provádění po daném počtu opakování"
+#~ msgid "On Error the script will stop execution after given number of retrys"
+#~ msgstr "Při chybě skript zastaví provádění po daném počtu opakování"
 
-msgid "The default setting of '0' will retry infinite."
-msgstr "Výchozí nastavení '0' znamená nekonečné opakování."
+#~ msgid "The default setting of '0' will retry infinite."
+#~ msgstr "Výchozí nastavení '0' znamená nekonečné opakování."

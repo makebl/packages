@@ -12,7 +12,7 @@ PKG_VERSION:=1.0.13
 PKG_RELEASE:=
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_VERSION:=9fc8c184da22d6b34a5b093f6ec8cf6ecaf22dbf
+PKG_SOURCE_VERSION:=null
 PKG_SOURCE_URL_FILE:=$(PKG_SOURCE_VERSION).tar.gz
 PKG_SOURCE_URL:=https://github.com/philippe44/AirConnect/archive/
 PKG_HASH:=skip

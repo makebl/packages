@@ -1,28 +1,26 @@
-# SPDX-License-Identifier: GPL-3.0-only
+# SPDX-License-Identifier: GPL-2.0-only
 #
-# Copyright (C) 2022 ImmortalWrt.org
+# Copyright (C) 2022-2023 ImmortalWrt.org
 
 include $(TOPDIR)/rules.mk
-
-PKG_NAME:=luci-app-homeproxy
-PKG_VERSION:=1.0
-PKG_RELEASE:=
 
 LUCI_TITLE:=The modern ImmortalWrt proxy platform for ARM64/AMD64
 LUCI_PKGARCH:=all
 LUCI_DEPENDS:= \
 	+sing-box \
-	+@SING_BOX_BUILD_GVISOR \
-	+curl \
-	+lua \
-	+lua-neturl \
-	+luci-lib-base \
-	+luci-lib-nixio \
-	+luci-lib-jsonc
+	+chinadns-ng \
+	+firewall4 \
+	+kmod-nft-tproxy
+
+PKG_NAME:=luci-app-homeproxy
 
 define Package/luci-app-homeproxy/conffiles
 /etc/config/homeproxy
 /etc/homeproxy/certs/
+/etc/homeproxy/ruleset/
+/etc/homeproxy/resources/direct_list.txt
+/etc/homeproxy/resources/proxy_list.txt
+/etc/homeproxy/cache.db
 endef
 
 include $(TOPDIR)/feeds/luci/luci.mk
