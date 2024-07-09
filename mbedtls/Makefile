@@ -8,7 +8,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mbedtls
-PKG_VERSION:=2.28.7
+PKG_VERSION:=2.28.8
 PKG_RELEASE:=
 PKG_USE_MIPS16:=0
 
