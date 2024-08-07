@@ -23,7 +23,7 @@ define Package/$(PKG_NAME)
   SECTION:=net
   CATEGORY:=Network
   TITLE:=3proxy OpenWRT package
-  DEPENDS:=+libpthread +libopenssl
+  DEPENDS:=+libpthread +libopenssl +libpcre
 endef
 
 define Package/lib$(PKG_NAME)
