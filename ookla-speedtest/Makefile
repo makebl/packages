@@ -46,4 +46,6 @@ define Package/$(PKG_NAME)/install
 	$(CP) $(BIN_PATH)/speedtest $(1)/usr/bin
 endef
 
-$(eval $(call BuildPackage,$(PKG_NAME))) 
+ifeq ($(ARCH),$(filter $(ARCH), x86_64 i386 arm aarch64))
+  $(eval $(call BuildPackage,$(PKG_NAME))) 
+endif
