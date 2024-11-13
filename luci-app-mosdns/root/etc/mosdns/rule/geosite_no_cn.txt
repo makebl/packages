@@ -5824,6 +5824,7 @@ charteredcollegeofteaching.ac.uk
 charticulator.com
 chase.ac.uk
 chasestudy.ac.uk
+chat.com
 chat.lmsys.org
 chatango.com
 chatgpt.com
@@ -13579,6 +13580,7 @@ icit.ac.uk
 icl-fi.org
 icloud-content.com
 icloud-isupport.com
+icloud-sandbox.com
 icloud.ch
 icloud.com
 icloud.de
@@ -30600,6 +30602,8 @@ full:na1r.services.adobe.com
 full:nab.demdex.net
 full:nationalaustraliaban.tt.omtrdc.net
 full:netflix.com.edgesuite.net
+full:notary-submissions-prod.s3-accelerate.amazonaws.com
+full:notary-submissions-prod.s3.us-west-2.amazonaws.com
 full:notify.ppy.sh
 full:nurofensk-prod-env.eu-west-1.elasticbeanstalk.com
 full:nvidia.tt.omtrdc.net
