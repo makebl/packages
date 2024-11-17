@@ -1,7 +1,6 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=njit8021xclient
-PKG_BASE_VERSION:=2.0
 PKG_RELEASE:=
 
 PKG_SOURCE_PROTO:=git
@@ -9,8 +8,6 @@ PKG_SOURCE_URL:=https://github.com/bitdust/njit8021xclient.git
 PKG_SOURCE_DATE:=2018-11-24
 PKG_SOURCE_VERSION:=null
 PKG_MIRROR_HASH:=skip
-
-PKG_VERSION:=$(PKG_BASE_VERSION)-$(PKG_SOURCE_DATE)-$(call version_abbrev,$(PKG_SOURCE_VERSION))
 
 PKG_FIXUP:=autoreconf
 PKG_BUILD_PARALLEL:=1
