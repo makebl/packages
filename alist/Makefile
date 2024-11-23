@@ -7,7 +7,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=alist
-PKG_VERSION:=3.39.4
+PKG_VERSION:=3.40.0
 PKG_WEB_VERSION:=3.39.2
 PKG_RELEASE:=
 

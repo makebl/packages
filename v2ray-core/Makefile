@@ -5,7 +5,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=v2ray-core
-PKG_VERSION:=5.21.0
+PKG_VERSION:=5.22.0
 PKG_RELEASE:=
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
@@ -31,7 +31,7 @@ include $(INCLUDE_DIR)/package.mk
 include $(TOPDIR)/feeds/packages/lang/golang/golang-package.mk
 
 define Package/v2ray/template
-  TITLE:=A platform for building proxies to bypass network restrictions
+  TITLE:=A proxy platform to bypass network restrictions
   SECTION:=net
   CATEGORY:=Network
   URL:=https://www.v2fly.org

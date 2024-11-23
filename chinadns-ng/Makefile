@@ -5,9 +5,10 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=chinadns-ng
-PKG_VERSION:=2024.07.21
+PKG_VERSION:=2024.11.17
 PKG_RELEASE:=
 
+DOWN_VERSION:=$(PKG_VERSION)
 ifeq ($(ARCH),aarch64)
   ifeq ($(BOARD),rockchip)
     PKG_ARCH:=$(PKG_NAME)+wolfssl@aarch64-linux-musl@generic+v8a@fast+lto
@@ -22,6 +23,7 @@ else ifeq ($(ARCH),arm)
   ifeq ($(ARM_CPU_FEATURES),)
     PKG_ARCH:=$(PKG_NAME)+wolfssl@arm-linux-musleabi@generic+v5t+soft_float@fast+lto
     PKG_HASH:=skip
+    DOWN_VERSION:=2024.10.14
   else ifneq ($(filter $(ARM_CPU_FEATURES),vfp vfpv2),)
     PKG_ARCH:=$(PKG_NAME)+wolfssl@arm-linux-musleabi@generic+v6+soft_float@fast+lto
     PKG_HASH:=skip
@@ -48,6 +50,12 @@ else ifeq ($(ARCH),mipsel)
     PKG_ARCH:=$(PKG_NAME)+wolfssl@mipsel-linux-musl@mips32@fast+lto
     PKG_HASH:=skip
   endif
+else ifeq ($(ARCH),mips64)
+  PKG_ARCH:=$(PKG_NAME)+wolfssl@mips64-linux-musl@mips64+soft_float@fast+lto
+  PKG_HASH:=skip
+else ifeq ($(ARCH),mips64el)
+  PKG_ARCH:=$(PKG_NAME)+wolfssl@mips64el-linux-musl@mips64+soft_float@fast+lto
+  PKG_HASH:=skip
 else ifeq ($(ARCH),x86_64)
   PKG_ARCH:=$(PKG_NAME)+wolfssl@x86_64-linux-musl@x86_64@fast+lto
   PKG_HASH:=skip
@@ -56,8 +64,8 @@ else
   PKG_HASH:=skip
 endif
 
-PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(ARCH_PACKAGES)
-PKG_SOURCE_URL:=https://github.com/zfl9/chinadns-ng/releases/download/$(PKG_VERSION)/$(PKG_ARCH)?
+PKG_SOURCE:=$(PKG_NAME)-$(DOWN_VERSION)-$(ARCH_PACKAGES)
+PKG_SOURCE_URL:=https://github.com/zfl9/chinadns-ng/releases/download/$(DOWN_VERSION)/$(PKG_ARCH)?
 UNPACK_CMD=$(CP) $(DL_DIR)/$(PKG_SOURCE) $(PKG_BUILD_DIR)/$(PKG_NAME)
 
 PKG_LICENSE:=AGPL-3.0-only
@@ -72,7 +80,7 @@ define Package/chinadns-ng
   SUBMENU:=IP Addresses and Names
   TITLE:=ChinaDNS next generation, refactoring with epoll and ipset.
   URL:=https://github.com/zfl9/chinadns-ng
-  DEPENDS:=@(aarch64||arm||i386||mips||mipsel||x86_64)
+  DEPENDS:=@(aarch64||arm||i386||mips||mipsel||mips64||mips64el||x86_64)
 endef
 
 define Build/Compile
