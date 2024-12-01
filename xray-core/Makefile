@@ -1,7 +1,7 @@
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=Xray-core
-PKG_VERSION:=24.11.21
+PKG_NAME:=xray-core
+PKG_VERSION:=24.11.30
 PKG_RELEASE:=
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
