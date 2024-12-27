@@ -44,6 +44,7 @@ define Package/$(PKG_NAME)/postinst
 #!/bin/sh
 if [ -z "$${IPKG_INSTROOT}" ]; then
 	[ -f /etc/uci-defaults/sunpanel ] && /etc/uci-defaults/sunpanel && rm -f /etc/uci-defaults/sunpanel
+	exit 0
 fi
 endef
 

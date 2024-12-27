@@ -77,6 +77,7 @@ define Package/$(PKG_NAME)/postinst
 #!/bin/sh
 if [ -z "$${IPKG_INSTROOT}" ]; then
 	[ -f /etc/uci-defaults/homebox ] && /etc/uci-defaults/homebox && rm -f /etc/uci-defaults/homebox
+	exit 0
 fi
 endef
 
