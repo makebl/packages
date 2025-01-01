@@ -10,7 +10,7 @@ include $(TOPDIR)/rules.mk
 PKG_ARCH_VMEASE:=$(ARCH)
 
 PKG_NAME:=vmease
-PKG_VERSION:=0.8.5
+PKG_VERSION:=0.8.7
 PKG_RELEASE:=
 PKG_SOURCE:=$(PKG_NAME)-binary-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=http://fw0.koolcenter.com/binary/vmease/
