@@ -32,7 +32,7 @@ define Package/$(PKG_NAME)
   SECTION:=net
   CATEGORY:=Network
   TITLE:=accel-ppp VPN server
-  DEPENDS:=+libpcre +libopenssl +libpthread +librt +libatomic +libucontext
+  DEPENDS:=+libpcre2 +libopenssl +libpthread +librt +libatomic +libucontext
 endef
 
 CMAKE_OPTIONS += \
