@@ -121,7 +121,7 @@ jobs:
           
           ping6 -c 4 ::1 || { echo "::1 is not reachable"; exit 1; }
 
-      - name: Run unit tests
+      - name: Run integration tests
         run: |
           cmake -S . -B build -DUA2F_BUILD_TESTS=OFF -DUA2F_ENABLE_UCI=OFF -DUA2F_ENABLE_ASAN=ON ${{ matrix.cache }}
           cmake --build build
@@ -181,7 +181,7 @@ jobs:
           for f in tmp/*.ipk; do mv "$f" "${f/.ipk/-${{ matrix.version }}.ipk}" 2>/dev/null || true; done
           mv tmp/*.ipk . 2>/dev/null || true
           rm -rf tmp
-
+          
       - name: Store packages
         uses: actions/upload-artifact@v4
         if: "!startsWith(github.ref, 'refs/tags/v')"
