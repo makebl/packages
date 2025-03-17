@@ -9,7 +9,7 @@ PKG_RELEASE:=
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/tindy2013/subconverter.git
-PKG_SOURCE_DATE:=2024-04-18
+PKG_SOURCE_DATE:=2025-01-16
 PKG_SOURCE_VERSION:=null
 PKG_MIRROR_HASH:=skip
 PKG_VERSION:=0.9.0~$(call version_abbrev,$(PKG_SOURCE_VERSION))
