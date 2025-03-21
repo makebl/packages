@@ -4,6 +4,34 @@
 ACTION=${1}
 shift 1
 
+istoreenhance_pull() {
+  local image_name="$1"
+  echo "docker pull ${image_name}"
+  docker pull "$image_name"
+  if [ $? -ne 0 ]; then
+    local isInstall=$(command -v iStoreEnhance)
+    local isRun=$(pgrep iStoreEnhance)
+      # 判断iStoreEnhance是否运行
+    if [ -n "$isRun" ]; then
+      # 使用 docker info 获取包含 registry.linkease.net 的镜像服务器地址
+      local registry_mirror=$(docker info 2>/dev/null | awk -F': ' '/Registry Mirrors:/ {found=1; next} found && NF {if ($0 ~ /registry.linkease.net/) {print; exit}}')
+
+      if [[ -n "$registry_mirror" ]]; then
+        echo "istoreenhance_pull failed"
+      else
+        echo "download failed, not found registry.linkease.net"
+      fi
+    else
+      if [ -z "$isInstall" ]; then
+        echo "download failed, install istoreenhance to speedup, \"https://doc.linkease.com/zh/guide/istore/software/istoreenhance.html\""
+      else
+        echo "download failed, enable istoreenhance to speedup"
+      fi
+    fi
+    exit 1
+  fi
+}
+
 do_install() {
   local port=`uci get immich.@main[0].port 2>/dev/null`
   local config=`uci get immich.@main[0].config_path 2>/dev/null`
@@ -36,33 +64,15 @@ do_install() {
   cd $config
   export COMPOSE_PROJECT_NAME=linkease-immich
 
-  docker pull redis:6.2-alpine@sha256:905c4ee67b8e0aa955331960d2aa745781e6bd89afc44a8584bfd13bc890f0ae
-  RET=$?
-  if [ ! "$RET" = "0" ]; then
-    echo "download failed, install istoreenhance to speedup"
-    exit 1
-  fi
+  istoreenhance_pull redis:6.2-alpine@sha256:905c4ee67b8e0aa955331960d2aa745781e6bd89afc44a8584bfd13bc890f0ae
 
-  docker pull tensorchord/pgvecto-rs:pg14-v0.2.0@sha256:90724186f0a3517cf6914295b5ab410db9ce23190a2d9d0b9dd6463e3fa298f0
-  RET=$?
-  if [ ! "$RET" = "0" ]; then
-    echo "download failed, install istoreenhance to speedup"
-    exit 1
-  fi
+  istoreenhance_pull tensorchord/pgvecto-rs:pg14-v0.2.0@sha256:90724186f0a3517cf6914295b5ab410db9ce23190a2d9d0b9dd6463e3fa298f0
 
-  docker pull "linkease/immich-machine-learning:$IMMICH_VERSION"
-  RET=$?
-  if [ ! "$RET" = "0" ]; then
-    echo "download failed, install istoreenhance to speedup"
-    exit 1
-  fi
+  istoreenhance_pull "linkease/immich-machine-learning:$IMMICH_VERSION"
+  
 
-  docker pull "linkease/immich-server:$IMMICH_VERSION"
-  RET=$?
-  if [ ! "$RET" = "0" ]; then
-    echo "download failed, install istoreenhance to speedup"
-    exit 1
-  fi
+  istoreenhance_pull "linkease/immich-server:$IMMICH_VERSION"
+  
 
   docker-compose down || true
   docker-compose up -d
