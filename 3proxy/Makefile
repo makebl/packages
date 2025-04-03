@@ -52,7 +52,7 @@ define Build/Configure
 	$(CP) $(PKG_BUILD_DIR)/Makefile.Linux $(PKG_BUILD_DIR)/Makefile
 endef
 
-define Package.$(PKG_NAME)/conffiles
+define Package/$(PKG_NAME)/conffiles
 /etc/config/3proxy
 /etc/3proxy.cfg
 endef
