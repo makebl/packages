@@ -5,7 +5,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=chinadns-ng
-PKG_VERSION:=2024.12.22
+PKG_VERSION:=2025.03.27
 PKG_RELEASE:=
 
 ifeq ($(ARCH),aarch64)
@@ -57,6 +57,9 @@ else ifeq ($(ARCH),i386)
 else ifeq ($(ARCH),x86_64)
   PKG_ARCH:=$(PKG_NAME)+wolfssl@x86_64-linux-musl@x86_64@fast+lto
   PKG_HASH:=skip
+else ifeq ($(ARCH),riscv64)
+  PKG_ARCH:=chinadns-ng+wolfssl@riscv64-linux-musl@baseline_rv64@fast+lto
+  PKG_HASH:=skip
 else
   PKG_ARCH:=dummy
   PKG_HASH:=skip
@@ -78,7 +81,11 @@ define Package/chinadns-ng
   SUBMENU:=IP Addresses and Names
   TITLE:=ChinaDNS next generation, refactoring with epoll and ipset.
   URL:=https://github.com/zfl9/chinadns-ng
-  DEPENDS:=@(aarch64||arm||i386||mips||mipsel||mips64||mips64el||x86_64)
+  DEPENDS:=@(aarch64||arm||i386||mips||mipsel||mips64||mips64el||riscv64||x86_64)
+endef
+
+define Package/chinadns-ng/description
+ChinaDNS Next Generation, refactoring with epoll and ipset.
 endef
 
 define Build/Compile
@@ -86,7 +93,7 @@ endef
 
 define Package/chinadns-ng/install
 	$(INSTALL_DIR) $(1)/usr/bin
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/$(PKG_NAME) $(1)/usr/bin/chinadns-ng
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/chinadns-ng $(1)/usr/bin
 endef
 
 $(eval $(call BuildPackage,chinadns-ng))

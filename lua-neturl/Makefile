@@ -5,7 +5,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=neturl
-PKG_REAL_VERSION:=1.1-1
+PKG_REAL_VERSION:=1.2-1
 PKG_VERSION:=$(subst -,.,$(PKG_REAL_VERSION))
 PKG_RELEASE:=
 
