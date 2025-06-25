@@ -3,19 +3,19 @@
 include $(TOPDIR)/rules.mk
 
 
-LUCI_TITLE:=LuCI support for bmtedge
+LUCI_TITLE:=LuCI support for demon
 LUCI_PKGARCH:=all
 LUCI_DEPENDS:=+lsblk +docker +luci-lib-taskd
 
-define Package/luci-app-bmtedge/conffiles
-/etc/config/bmtedge
+define Package/luci-app-demon/conffiles
+/etc/config/demon
 endef
 
 # prerm
 # postrm
-define Package/luci-app-bmtedge/prerm
+define Package/luci-app-demon/prerm
 #!/bin/sh
-/root/usr/libexec/istorec/bmtedge.sh rm
+docker rm -f demon
 exit 0
 endef
 
