@@ -44,21 +44,6 @@ endef
 
 define Package/dnsproxy/install
 	$(call GoPackage/Package/Install/Bin,$(1))
-
-	$(INSTALL_DIR) $(1)/etc/capabilities/
-	$(INSTALL_DATA) $(CURDIR)/files/dnsproxy.json $(1)/etc/capabilities/dnsproxy.json
-	$(INSTALL_DIR) $(1)/etc/config/
-	$(INSTALL_CONF) $(CURDIR)/files/dnsproxy.config $(1)/etc/config/dnsproxy
-	$(INSTALL_DIR) $(1)/etc/init.d/
-	$(INSTALL_BIN) $(CURDIR)/files/dnsproxy.init $(1)/etc/init.d/dnsproxy
-	$(INSTALL_DIR) $(1)/etc/uci-defaults/
-	$(INSTALL_BIN) $(CURDIR)/files/dnsproxy.defaults $(1)/etc/uci-defaults/80-dnsproxy-migration
-	$(INSTALL_DIR) $(1)/etc/sysctl.d/
-	$(INSTALL_CONF) ./files/dnsproxy.sysctl $(1)/etc/sysctl.d/50-dnsproxy.conf
-endef
-
-define Package/dnsproxy/conffiles
-/etc/config/dnsproxy
 endef
 
 $(eval $(call GoBinPackage,dnsproxy))
