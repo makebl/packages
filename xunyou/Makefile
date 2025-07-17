@@ -9,7 +9,7 @@ include $(TOPDIR)/rules.mk
 
 
 PKG_NAME:=xunyou
-PKG_VERSION:=2.0.8.4
+PKG_VERSION:=2.0.8.5
 PKG_RELEASE:=
 
 PKG_SOURCE:=$(PKG_NAME)_v$(PKG_VERSION).tar.gz
@@ -28,7 +28,6 @@ define Package/$(PKG_NAME)
 	CATEGORY:=Network
 	SUBMENU:=Web Servers/Proxies
 	TITLE:=xunyou
-	DEPENDS:=+coreutils-nohup
 endef
 
 define Package/$(PKG_NAME)/description
