@@ -5,7 +5,7 @@ PKG_RELEASE:=
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/CareyWang/sub-web.git
-PKG_SOURCE_DATE:=2022-11-10
+PKG_SOURCE_DATE:=2025-01-08
 PKG_SOURCE_VERSION:=null
 PKG_MIRROR_HASH:=skip
 
@@ -35,7 +35,7 @@ define Build/Compile
 	( \
 		pushd "$(PKG_BUILD_DIR)"; \
 		yarn install; \
-		NODE_OPTIONS=--openssl-legacy-provider yarn build; \
+		yarn build; \
 		popd ; \
 	)
 endef
