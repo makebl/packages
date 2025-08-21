@@ -25,10 +25,16 @@ else ifeq ($(ARCH),powerpc64)
 else ifeq ($(ARCH),x86_64)
   PKG_ARCH_VERYSYNC:=amd64
   PKG_HASH:=skip
+else ifeq ($(ARCH),riscv64)
+  PKG_ARCH_VERYSYNC:=riscv64
+  PKG_HASH:=skip
+else ifeq ($(ARCH),loongarch64)
+  PKG_ARCH_VERYSYNC:=loong64
+  PKG_HASH:=skip
 endif
 
 PKG_NAME:=verysync
-PKG_VERSION:=2.17.0
+PKG_VERSION:=2.21.3
 PKG_RELEASE:=
 
 PKG_SOURCE:=$(PKG_NAME)-linux-$(PKG_ARCH_VERYSYNC)-v$(PKG_VERSION).tar.gz
@@ -44,7 +50,7 @@ define Package/verysync
   CATEGORY:=Network
   TITLE:=A efficient data transmission tool
   URL:=http://www.verysync.com
-  DEPENDS:=@(aarch64||arm||i386||mips||mipsel||powerpc64||x86_64)
+  DEPENDS:=@(aarch64||arm||i386||mips||mipsel||powerpc64||x86_64||riscv64||loongarch64)
 endef
 
 define Build/Compile
