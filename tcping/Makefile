@@ -5,13 +5,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=tcping
+PKG_VERSION:=1
 PKG_RELEASE:=
-
-PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/Lienol/tcping.git
-PKG_SOURCE_DATE:=2020-07-04
-PKG_SOURCE_VERSION:=null
-PKG_MIRROR_HASH:=skip
 
 PKG_LICENSE:=GPL-2.0-only
 PKG_LICENSE_FILES:=license.txt
