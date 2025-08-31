@@ -104,6 +104,7 @@ CONFIGURE_ARGS+= \
 	--enable-default-shared \
 	--enable-shared \
 	--enable-libusb \
+	--enable-debug \
 	--disable-acl \
 	--disable-dnssd \
 	--disable-dbus \
