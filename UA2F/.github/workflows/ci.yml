@@ -26,7 +26,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y cmake libnetfilter-queue-dev libmnl-dev libnetfilter-conntrack-dev libjson-c-dev
+          sudo apt-get install -y cmake libnetfilter-queue-dev libmnl-dev libnetfilter-conntrack-dev lcov libjson-c-dev lcov
 
       - name: Build and install libubox
         working-directory: /tmp
@@ -56,6 +56,22 @@ jobs:
           cmake --build build
           ./build/ua2f_test
 
+      - name: Generate unit test coverage
+        run: |
+          cmake -S . -B build-coverage -DUA2F_BUILD_TESTS=ON
+          cmake --build build-coverage
+          cd build-coverage
+          make coverage-lcov
+
+      - name: Upload unit test coverage to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          files: build-coverage/coverage.info
+          flags: unittests
+          fail_ci_if_error: true
+          verbose: true
+          token: ${{ secrets.CODECOV_TOKEN }}
+
   test-standalone:
     name: Run unit tests without uci support
     runs-on: ubuntu-latest
@@ -67,13 +83,29 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y cmake libnetfilter-queue-dev libmnl-dev libnetfilter-conntrack-dev
+          sudo apt-get install -y cmake libnetfilter-queue-dev libmnl-dev libnetfilter-conntrack-dev lcov lcov
 
       - name: Run unit tests
         run: |
           cmake -S . -B build -DUA2F_BUILD_TESTS=ON -DUA2F_ENABLE_UCI=OFF
           cmake --build build
           ./build/ua2f_test
+
+      - name: Generate unit test coverage (standalone)
+        run: |
+          cmake -S . -B build-coverage -DUA2F_BUILD_TESTS=ON -DUA2F_ENABLE_UCI=OFF
+          cmake --build build-coverage
+          cd build-coverage
+          make coverage-lcov
+
+      - name: Upload unit test coverage to Codecov (standalone)
+        uses: codecov/codecov-action@v5
+        with:
+          files: build-coverage/coverage.info
+          flags: unittests-standalone
+          fail_ci_if_error: true
+          verbose: true
+          token: ${{ secrets.CODECOV_TOKEN }}
 
   test-integration:
     name: Run integration tests
@@ -88,7 +120,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y cmake libnetfilter-queue-dev libmnl-dev libnetfilter-conntrack-dev
+          sudo apt-get install -y cmake libnetfilter-queue-dev libmnl-dev libnetfilter-conntrack-dev lcov
 
       - name: Setup Python
         uses: actions/setup-python@v6
@@ -127,6 +159,48 @@ jobs:
           cmake --build build
           sudo ./build/ua2f --version
           sudo -E $(which python3) scripts/test.py ./build/ua2f
+
+      - name: Generate integration test coverage
+        run: |
+          # Build with coverage enabled for integration testing
+          cmake -S . -B build-coverage -DUA2F_BUILD_TESTS=OFF -DUA2F_ENABLE_UCI=OFF ${{ matrix.cache }}
+          cmake --build build-coverage
+          cd build-coverage
+          
+          # Reset coverage counters
+          make coverage-integration-reset
+          
+          # Run integration tests with coverage-enabled binary
+          sudo ./ua2f --version
+          sudo -E $(which python3) ../scripts/test.py ./ua2f
+          
+          # Process coverage data with lcov
+          make coverage-integration-process
+          
+          # Fix ownership of all coverage files recursively
+          sudo chown -R $(whoami):$(whoami) .
+          
+          # Ensure coverage files are readable
+          find . -name "*.gcno" -o -name "*.gcda" -o -name "*.info" | xargs chmod 644
+          
+          # Debug: List coverage files and their permissions
+          echo "Coverage files generated:"
+          find . -name "*.gcno" -o -name "*.gcda" -o -name "*.info" | head -10 | xargs ls -la
+          
+          # Count coverage files
+          gcno_count=$(find . -name "*.gcno" | wc -l)
+          gcda_count=$(find . -name "*.gcda" | wc -l)
+          info_count=$(find . -name "*.info" | wc -l)
+          echo "Found $gcno_count .gcno files, $gcda_count .gcda files, and $info_count .info files"
+
+      - name: Upload integration test coverage to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          files: build-coverage/coverage-integration.info
+          flags: integration
+          fail_ci_if_error: true
+          token: ${{ secrets.CODECOV_TOKEN }}
+          verbose: true
 
       - name: Upload log
         uses: actions/upload-artifact@v4
