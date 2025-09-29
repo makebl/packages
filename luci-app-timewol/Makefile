@@ -6,6 +6,8 @@
 include $(TOPDIR)/rules.mk
 
 LUCI_TITLE:=LuCI support for Timewol
+LUCI_DEPENDS:=+luci-compat
+
 
 include $(TOPDIR)/feeds/luci/luci.mk
 
