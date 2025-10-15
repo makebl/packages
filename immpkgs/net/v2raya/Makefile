@@ -5,12 +5,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=v2rayA
-PKG_VERSION:=2.2.7.1
-PKG_RELEASE:=
+PKG_VERSION:=2.2.7.3
+PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/v2rayA/v2rayA/tar.gz/v$(PKG_VERSION)?
-PKG_HASH:=skip
+PKG_HASH:=4b36275dff287d8cf03ee8fa5331d731593f35020459a8ea0ff925e8496a52cf
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)/service
 
 PKG_LICENSE:=AGPL-3.0-only
@@ -19,7 +19,6 @@ PKG_MAINTAINER:=Tianling Shen <cnsztl@immortalwrt.org>
 
 PKG_BUILD_DEPENDS:=golang/host
 PKG_BUILD_PARALLEL:=1
-PKG_USE_MIPS16:=0
 PKG_BUILD_FLAGS:=no-mips16
 
 GO_PKG:=github.com/v2rayA/v2rayA
@@ -28,7 +27,7 @@ GO_PKG_LDFLAGS_X:= \
 	$(GO_PKG)/core/iptables.TproxyNotSkipBr=true
 
 include $(INCLUDE_DIR)/package.mk
-include $(TOPDIR)/feeds/packages/lang/golang/golang-package.mk
+include ../../lang/golang/golang-package.mk
 
 TAR_OPTIONS+= --strip-components 1
 TAR_CMD=$(HOST_TAR) -C $(1)/.. $(TAR_OPTIONS)
@@ -60,7 +59,7 @@ define Download/v2raya-web
 	URL:=https://github.com/v2rayA/v2rayA/releases/download/v$(PKG_VERSION)/
 	URL_FILE:=web.tar.gz
 	FILE:=$(WEB_FILE)
-	HASH:=26eaea7b367b36b844c98c0b537fb05482595329ac5fe0ea2293f77bc9d1aac9
+	HASH:=99e789fa7cbfe9f6bc49afa8365556dff6d6c664e6136b045dd7f43322d0de7f
 endef
 
 define Build/Prepare
