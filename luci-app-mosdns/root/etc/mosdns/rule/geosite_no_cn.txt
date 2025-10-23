@@ -1453,6 +1453,7 @@ alphabet.uk
 alphabet.us
 alphabetfinance.net
 alphaporno.com
+alphaxiv.org
 alphera-finance.co.in
 alphera-finance.com.hk
 alphera-finance.in
@@ -1736,6 +1737,10 @@ androidpolice.com
 androidtv.com
 andygod.com
 andysparis.com
+anexia-engine.com
+anexia-it.com
+anexia.at
+anexia.com
 anfutong.com
 angel-gto.com
 angel.ac.uk
@@ -2787,6 +2792,7 @@ av6k.vip
 avaaz.org
 avail.googleflights.net
 avant.ac.uk
+avast.com
 avatara.com
 avbebe.com
 avcar.vip
@@ -2817,6 +2823,7 @@ avhu.com
 avidemux.org
 avinetworks.com
 avinin.com
+avira.com
 avizoon.site
 avizoone.com
 avjb.com
@@ -3979,6 +3986,7 @@ bitchute.com
 bitcoin.org
 bitcointalk.org
 bitcoinworld.com
+bitdefender.com
 bite.ac.uk
 bitfinex.com
 bitflyer.com
@@ -6376,6 +6384,7 @@ clackmannan-college.ac.uk
 clacks.ac.uk
 clacton.ac.uk
 clad.ac.uk
+clamwin.com
 clannad-movie.jp
 claravenger.com
 clarendon.ac.uk
@@ -7791,6 +7800,7 @@ deviantart.net
 deviantclip.com
 device-manager.us
 devilsfilm.com
+devin.ai
 devio.us
 devm2m.com
 devolution.ac.uk
@@ -8181,6 +8191,7 @@ docker.com
 docker.io
 dockerizer.com
 dockerstatic.com
+dockerstatus.com
 docleradn.com
 doclercdn.com
 docs.com
@@ -8662,6 +8673,7 @@ e-tugra.com
 e-zone.com.hk
 e123.hk
 e3an.ac.uk
+e5.sk
 e53w.com
 e621.net
 ea-anz-press.com
@@ -9495,6 +9507,11 @@ esdi.ac.uk
 esds.ac.uk
 ese.ac.uk
 eselondon.ac.uk
+eset.com
+eset.eu
+eset.sk
+eset.systems
+esetsoftware.com
 esg.ac.uk
 esg.t91y.com
 eshcru.ac.uk
@@ -9704,6 +9721,7 @@ f-boro-sfc.ac.uk
 f-dro1d.org
 f-droid.com
 f-droid.org
+f-secure.com
 f2pool.com
 f5pf.com
 f6988.com
@@ -10350,6 +10368,7 @@ fifastreet.com
 fifastreet3.com
 fife.ac.uk
 fifeglen.ac.uk
+fifthns.com
 fightforux.com
 figma.com
 figprayer.com
@@ -10493,6 +10512,7 @@ first-ns.de
 firstanalvideos.com
 firstchancesfife.ac.uk
 firstgynexam.com
+firstns.cc
 firstpelvicexam.com
 firstpost.com
 firstprivatebank.com.mm
@@ -10665,6 +10685,7 @@ foundationdb.org
 foundationyear.ac.uk
 fountmedia.io
 fourthinternational.org
+fourthns.systems
 fox
 fox-corporation.com
 fox-news.com
@@ -13245,6 +13266,7 @@ hotbeatsonsale.com
 hotbed.ac.uk
 hotcandyland.com
 hotcoin.com
+hotcrp.com
 hotcuckoldwife.com
 hotcumporn.com
 hotels.cn
@@ -15644,6 +15666,8 @@ karmapa-teachings.org
 karmapa.org
 karupsha.com
 karupspc.com
+kaspersky-labs.com
+kaspersky.com
 kastatic.org
 katestube.com
 kavkazr.com
@@ -15814,6 +15838,7 @@ kinkypeepz.com
 kinmen.org.tw
 kinmen.travel
 kinokuniya.com
+kinopoisk.ru
 kir.jp
 kir2kos.net
 kirbysepicyarn.com
@@ -17357,6 +17382,7 @@ mc6.ac.uk
 mca.ac.uk
 mcadforums.com
 mcaf.ee
+mcafee.com
 mcb.com.mm
 mcc.ac.uk
 mcd
@@ -19861,6 +19887,7 @@ northtrafford.ac.uk
 northumberland-acl.ac.uk
 northumberland.ac.uk
 northumbria.ac.uk
+norton.com
 norwichresearchpark.ac.uk
 nos.nl
 notepad-plus-plus.org
@@ -20546,6 +20573,7 @@ openlibrary.org
 openmaps.org
 openreality.com
 openresty.org
+openreview.net
 openrouter.ai
 opensciencelab.ac.uk
 opensciencelaboratory.ac.uk
@@ -20837,6 +20865,7 @@ pandamovies.pw
 pandanet-igs.com
 pandapow.co
 pandapow.net
+pandasecurity.com
 pandavpn-jp.com
 pandavpnpro.com
 pandora.com
@@ -23695,6 +23724,7 @@ secom.co.jp
 secomtrust.net
 second-ns.com
 second-ns.de
+secondns.at
 secret-flirt-hub.com
 secretbabes.co.uk
 secretchina.com
@@ -24273,6 +24303,7 @@ siege-amazon.com
 sierrafriendsoftibet.org
 sifa.ac.uk
 sifangclub.com
+sigcomm.org
 sigma-cetl.ac.uk
 sigma-network.ac.uk
 sigmoidoscopeexam.com
@@ -24288,6 +24319,7 @@ signalbar.com
 signalprocessingsociety.org
 signalr.net
 signalusers.org
+sigops.org
 sihe.ac.uk
 sijihuisuo.club
 sijihuisuo.com
@@ -25346,6 +25378,7 @@ stpadarns.ac.uk
 straightouttasomewhere.com
 straightpornstuds.com
 straitstimes.com
+straitsx.com
 stran.ac.uk
 stranabg.com
 straplessdildo.com
@@ -26242,6 +26275,7 @@ theopportunityproject.org
 thepaypalshop.com
 thepervs.com
 thepiratebay.org
+thepoizon.ru
 theporn.cc
 thepornarea.com
 thepornbest.com
@@ -26322,6 +26356,7 @@ thinkquarterly.com
 thinkwales.ac.uk
 thinkwithgoogle.com
 thirdmill.org
+thirdns.de
 thisav.com
 thisismoney.co.uk
 thisispolaris.com
@@ -27600,6 +27635,7 @@ uscg.mil
 uscnpm.org
 use-of-mans.ac.uk
 uselessjunk.com
+usenix.org
 useplannr.com
 userapi.com
 usercontent.dev
@@ -28755,6 +28791,7 @@ warddogs.com
 wariolandshakeit.com
 wariowarediy.com
 warkscol.ac.uk
+warnerbrosgames.com
 warp.plus
 warr.ac.uk
 warrington.ac.uk
@@ -28801,9 +28838,12 @@ waverleyabbeycollege.ac.uk
 waybig.com
 waymo.com
 waze.com
+wbagora.com
 wballiance.com
 wbd.ms
 wbdnbo.net
+wbgames.com
+wbinsights.com
 wbrks.com
 wbs.ac.uk
 wbvm4s.com
@@ -30999,11 +31039,13 @@ full:d33wubrfki0l68.cloudfront.net
 full:d36nr0u3xmc4mm.cloudfront.net
 full:d3aqoihi2n8ty8.cloudfront.net
 full:d3c27h4odz752x.cloudfront.net
+full:d3r7nsslvs6aaf.cloudfront.net
 full:d3vd9lfkzbru3h.cloudfront.net
 full:d6d4ismr40iw.cloudfront.net
 full:d6tizftlrpuof.cloudfront.net
 full:databank.worldbank.org
 full:database.asahi.com
+full:datarouter.apps.netherrealm.com
 full:ddacn6pr5v0tl.cloudfront.net
 full:default.exp-tas.com
 full:dell.my.site.com
@@ -31032,12 +31074,14 @@ full:eaassets-a.akamaihd.net
 full:ebay-25-assets.s3-us-west-1.amazonaws.com
 full:ecapi-pchome.cdn.hinet.net
 full:elib.maruzen.co.jp
+full:epc-de-agent-proxy.germanywestcentral.cloudapp.azure.com
 full:ereg.adobe.com
 full:ereg.wip.adobe.com
 full:ereg.wip1.adobe.com
 full:ereg.wip2.adobe.com
 full:ereg.wip3.adobe.com
 full:ereg.wip4.adobe.com
+full:eset-prod-ca48648d0ce7cadf.elb.eu-central-1.amazonaws.com
 full:espn.api.edge.bamgrid.com
 full:espn.hb.omtrdc.net
 full:espndotcom.tt.omtrdc.net
@@ -31294,6 +31338,7 @@ full:steamstore-a.akamaihd.net
 full:steamusercontent-a.akamaihd.net
 full:steamuserimages-a.akamaihd.net
 full:steamvideo-a.akamaihd.net
+full:straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
 full:t21.nikkei.co.jp
 full:t21ipau.nikkei.co.jp
 full:teamviewer.com.cdn.cloudflare.net
@@ -31366,6 +31411,7 @@ full:vscode-sync.trafficmanager.net
 full:vscode.blob.core.windows.net
 full:vscode.search.windows.net
 full:vsmarketplacebadge.apphb.com
+full:wb-agora-hydra-file-storage-k1.s3.amazonaws.com
 full:webchannel-alkalimakersuite-pa.clients6.google.com
 full:weblive-hamivideo.cdn.hinet.net
 full:wetv.qq.com
