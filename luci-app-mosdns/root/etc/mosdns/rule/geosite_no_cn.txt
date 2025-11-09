@@ -7524,7 +7524,6 @@ delcamp.net
 delcamtv.com
 delcamuniversity.com
 delcamusa.com
-delicious.com
 delicious.com.au
 dell
 dell.ac
@@ -7692,7 +7691,6 @@ dementianet.ac.uk
 dementiaresearchinstitute.ac.uk
 demo.unlock-music.dev
 democracy.earth
-democrats.org
 demonoid.is
 demoprint.com
 demos.ac.uk
@@ -14285,6 +14283,7 @@ imagemodeler.com
 imagepost.com
 images-amazon.com
 images-gaytube.com
+images.prismic.io
 imageshack.com
 imageshack.us
 imagetwist.com
