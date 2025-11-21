@@ -1,7 +1,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=tun2socks
-PKG_VERSION:=2.5.2
+PKG_VERSION:=2.6.0
 PKG_RELEASE:=
 
 PKG_SOURCE_PROTO:=git
