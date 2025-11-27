@@ -1163,6 +1163,7 @@ akiba-web.com
 akinator.com
 akita-bank.co.jp
 akow.org
+akstat.io
 akthelp.com
 al-islam.com
 alabout.com
@@ -3472,7 +3473,6 @@ bing
 bing.com
 bing.net
 bing123.com
-bingads.com
 bingagencyawards.com
 bingapis.com
 bingapistatistics.com
@@ -8109,7 +8109,6 @@ facebook30.com
 facebook30.net
 facebook30.org
 facebook4business.com
-facebookads.com
 facebookadvertisingsecrets.com
 facebookappcenter.info
 facebookappcenter.net
@@ -14760,7 +14759,6 @@ microsoft.vn
 microsoft365.com
 microsoftaccountguard.com
 microsoftadc.com
-microsoftads.com
 microsoftadvertising.com
 microsoftadvertisingregionalawards.com
 microsoftaffiliates.com
@@ -15510,7 +15508,6 @@ ms-studiosmedia.com
 ms365surfaceoffer.com
 ms4dre.com
 msa-it.org
-msads.net
 msauth.net
 mschallenge2018.com
 msdn.com
@@ -19626,6 +19623,7 @@ sensorynetworks.com
 sensualgirls.org
 sensualmothers.com
 sensueel.net
+sentry-cdn.com
 sentry.io
 senzuritv.net
 seqing.one
@@ -24987,6 +24985,7 @@ yandex.st
 yandex.sx
 yandex.tj
 yandex.tm
+yandex.tr
 yandex.ua
 yandex.uz
 yandexadexchange.net
