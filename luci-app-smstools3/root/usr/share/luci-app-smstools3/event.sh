@@ -10,7 +10,8 @@ config_load smstools3
 
 get_modem_names() {
 	local modem_name="$1"
-	MODEMS="${MODEMS}${MODEMS:+, }$modem_name"
+	config_get ENABLE "$modem_name" enable
+	[ "$ENABLE" = "1" ] && MODEMS="${MODEMS}${MODEMS:+, }$modem_name"
 }
 
 config_foreach get_modem_names modem
@@ -112,16 +113,16 @@ process_modem() {
 
 	# PIN validation
 	[ -n "$PIN" ] && {
-		case "$PIN" in
-			''|*[!0-9]*)
+		case "${PIN#}" in
+			*[!0-9]*)
 				logger -t luci-app-smstools3 "invalid pin for modem $modem_name"
 			;;
-			*)
-				if [ ${#PIN} -ne 4 ]; then
+			*[0-9]*)
+				[ ${#PIN} -lt 4 -a ${#PIN} -gt 8 ] && {
+					echo "pin = $PIN"
+				} || {
 					logger -t luci-app-smstools3 "invalid pin length for modem $modem_name"
-				else
-					 echo "pin = $PIN"
-				fi
+				}
 			;;
 		esac
 	}
