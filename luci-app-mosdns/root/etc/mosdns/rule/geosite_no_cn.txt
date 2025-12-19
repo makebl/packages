@@ -2624,6 +2624,7 @@ awjq.cc
 aws
 aws-iot-hackathon.com
 aws.com
+aws.dev
 awsapprunner.com
 awsapps.com
 awsautopilot.com
@@ -3518,6 +3519,7 @@ bisyoujyogyaruge.topaz.ne.jp
 bit-z.com
 bit.do
 bit.ly
+bitbaby.com
 bitballoon.com
 bitbank.cc
 bitbay.net
@@ -11744,6 +11746,7 @@ icu-project.org
 icuminside.com
 id.hao123.com
 idarkdoll.com
+idcflare.com
 idea-server.com
 ideal-teens.com
 ideapocket.com
