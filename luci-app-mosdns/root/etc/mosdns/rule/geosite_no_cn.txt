@@ -6819,6 +6819,8 @@ dmcdn.net
 dmed.technology
 dmgmediaprivacy.co.uk
 dmhy.org
+dmit.io
+dmit.sh
 dml-lang.org
 dmm-extension.com
 dmm.co.jp
@@ -7259,6 +7261,7 @@ dynu.com
 dynu.net
 dynupdate.no-ip.com
 dysfz.cc
+dzcdn.net
 dzen.ru
 dzeninfra.ru
 dzze.com
@@ -7740,6 +7743,7 @@ entrust.cn
 entrust.com
 entrust.net
 entrustdatacard.com
+eotarchive.org
 epac.to
 epicbrowser.com
 epicgames.com
@@ -9758,6 +9762,7 @@ ghbi.ir
 ghcr.io
 ghettotube.com
 ghidra-sre.org
+ghostarchive.org
 ghostgames.com
 ghostpath.com
 ghut.org
@@ -14736,6 +14741,7 @@ meltoday.com
 meme111.com
 memealerts.com
 memehk.com
+mementoweb.org
 memes.tw
 memri.org
 memrijttm.org
@@ -17455,6 +17461,7 @@ parstream.com
 parstream.net
 parstream.org
 partmaker.com
+partnerstack.xyz
 partycasino.com
 partylikeits1986.org
 partypoker.com
@@ -17766,6 +17773,7 @@ perfectshemales.com
 perfecttitspics.com
 periscope.tv
 perl.org
+perma.cc
 perplexity.ai
 perplexity.com
 persagg.com
@@ -23928,6 +23936,7 @@ webcamjackers.com
 webcammedellin.co
 webcams.tv
 webcamtubexxx.com
+webcitation.org
 webevader.org
 webex.ca
 webex.co.in
@@ -26038,7 +26047,13 @@ full:notary-submissions-prod.s3-accelerate.amazonaws.com
 full:notary-submissions-prod.s3.us-west-2.amazonaws.com
 full:notify.ppy.sh
 full:np-edge.itunes.apple.com
+full:ntdfreemobile-tgc.cdn.hinet.net
+full:ntdfreepc-tgc.cdn.hinet.net
+full:ntdfreetv-tgc.cdn.hinet.net
+full:ntdfreevcpc-tgc.cdn.hinet.net
+full:ntdofifreemobile-tgc.cdn.hinet.net
 full:ntdofifreepc-tgc.cdn.hinet.net
+full:ntdofifreetv-tgc.cdn.hinet.net
 full:ntdofifreevcpc-tgc.cdn.hinet.net
 full:ntp-b.nist.gov
 full:ntp-c.colorado.edu
