@@ -5,7 +5,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=v2rayA
-PKG_VERSION:=2.2.7.1
+PKG_VERSION:=2.2.7.4
 PKG_RELEASE:=
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
@@ -19,7 +19,6 @@ PKG_MAINTAINER:=Tianling Shen <cnsztl@immortalwrt.org>
 
 PKG_BUILD_DEPENDS:=golang/host
 PKG_BUILD_PARALLEL:=1
-PKG_USE_MIPS16:=0
 PKG_BUILD_FLAGS:=no-mips16
 
 GO_PKG:=github.com/v2rayA/v2rayA
@@ -60,7 +59,7 @@ define Download/v2raya-web
 	URL:=https://github.com/v2rayA/v2rayA/releases/download/v$(PKG_VERSION)/
 	URL_FILE:=web.tar.gz
 	FILE:=$(WEB_FILE)
-	HASH:=26eaea7b367b36b844c98c0b537fb05482595329ac5fe0ea2293f77bc9d1aac9
+	HASH:=985b083a75b7b34ea9c5151cbc096f6f44fa369a807fea85b435fed5229dae65
 endef
 
 define Build/Prepare
