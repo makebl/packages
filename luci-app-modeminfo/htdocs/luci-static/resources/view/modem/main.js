@@ -17,6 +17,10 @@
 	
 */
 
+const REGISTERED_STATUSES = [1, 6, 9];
+const ROAMING_STATUSES = [3, 5, 7, 10];
+
+
 return view.extend({
 
 	load: function(data) {
@@ -26,6 +30,7 @@ return view.extend({
 	polldata: poll.add(function() {
 		return L.resolveDefault(fs.exec_direct('/usr/bin/modeminfo'), '{"modem": []}').then(function(res) {
 			var json = JSON.parse(res);
+			if (!json || !json.modem || !Array.isArray(json.modem)) return;
 			for (var i = 0; i < json.modem.length; i++) {
 				// progressbar cellular metric
 				const progressConfig = {
@@ -67,6 +72,36 @@ return view.extend({
 					pg.style.width = '%d%%';
 					pg.firstElementChild.style.animationDirection = "reverse";
 					pg.setAttribute('title', '%s'.format(value));
+				}
+
+				function formatDistance(dist) {
+					if (!dist || dist === "--" || dist === "" || dist === "0.00") {
+						return '';
+					}
+					return ' ~' + dist + ' km';
+				}
+
+				function formatModemStatus(modem, icon, reg) {
+					var rg = parseInt(modem.reg) || 0;
+					var p = modem.csq_per || 0;
+					var cops = modem.cops || '--';
+					var color = modem.csq_col || '#000000';
+    
+					var distanceHtml = formatDistance(modem.distance);
+    					var iconHtml = icon ? '<img class="modem-signal-icon" src="' + icon + '"/>' : '';
+    
+					var percentWithColor = p + '%';   
+					if (REGISTERED_STATUSES.includes(rg)) {
+						return '<span class="ifacebadge">' + cops + ' ' + iconHtml + 
+						' <b style="color:' + color + '">' + percentWithColor + '</b>' + 
+						distanceHtml + '</span>';
+					 } else if (ROAMING_STATUSES.includes(rg)) {
+						return '<span class="ifacebadge">' + cops + ' (' + reg + ') ' + iconHtml + 
+						' <b style="color:' + color + '">' + percentWithColor + '</b>' + 
+						distanceHtml + '</span>';
+					} else {
+						return '<span class="ifacebadge">' + (reg || '--') + '</span>';
+					}
 				}
 
 				// icon signal strength
@@ -239,25 +274,12 @@ return view.extend({
 						namebnd = _('Network/Band');
 				}
 
-				// data by element	
-				if (document.getElementById('status'+i)){
-					var view = document.getElementById('status'+i);
-					if (rg == 1 || rg == 6 || rg == 9) {
-						if( dist== "--" || dist == "" || dist == "0.00"){
-							view.innerHTML = String.format(json.modem[i].cops +'<img style="padding-left: 10px;" src="%s"/>'  + " " +  '<span class="ifacebadge"><p style="color:'+ json.modem[i].csq_col +'"><b>%d%%</b></p></span>', icon, p);
-						} else {
-							view.innerHTML = String.format(json.modem[i].cops +'<img style="padding-left: 10px;" src="%s"/>'  + " " +  '<span class="ifacebadge"><p style="color:'+ json.modem[i].csq_col +'"><b>%d%%</b></p></span>' + distance, icon, p);
-						}
-					} else if (rg == 3 || rg == 5 || rg == 7 || rg == 10) {
-						if( dist== "--" || dist == "" || dist == "0.00"){
-							view.innerHTML = String.format(json.modem[i].cops + " (" + reg + ')<img style="padding-left: 10px;" src="%s"/>'  + " " +  '<span class="ifacebadge"><p style="color:'+ json.modem[i].csq_col +'"><b>%d%%</b></p></span>', icon, p);
-						} else {
-							view.innerHTML = String.format(json.modem[i].cops + " (" + reg + ')<img style="padding-left: 10px;" src="%s"/>'  + " " +  '<span class="ifacebadge"><p style="color:'+ json.modem[i].csq_col +'"><b>%d%%</b></p></span>' + distance, icon, p);
-						}
-					} else {
-						view.innerHTML = String.format(reg);
-					}
-				}
+				// data by element
+
+                                if (document.getElementById('status'+i)) {
+                                        var view = document.getElementById('status'+i);
+                                        view.innerHTML = formatModemStatus(json.modem[i], icon, reg);
+                                }
 
 				if (document.getElementById('mode'+i)){
 					var view = document.getElementById('mode'+i);
@@ -305,16 +327,25 @@ return view.extend({
 				if (document.getElementById('rssi'+i)) {
 					var view = document.getElementById('rssi'+i);
 					if (json.modem[i].rssi == '') {
-						view = document.getElementById('--');
+						view.textContent = '--';
 					} else {
 						updateProgressBar('rssi', json.modem[i].rssi + ' dBm', -110, i);
 					}
 				}
+				
+				
 				if (document.getElementById('sinr'+i)) {
-					var view = document.getElementById('sinr'+i);
-					if (json.modem[i].sinr == "--" || netmode == "--") {
-						view = document.getElementById('--');
+					var sinrElement = document.getElementById('sinr'+i);
+					var sinrParent = sinrElement ? sinrElement.parentElement : null;
+				
+					if (!json.modem[i].sinr || json.modem[i].sinr === "--" || json.modem[i].sinr === "") {
+						if (sinrParent && sinrParent.parentElement) {
+							sinrParent.parentElement.style.display = 'none';
+						}
 					} else {
+						if (sinrParent && sinrParent.parentElement) {
+							sinrParent.parentElement.style.display = '';
+						}
 						if (netmode == "LTE") {
 							updateProgressBar('sinr', json.modem[i].sinr + ' dB', -20, i);
 						} else {
@@ -324,19 +355,33 @@ return view.extend({
 				}
 				
 				if (document.getElementById('rsrp'+i)) {
-					var view = document.getElementById('rsrp'+i);
-					if (json.modem[i].rsrp == "--") {
-						view = document.getElementById('--');
+					var rsrpElement = document.getElementById('rsrp'+i);
+					var rsrpParent = rsrpElement ? rsrpElement.parentElement : null;
+					
+					if (!json.modem[i].rsrp || json.modem[i].rsrp === "--" || json.modem[i].rsrp === "") {
+						if (rsrpParent && rsrpParent.parentElement) {
+							rsrpParent.parentElement.style.display = 'none';
+						}
 					} else {
+						if (rsrpParent && rsrpParent.parentElement) {
+							rsrpParent.parentElement.style.display = '';
+						}
 						updateProgressBar('rsrp', json.modem[i].rsrp + ' dBm', -140, i);
 					}
 				}
-
+				
 				if (document.getElementById('rsrq'+i)) {
-					var view = document.getElementById('rsrq'+i);
-					if (json.modem[i].rsrq == "--") {
-						view = document.getElementById('--');
+					var rsrqElement = document.getElementById('rsrq'+i);
+					var rsrqParent = rsrqElement ? rsrqElement.parentElement : null;
+					
+					if (!json.modem[i].rsrq || json.modem[i].rsrq === "--" || json.modem[i].rsrq === "") {
+						if (rsrqParent && rsrqParent.parentElement) {
+							rsrqParent.parentElement.style.display = 'none';
+						}
 					} else {
+						if (rsrqParent && rsrqParent.parentElement) {
+							rsrqParent.parentElement.style.display = '';
+						}
 						updateProgressBar('rsrq', json.modem[i].rsrq + ' dB', -20, i);
 					}
 				}
@@ -352,20 +397,6 @@ return view.extend({
 		s = m.section(form.TypedSection, 'general', null);
 		var json = JSON.parse(data);
 	
-		// for future use
-		/*	
-		var vendors = [];
-		var duplicate_modem_index = 1;
-		json.modem.forEach(obj => {
-  			const device = obj.device;
-  			if (!vendors.includes(device)) {
-    			vendors.push(device);
-  			} else {
-    			vendors.push(device+" ("+duplicate_modem_index+")");
-    			duplicate_modem_index++;
-  			}
-		});
-		*/
 		for (var i = 0; i < json.modem.length; i++) {
 			let status = 'status'+i;
 			let mode = 'mode'+i;
@@ -380,9 +411,7 @@ return view.extend({
 			let rsrp = 'rsrp'+i;
 			let rsrq = 'rsrq'+i;
 			let m = i+1;
-			//s.tab("modem" + i, vendors[i]);
-			//o = json.modem.length > 1 ? s.taboption('modem'+i, form.HiddenValue, 'generic') : s.option(form.HiddenValue, 'generic');
-
+			
 			if ( json.modem.length > 1 ) {
 				s.tab("modem" + i, _('Modem')+' '+m);
 				o = s.taboption('modem'+i, form.HiddenValue, 'generic');
